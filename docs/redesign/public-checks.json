@@ -1,0 +1,8 @@
+{
+  "checks": [
+    "Doctor name search, all quick filters, combined specialty filters, campus, fee, language, sorting, list/grid, empty/reset, eight profiles and eight booking selections",
+    "Contact validation, character count, email request feedback, four FAQs and campus clipboard",
+    "Duplicate brand removed on all source pages; no home hero gap; all navigation stays in current tab"
+  ],
+  "errors": []
+}

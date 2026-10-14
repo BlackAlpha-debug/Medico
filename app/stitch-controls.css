@@ -1,0 +1,29 @@
+#stitch-landing .stitch-dialog{position:fixed;inset:0;margin:auto;width:min(560px,calc(100% - 32px));max-height:90dvh;padding:0;border:0;border-radius:24px;background:white;color:#163d3d;box-shadow:0 24px 100px #00292940;overflow:auto}
+#stitch-landing .stitch-dialog::backdrop{background:#082c2c99;backdrop-filter:blur(4px)}
+#stitch-landing .stitch-dialog-body{padding:32px;position:relative}
+#stitch-landing .stitch-dialog h2{font:600 28px/1.2 var(--font-outfit);margin:0 30px 18px 0}
+#stitch-landing .stitch-dialog p{font-size:15px;line-height:1.6;margin:14px 0}
+#stitch-landing .stitch-dialog button:not(.stitch-close),#stitch-landing .stitch-dialog a{display:inline-block;background:#005050;color:white;padding:12px 18px;border-radius:24px;cursor:pointer;margin:8px 8px 0 0}
+#stitch-landing .stitch-dialog .stitch-close{position:absolute;right:20px;top:16px;font-size:30px;cursor:pointer}
+#stitch-landing .stitch-form{display:grid;gap:14px;margin-top:20px}
+#stitch-landing .stitch-form label{display:grid;gap:6px;font-size:14px}
+#stitch-landing .stitch-form input,#stitch-landing .stitch-form select{border:1px solid #9ab6b4;border-radius:10px;padding:12px;background:white;width:100%;min-width:0;color:#163d3d}
+#stitch-landing .stitch-form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#stitch-landing .stitch-notice{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:100;background:#003d3d;color:white;border-radius:16px;padding:16px 24px;max-width:calc(100% - 32px);box-shadow:0 5px 24px #0003}
+#stitch-landing .stitch-chat-draft{padding:16px;border-radius:16px;background:#e1f3f1;font-size:14px;margin:12px 0}
+#stitch-landing .stitch-dialog ol{list-style:decimal;padding-left:24px;line-height:2}
+#stitch-landing .stitch-mobile-menu,#stitch-landing .stitch-mobile-nav{display:none}
+@media(max-width:1023px){#stitch-landing .stitch-mobile-menu{display:block;position:fixed;right:12px;top:87px;z-index:60;background:#005050;color:white;border-radius:50%;width:42px;height:42px;font-size:22px}#stitch-landing .stitch-mobile-nav{display:grid;position:fixed;right:16px;top:136px;z-index:60;background:white;border-radius:16px;padding:20px;gap:16px;box-shadow:0 8px 30px #0003}}
+@media(max-width:600px){#stitch-landing header>div{padding-inline:16px;gap:8px}#stitch-landing header>div>div:last-child{gap:8px}#stitch-landing header [data-action="booking"]{padding:10px}#stitch-landing header [data-action="booking"]>span:last-child{display:none}#stitch-landing .stitch-dialog-body{padding:24px}#stitch-landing .stitch-form-row{grid-template-columns:1fr}}
+#stitch-landing .stitch-tour-video{display:block;width:100%;border-radius:16px;background:#005050;margin:16px 0}
+@media(max-width:600px){#stitch-landing header>div>div:first-child>span{display:none}}
+#stitch-landing .stitch-list-view{grid-template-columns:1fr!important}
+#stitch-landing [data-directory-empty]{padding:40px;background:white;border-radius:20px;text-align:center}
+#stitch-landing [data-action="directory-fee"][aria-pressed="true"],#stitch-landing [data-action="directory-language"][aria-pressed="true"],#stitch-landing [data-action="directory-view"][aria-pressed="true"]{background:#005050;color:white}
+#stitch-landing .stitch-filter-pill{font-size:12px;padding:3px 10px;background:#c8eeee;border-radius:20px;cursor:pointer}
+#stitch-landing button:disabled{opacity:.4;cursor:default}
+#stitch-landing .stitch-mobile-menu{top:88px}
+@media(max-width:600px){#stitch-landing header>div{padding-inline:16px!important;gap:8px!important}#stitch-landing header>div>div:last-child{gap:8px!important}}
+@media(max-width:1023px){#stitch-landing aside{position:static}#stitch-landing aside>div{max-height:none}}
+#stitch-landing [data-action="directory-fee"][aria-pressed="false"],#stitch-landing [data-action="directory-language"][aria-pressed="false"]{background:#e3f1f0;color:#3f4948}
+@media(max-width:1023px){#stitch-landing aside{position:static!important}#stitch-landing aside>div{max-height:none!important}}

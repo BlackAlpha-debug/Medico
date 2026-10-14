@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "login/patient/true: request to /patient/dashboard; mocked auth and redirect destination",
+    "login/doctor/true: request to /doctor/dashboard; mocked auth and redirect destination",
+    "login/doctor/false: request to /doctor/onboarding; mocked auth and redirect destination",
+    "login/patient/false: request to /patient/medical_session; mocked auth and redirect destination",
+    "signup/patient/new: request to /patient/medical_session; mocked auth and redirect destination",
+    "signup/doctor/new: request to /doctor/onboarding; mocked auth and redirect destination",
+    "Google provider request, pending role persistence, and failure message (mocked)"
+  ],
+  "limits": "All authentication/role responses and final destinations mocked. This proves frontend request and navigation handling, not live authentication or persistence."
+}

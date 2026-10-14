@@ -1,0 +1,150 @@
+{
+  "results": [
+    {
+      "route": "/doctor/home",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "reportQueue": true,
+      "dedicatedNavigation": true
+    },
+    {
+      "route": "/doctor/home",
+      "viewport": "tablet",
+      "overflow": {
+        "viewport": 768,
+        "scroll": 768
+      },
+      "reportQueue": true,
+      "dedicatedNavigation": false
+    },
+    {
+      "route": "/doctor/home",
+      "viewport": "mobile",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      },
+      "reportQueue": true,
+      "dedicatedNavigation": false
+    },
+    {
+      "route": "/doctor/appointments",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "activeNavigation": true,
+      "primaryInteraction": true
+    },
+    {
+      "route": "/doctor/patients",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "activeNavigation": true,
+      "primaryInteraction": true
+    },
+    {
+      "route": "/doctor/schedule",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "activeNavigation": true,
+      "primaryInteraction": true
+    },
+    {
+      "route": "/doctor/prescriptions",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "activeNavigation": true,
+      "primaryInteraction": true
+    },
+    {
+      "route": "/doctor/lab-requests",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "activeNavigation": true,
+      "primaryInteraction": true
+    },
+    {
+      "route": "/doctor/messages",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "activeNavigation": true,
+      "primaryInteraction": true
+    },
+    {
+      "route": "/doctor/reports",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "activeNavigation": true,
+      "primaryInteraction": true
+    },
+    {
+      "route": "/doctor/settings",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "activeNavigation": true,
+      "primaryInteraction": true
+    },
+    {
+      "route": "/doctor/report/report-1",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "reviewControls": true
+    },
+    {
+      "route": "/doctor/report/report-1",
+      "viewport": "mobile",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      },
+      "reviewControls": true
+    },
+    {
+      "route": "/this-page-does-not-exist",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "route": "/this-page-does-not-exist",
+      "viewport": "mobile",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    }
+  ],
+  "errors": [],
+  "limits": "Authentication, doctor profile, report queues, review, chat, prescription, and PDF endpoints were mocked. Tests verify frontend rendering and interactions, not live services."
+}

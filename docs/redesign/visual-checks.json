@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "All source images loaded",
+    "390px/768px/desktop: no horizontal overflow",
+    "Contact clipboard action",
+    "Keyboard skip link and FAQ disclosure",
+    "No uncaught or console errors"
+  ],
+  "errors": []
+}

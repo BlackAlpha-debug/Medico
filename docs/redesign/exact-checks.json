@@ -1,0 +1,71 @@
+{
+  "errors": [],
+  "sizes": [
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "culprits": [
+        {
+          "tag": "svg",
+          "cls": {}
+        },
+        {
+          "tag": "text",
+          "cls": {}
+        },
+        {
+          "tag": "textPath",
+          "cls": {}
+        },
+        {
+          "tag": "DIV",
+          "cls": "absolute -right-20 -bottom-20 w-80 h-80 bg-error/20 rounded-full blur-3xl pointer-events-none"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "culprits": [
+        {
+          "tag": "svg",
+          "cls": {}
+        },
+        {
+          "tag": "text",
+          "cls": {}
+        },
+        {
+          "tag": "textPath",
+          "cls": {}
+        },
+        {
+          "tag": "DIV",
+          "cls": "absolute -right-20 -bottom-20 w-80 h-80 bg-error/20 rounded-full blur-3xl pointer-events-none"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "culprits": [
+        {
+          "tag": "DIV",
+          "cls": "absolute -right-20 -bottom-20 w-80 h-80 bg-error/20 rounded-full blur-3xl pointer-events-none"
+        }
+      ]
+    }
+  ],
+  "links": [
+    "/",
+    "/services",
+    "/doctors",
+    "/departments",
+    "/about",
+    "/contact",
+    "/login",
+    "/signup?type=doctor",
+    "/how-it-works"
+  ],
+  "checks": "14 sections; all action dialogs; doctor filters; service carousel; bookmarks; six FAQs; draft chat; PDF; booking form; newsletter; same-tab Contact; route status"
+}

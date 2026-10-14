@@ -1,0 +1,38 @@
+{
+  "checks": [
+    "/: HTTP 200; navigation targets; desktop layout",
+    "/services: HTTP 200; navigation targets; desktop layout",
+    "/how-it-works: HTTP 200; navigation targets; desktop layout",
+    "/about: HTTP 200; navigation targets; desktop layout",
+    "/contact: HTTP 200; navigation targets; desktop layout",
+    "/faq: HTTP 200; navigation targets; desktop layout",
+    "/login: HTTP 200; navigation targets; desktop layout",
+    "/signup: HTTP 200; navigation targets; desktop layout",
+    "/signup?type=doctor: HTTP 200; navigation targets; desktop layout",
+    "Contact navigation opens /contact in a new tab",
+    "FAQ opens and closes",
+    "/: 390px mobile layout",
+    "/login: 390px mobile layout",
+    "/signup: 390px mobile layout",
+    "/signup?type=doctor: 390px mobile layout",
+    "/contact: 390px mobile layout",
+    "/services: 390px mobile layout",
+    "/about: 390px mobile layout",
+    "/how-it-works: 390px mobile layout",
+    "/faq: 390px mobile layout",
+    "Mobile navigation opens/closes",
+    "Signup role selector and query parameter",
+    "Signup password mismatch blocks submission",
+    "Password visibility toggle",
+    "Role mismatch error (mocked account lookup)",
+    "Duplicate account error (mocked account lookup)",
+    "Failed account request gives retryable error (mocked 503)",
+    "Contact form validates and composes correct email draft (window.open intercepted; no email sent)",
+    "No browser page errors"
+  ],
+  "errors": [],
+  "limits": [
+    "Authentication responses mocked for frontend error tests; no live database/provider configuration",
+    "Contact email draft verified without sending email"
+  ]
+}

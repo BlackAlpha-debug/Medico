@@ -1,0 +1,56 @@
+{
+  "results": [
+    {
+      "route": "/patient/dashboard",
+      "viewport": "desktop",
+      "overflow": {
+        "viewport": 1440,
+        "scroll": 1440
+      },
+      "modeDialog": true
+    },
+    {
+      "route": "/patient/dashboard",
+      "viewport": "tablet",
+      "overflow": {
+        "viewport": 768,
+        "scroll": 768
+      },
+      "modeDialog": true
+    },
+    {
+      "route": "/patient/dashboard",
+      "viewport": "mobile",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      },
+      "modeDialog": true
+    },
+    {
+      "route": "/patient/profile?tab=medical-history",
+      "historyFields": true,
+      "singleActiveNavigationItem": true
+    },
+    {
+      "route": "/patient/interview?mode=text",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "route": "/patient/interview?mode=voice",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "route": "/patient/medical_session",
+      "textModeAvailable": true
+    }
+  ],
+  "errors": [],
+  "limits": "Authentication, medical-history, clinical-session, dashboard, and voice endpoints were mocked. Tests verify frontend rendering and interactions, not live services."
+}

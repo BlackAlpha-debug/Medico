@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-lowest":"#ffffff","on-tertiary-fixed":"#002021","background":"#effcfb","surface":"#effcfb","primary":"#005252","outline":"#6f7979","surface-container":"#e3f1f0","surface-dim":"#cfdddc","on-tertiary-fixed-variant":"#164e51","inverse-on-surface":"#e6f3f3","on-primary-fixed-variant":"#004f50","inverse-surface":"#263333","tertiary":"#195154","error":"#ba1a1a","on-error-container":"#93000a","secondary-container":"#2b69fd","tertiary-fixed-dim":"#9bd0d3","secondary-fixed":"#dbe1ff","on-error":"#ffffff","on-secondary-fixed-variant":"#003cac","on-tertiary-container":"#b1e6e9","on-primary-fixed":"#002020","tertiary-fixed":"#b7ecef","on-secondary":"#ffffff","on-surface-variant":"#3f4948","surface-tint":"#1b6969","outline-variant":"#bec8c8","surface-container-low":"#e9f6f6","primary-fixed-dim":"#8dd3d2","on-secondary-container":"#fefbff","on-background":"#121e1e","error-container":"#ffdad6","secondary":"#004fda","surface-container-high":"#ddebea","surface-container-highest":"#d8e5e5","primary-container":"#1f6b6b","surface-variant":"#d8e5e5","on-tertiary":"#ffffff","on-primary-container":"#a2e9e8","on-primary":"#ffffff","surface-bright":"#effcfb","primary-fixed":"#a8efee","tertiary-container":"#35696c","inverse-primary":"#8dd3d2","secondary-fixed-dim":"#b5c4ff","on-surface":"#121e1e","on-secondary-fixed":"#00174d"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","margin-mobile":"1rem","margin":"2rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2.5rem"},fontFamily:{"headline-lg-mobile":["Outfit"],"headline-lg":["Outfit"],"label-sm":["Inter"],"headline-xl-mobile":["Outfit"],"label-lg":["Inter"],"headline-xl":["Outfit"],"headline-sm":["Outfit"],"label-md":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-md":["Outfit"],"body-sm":["Inter"]},fontSize:{"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-xl-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"500"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"body-md":["15px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0.005em",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="sticky top-0 z-50 w-full bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Medico Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UV23cS6teRJAn_HDC2xV0EPg1DRC0N_Lvp8iDC8jjV61i9ZUcV_O_T6zKq-WCRu-ZPNd8he71d4ZcXFfJ1ABLtZmnbW1YqqL2wEQinS2BdLPifbAG-ya9lFcPF0T9CX_1srv6Ia_R8ehkb5OmeLwemIuMr_QqDZ6z4pXBr3UGhsKSBMvfIEJHuk9fGsSkKE2PtxrHnubJT3D6ya2Cxfh8SAW4EnOmMEB-IJ6FrFUg4dec3qltmhKkRnHhr"/><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Medico</span></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold border-b-2 border-primary pb-1"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1" data-path="services" href="#">Services</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1" data-path="doctors" href="#">Doctors</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1" data-path="departments" href="#">Departments</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1" data-path="about" href="#">About</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors px-space-xs py-space-sm" data-path="login" href="#">Login</a><a class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary font-label-lg text-label-lg px-space-md py-space-sm rounded-full shadow-[0_2px_8px_rgba(31,107,107,0.2)] hover:bg-tertiary transition-all active:translate-y-[1px]" data-path="appointment-booking" href="#"><span class="material-symbols-outlined text-[18px]">calendar_add_on</span><span>Book Appointment</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Canvas Background & Ambient Glow -->
+<div class="relative w-full overflow-hidden pb-space-xl">
+<!-- Ambient Blur Spheres -->
+<div class="pointer-events-none absolute -top-24 -left-20 w-96 h-96 rounded-full bg-primary-fixed/20 blur-3xl"></div>
+<div class="pointer-events-none absolute top-1/3 -right-24 w-96 h-96 rounded-full bg-secondary-fixed/30 blur-3xl"></div>
+<div class="pointer-events-none absolute bottom-10 left-1/4 w-[32rem] h-[32rem] rounded-full bg-tertiary-fixed/20 blur-3xl"></div>
+<div class="relative max-w-[1240px] mx-auto px-margin-mobile md:px-margin pt-space-lg">
+<!-- Top Clinical Context & Header -->
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-lg">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Medico Health Unified Gateway</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mb-space-xs">
+          Join Medico Healthcare Network
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Select your clinical role to get started with tailored clinical workflows, secure medical records, and integrated health services.
+        </p>
+<!-- Prototype Quick Preview Bar -->
+<div class="mt-space-md flex flex-wrap items-center justify-center gap-space-xs bg-surface-container-high/80 p-space-xs rounded-xl shadow-inner">
+<span class="font-label-md text-label-md text-on-surface-variant px-space-xs">Quick Views:</span>
+<button class="px-space-sm py-1 rounded-lg text-label-sm font-label-sm bg-surface-container-lowest text-primary shadow-sm hover:bg-surface-container-low transition-all" onclick="previewView('patient-form')" type="button">Patient Form</button>
+<button class="px-space-sm py-1 rounded-lg text-label-sm font-label-sm bg-surface-container-lowest text-primary shadow-sm hover:bg-surface-container-low transition-all" onclick="previewView('doctor-form')" type="button">Doctor Wizard</button>
+<button class="px-space-sm py-1 rounded-lg text-label-sm font-label-sm bg-surface-container-lowest text-primary shadow-sm hover:bg-surface-container-low transition-all" onclick="previewView('patient-success')" type="button">Patient Success</button>
+<button class="px-space-sm py-1 rounded-lg text-label-sm font-label-sm bg-surface-container-lowest text-primary shadow-sm hover:bg-surface-container-low transition-all" onclick="previewView('doctor-success')" type="button">Doctor Success</button>
+</div>
+</div>
+<!-- Dual Role Selector Switcher -->
+<div class="max-w-2xl mx-auto mb-space-xl" id="role-selector-container">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md p-space-xs bg-surface-container-low rounded-2xl shadow-sm">
+<!-- Role A: Patient -->
+<button class="relative flex items-start gap-space-md p-space-md rounded-xl text-left transition-all duration-300 bg-surface-container-lowest shadow-md ring-2 ring-primary" id="role-btn-patient" onclick="switchRole('patient')" type="button">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm" id="role-icon-patient">
+<span class="material-symbols-outlined text-[24px]">personal_injury</span>
+</div>
+<div class="flex flex-col min-w-0 pr-space-md">
+<div class="flex items-center gap-space-xs mb-0.5">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Patient</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed" id="badge-patient">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Book appointments &amp; manage my personal health records securely.
+              </p>
+</div>
+<div class="absolute top-4 right-4 text-primary" id="check-patient">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+<!-- Role B: Doctor -->
+<button class="relative flex items-start gap-space-md p-space-md rounded-xl text-left transition-all duration-300 bg-surface-container hover:bg-surface-container-lowest/80" id="role-btn-doctor" onclick="switchRole('doctor')" type="button">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0" id="role-icon-doctor">
+<span class="material-symbols-outlined text-[24px]">stethoscope</span>
+</div>
+<div class="flex flex-col min-w-0 pr-space-md">
+<div class="flex items-center gap-space-xs mb-0.5">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Doctor</span>
+<span class="hidden px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed" id="badge-doctor">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Manage patients, telehealth sessions, and credentialed practice.
+              </p>
+</div>
+<div class="absolute top-4 right-4 text-outline-variant hidden" id="check-doctor">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+</div>
+</div>
+<!-- MAIN CONTAINER CARD -->
+<div class="max-w-3xl mx-auto bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden mb-space-lg">
+<!-- ========================================== -->
+<!-- VIEW 1: PATIENT SIGNUP FORM (SINGLE STEP)  -->
+<!-- ========================================== -->
+<section class="p-space-lg md:p-space-xl flex flex-col" id="view-patient-form">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs mb-space-lg pb-space-md">
+<div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed/40 text-primary font-label-sm text-label-sm mb-1.5">
+<span class="material-symbols-outlined text-[14px]">id_card</span>
+<span>Immediate Portal Access</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Patient Registration</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Provide clinical identification to establish your Electronic Medical Record.</p>
+</div>
+<div class="text-left md:text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Already registered?</span>
+<a class="block font-label-lg text-label-lg text-secondary hover:underline" href="#">Log in to Portal →</a>
+</div>
+</div>
+<!-- Social Quick Signups -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mb-space-lg">
+<button class="flex items-center justify-center gap-space-sm h-12 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-colors shadow-sm" type="button">
+<!-- Google G Vector -->
+<svg class="w-5 h-5" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span>Continue with Google</span>
+</button>
+<button class="flex items-center justify-center gap-space-sm h-12 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-colors shadow-sm" type="button">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.42c.67-.82 1.12-1.96.99-3.11-1 .04-2.16.66-2.84 1.46-.59.68-1.12 1.84-.98 2.96 1.11.09 2.18-.58 2.83-1.31z"></path>
+</svg>
+<span>Continue with Apple</span>
+</button>
+</div>
+<div class="relative flex py-2 items-center mb-space-lg">
+<div class="flex-grow bg-surface-container-high h-px"></div>
+<span class="flex-shrink mx-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Or register with email</span>
+<div class="flex-grow bg-surface-container-high h-px"></div>
+</div>
+<!-- Patient Form Fields -->
+<form class="space-y-space-md" id="patient-signup-form" onsubmit="handlePatientSubmit(event)">
+<!-- Full Name -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="patient-name">
+                Full Legal Name <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary transition-all" id="patient-name" placeholder="e.g. Eleanor Vance" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant text-[20px]">badge</span>
+</div>
+</div>
+<!-- Email & Phone Group -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="patient-email">
+                  Email Address <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary transition-all" id="patient-email" oninput="validateEmailField(this)" placeholder="name@example.com" required="" type="email"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-primary text-[20px] hidden" id="email-valid-icon">check_circle</span>
+</div>
+<span class="text-label-sm font-label-sm text-error mt-1 hidden" id="email-error-msg">Please provide a valid email format</span>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="patient-phone">
+                  Mobile Number <span class="text-error">*</span>
+</label>
+<div class="flex gap-2">
+<select class="h-11 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none ring-1 ring-outline-variant/60">
+<option value="+1">🇺🇸 +1</option>
+<option value="+44">🇬🇧 +44</option>
+<option value="+91">🇮🇳 +91</option>
+<option value="+61">🇦🇺 +61</option>
+<option value="+49">🇩🇪 +49</option>
+</select>
+<input class="flex-1 h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary transition-all" id="patient-phone" placeholder="(555) 234-5678" required="" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Date of Birth & Blood Group -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="patient-dob">
+                  Date of Birth <span class="text-error">*</span>
+</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary transition-all" id="patient-dob" required="" type="date"/>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-[12px]">Must be 18+ or submit guardian authorization form</p>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="patient-blood">
+                  Blood Group <span class="text-on-surface-variant font-normal">(Optional)</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="patient-blood">
+<option value="">Unknown / Select later</option>
+<option value="A+">A Positive (A+)</option>
+<option value="A-">A Negative (A-)</option>
+<option value="B+">B Positive (B+)</option>
+<option value="B-">B Negative (B-)</option>
+<option value="O+">O Positive (O+)</option>
+<option value="O-">O Negative (O-)</option>
+<option value="AB+">AB Positive (AB+)</option>
+<option value="AB-">AB Negative (AB-)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Gender Identity Selector -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5">
+                Biological Sex / Gender <span class="text-error">*</span>
+</label>
+<div class="grid grid-cols-3 gap-space-sm" id="gender-group">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="gender" type="radio" value="female"/>
+<div class="flex items-center justify-center gap-1.5 h-10 rounded-lg bg-surface-container text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary transition-all font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">female</span>
+<span>Female</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="gender" type="radio" value="male"/>
+<div class="flex items-center justify-center gap-1.5 h-10 rounded-lg bg-surface-container text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary transition-all font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">male</span>
+<span>Male</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="gender" type="radio" value="other"/>
+<div class="flex items-center justify-center gap-1.5 h-10 rounded-lg bg-surface-container text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary transition-all font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">transgender</span>
+<span>Other</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Password & Confirmation -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="patient-pw">
+                  Create Password <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary transition-all pr-10" id="patient-pw" oninput="evaluatePasswordStrength(this.value, 'patient')" placeholder="••••••••••••" required="" type="password"/>
+<button class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant text-[20px] hover:text-on-surface" onclick="togglePasswordVis('patient-pw', this)" type="button">visibility</button>
+</div>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="patient-pw-confirm">
+                  Confirm Password <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary transition-all pr-10" id="patient-pw-confirm" oninput="checkMatchPassword()" placeholder="••••••••••••" required="" type="password"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-primary text-[20px] hidden" id="pw-match-icon">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Password Strength Bar & Checklist -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Security Strength:</span>
+<span class="font-label-sm text-label-sm font-semibold text-error" id="patient-strength-text">Weak</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-error transition-all" id="p-bar-1"></div>
+<div class="h-full bg-surface-variant transition-all" id="p-bar-2"></div>
+<div class="h-full bg-surface-variant transition-all" id="p-bar-3"></div>
+<div class="h-full bg-surface-variant transition-all" id="p-bar-4"></div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1 text-on-surface-variant" id="chk-len"><span class="material-symbols-outlined text-[14px]">radio_button_unchecked</span> 8+ chars</div>
+<div class="flex items-center gap-1 text-on-surface-variant" id="chk-upper"><span class="material-symbols-outlined text-[14px]">radio_button_unchecked</span> 1 uppercase</div>
+<div class="flex items-center gap-1 text-on-surface-variant" id="chk-num"><span class="material-symbols-outlined text-[14px]">radio_button_unchecked</span> 1 number</div>
+<div class="flex items-center gap-1 text-on-surface-variant" id="chk-sym"><span class="material-symbols-outlined text-[14px]">radio_button_unchecked</span> 1 symbol</div>
+</div>
+</div>
+<!-- Terms & Medical Disclosure -->
+<div class="pt-space-xs">
+<label class="flex items-start gap-space-sm cursor-pointer select-none">
+<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary border-outline accent-primary" id="patient-terms" required="" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                  I agree to Medico’s <a class="text-primary font-semibold hover:underline" href="#">Terms of Healthcare Service</a>, <a class="text-primary font-semibold hover:underline" href="#">Notice of Privacy Practices</a>, and acknowledge consent to clinical telemetry.
+                </span>
+</label>
+</div>
+<!-- Submit Button -->
+<div class="pt-space-md">
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-tertiary transition-all active:scale-[0.99] flex items-center justify-center gap-space-xs" id="btn-patient-submit" type="submit">
+<span>Create Patient Account</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</form>
+</section>
+<!-- ========================================== -->
+<!-- VIEW 2: DOCTOR SIGNUP WIZARD (3-STEP)      -->
+<!-- ========================================== -->
+<section class="hidden p-space-lg md:p-space-xl flex-col" id="view-doctor-form">
+<div class="mb-space-lg pb-space-sm">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm mb-1.5">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Physician &amp; Specialist Credentialing</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Physician Application</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Complete clinical profiling to establish your telehealth &amp; hospital practice.</p>
+</div>
+<!-- Wizard Step Progress Bar -->
+<div class="mb-space-xl bg-surface-container-low p-space-md rounded-2xl">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center" id="step-badge-1">1</div>
+<span class="font-label-md text-label-md font-semibold text-primary" id="step-lbl-1">Account</span>
+</div>
+<div class="flex-1 h-0.5 mx-space-sm bg-primary" id="prog-line-1"></div>
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center" id="step-badge-2">2</div>
+<span class="font-label-md text-label-md font-medium text-on-surface-variant" id="step-lbl-2">Practice Details</span>
+</div>
+<div class="flex-1 h-0.5 mx-space-sm bg-surface-container-highest" id="prog-line-2"></div>
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center" id="step-badge-3">3</div>
+<span class="font-label-md text-label-md font-medium text-on-surface-variant" id="step-lbl-3">Credentials</span>
+</div>
+</div>
+</div>
+<!-- FORM CONTAINER -->
+<form id="doctor-wizard-form" onsubmit="event.preventDefault();">
+<!-- STEP 1: Account Setup -->
+<div class="space-y-space-md" id="doc-step-1">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="md:col-span-1">
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-title">Title <span class="text-error">*</span></label>
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none" id="doc-title">
+<option value="Dr.">Dr.</option>
+<option value="Prof.">Prof.</option>
+<option value="Assoc. Prof.">Assoc. Prof.</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-fullname">Full Legal Name <span class="text-error">*</span></label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none" id="doc-fullname" placeholder="e.g. Marcus Vance, MD" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-email">Hospital / Work Email <span class="text-error">*</span></label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none" id="doc-email" placeholder="dr.vance@hospital.org" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-phone">Direct Clinic Phone <span class="text-error">*</span></label>
+<div class="flex gap-2">
+<select class="h-11 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm ring-1 ring-outline-variant/60 outline-none">
+<option value="+1">🇺🇸 +1</option>
+<option value="+44">🇬🇧 +44</option>
+<option value="+91">🇮🇳 +91</option>
+</select>
+<input class="flex-1 h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none" id="doc-phone" placeholder="(555) 890-1234" required="" type="tel"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-pw">Security Password <span class="text-error">*</span></label>
+<div class="relative">
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none pr-10" id="doc-pw" oninput="evaluatePasswordStrength(this.value, 'doc')" placeholder="••••••••••••" required="" type="password"/>
+<button class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant text-[20px]" onclick="togglePasswordVis('doc-pw', this)" type="button">visibility</button>
+</div>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-pw-confirm">Confirm Password <span class="text-error">*</span></label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none" id="doc-pw-confirm" placeholder="••••••••••••" required="" type="password"/>
+</div>
+</div>
+<!-- Doc Password Strength Indicator -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Security Benchmark: <span class="font-semibold text-error" id="doc-strength-text">Needs Improvement</span></span>
+<span class="text-primary font-medium">HIPAA Grade Required</span>
+</div>
+<div class="pt-space-md flex justify-end">
+<button class="px-space-lg h-12 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-tertiary transition-all flex items-center gap-space-xs" onclick="goToDocStep(2)" type="button">
+<span>Continue to Professional Details</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 2: Professional Details -->
+<div class="hidden space-y-space-md" id="doc-step-2">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-specialty">Primary Medical Specialty <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none appearance-none cursor-pointer" id="doc-specialty">
+<option value="Cardiology">Cardiology &amp; Vascular</option>
+<option value="Neurology">Neurology &amp; Neurosurgery</option>
+<option value="Pediatrics">Pediatrics &amp; Neonatology</option>
+<option value="Orthopedics">Orthopedics &amp; Sports Medicine</option>
+<option value="Oncology">Oncology &amp; Hematology</option>
+<option value="Dermatology">Dermatology</option>
+<option value="Internal Medicine">Internal Medicine</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-subspecialty">Sub-Specialty Focus</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none" id="doc-subspecialty" placeholder="e.g. Interventional Electrophysiology" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-license">State Medical License Number <span class="text-error">*</span></label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none font-mono" id="doc-license" placeholder="e.g. MD-940218-NY" type="text"/>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-exp">Years of Clinical Experience <span class="text-error">*</span></label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none" id="doc-exp" max="60" min="1" type="number" value="8"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-hospital">Hospital / Clinic Affiliation <span class="text-error">*</span></label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none" id="doc-hospital" placeholder="Medico Central Hospital, Pavilion B" type="text"/>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-school">Medical School / Institution <span class="text-error">*</span></label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none" id="doc-school" placeholder="Johns Hopkins University School of Medicine" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5" for="doc-fee">Standard Consultation Fee ($ USD)</label>
+<div class="relative w-full md:w-1/2">
+<span class="absolute left-3 top-3 text-on-surface-variant font-semibold">$</span>
+<input class="w-full h-11 pl-8 pr-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none" id="doc-fee" type="number" value="180"/>
+</div>
+</div>
+<!-- Languages Spoken Multi-tag selector -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5">Languages Spoken</label>
+<div class="flex flex-wrap gap-2" id="doc-languages">
+<button class="px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-primary text-on-primary shadow-sm flex items-center gap-1" onclick="toggleDocLanguage(this)" type="button">
+<span>English</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-primary text-on-primary shadow-sm flex items-center gap-1" onclick="toggleDocLanguage(this)" type="button">
+<span>Spanish</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors flex items-center gap-1" onclick="toggleDocLanguage(this)" type="button">
+<span>French</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors flex items-center gap-1" onclick="toggleDocLanguage(this)" type="button">
+<span>Mandarin</span>
+</button>
+<button class="px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors flex items-center gap-1" onclick="toggleDocLanguage(this)" type="button">
+<span>Arabic</span>
+</button>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<button class="px-space-md h-12 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors flex items-center gap-1" onclick="goToDocStep(1)" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Back</span>
+</button>
+<button class="px-space-lg h-12 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-tertiary transition-all flex items-center gap-space-xs" onclick="goToDocStep(3)" type="button">
+<span>Continue to Verification</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 3: Verification & Credentials -->
+<div class="hidden space-y-space-md" id="doc-step-3">
+<!-- Avatar Profile Photo -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-2">Physician Headshot / Profile Photo</label>
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container-high relative shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Professional studio portrait headshot of a friendly confident doctor in white medical coat with stethoscope smiling warmly on subtle teal background" id="avatar-preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyEAx9YrzufKtzMJInpabbFvwPvCGHKjSfCO9VABBxbl9eug0et3pCsANhyktMipIenE2EaYcktHkK6BZ1Vle7PpVO_VtfPXfiRo0a9SXx2SG0keHkY5EtOS4WcXQKDRpK-Y9hNMHOmEKTxccBskWURB7z0yECOMji5JsO3sjcfSmnpGxoQarHgQxWHqc28R7cMob6Pce7R_gHjN99YgpNzvx69YwBhXsuA0WjHlb5tAggGm8_bF9_VQ"/>
+</div>
+<div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface text-on-surface font-label-sm text-label-sm shadow-sm transition-colors" type="button">
+                      Upload New Photo
+                    </button>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] mt-1">Recommended 400x400px JPG or PNG. White clinical coat preferred.</p>
+</div>
+</div>
+</div>
+<!-- Upload 1: Medical License -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5">Official State Medical License Certificate <span class="text-error">*</span></label>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed/60 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">picture_as_pdf</span>
+</div>
+<div>
+<span class="block font-label-md text-label-md font-semibold text-on-surface">NY_State_Medical_License_2025.pdf</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant text-[12px]">2.4 MB • Uploaded &amp; Validated</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-error-container hover:text-on-error-container text-on-surface-variant transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Upload 2: Government Photo ID -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1.5">Government Issued Photo ID (Passport / Drivers License) <span class="text-error">*</span></label>
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[22px]">cloud_upload</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold">Click to browse or drag and drop</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">PDF, PNG, JPG up to 10MB</span>
+</div>
+</div>
+<!-- Short Bio -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<label class="block font-label-lg text-label-lg text-on-surface" for="doc-bio">Clinical Philosophy &amp; Bio Summary</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="bio-counter">184 / 500 characters</span>
+</div>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md ring-1 ring-outline-variant/60 focus:ring-2 focus:ring-primary outline-none resize-none" id="doc-bio" oninput="updateBioCount(this)" rows="3">Board-certified cardiologist with extensive training in structural heart interventions and non-invasive hemodynamics. Committed to preventive vascular health and evidence-based patient advocacy.</textarea>
+</div>
+<!-- Regulatory Banner -->
+<div class="p-space-md rounded-xl bg-tertiary-fixed/30 flex items-start gap-space-sm text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px] text-primary shrink-0 mt-0.5">policy</span>
+<div class="text-label-sm font-label-sm">
+<span class="font-semibold block text-primary">Medico Credentialing Board Protocol:</span>
+<span>All applications undergo primary source verification through the National Practitioner Data Bank (NPDB) and state medical licensing boards prior to clinical activation (typically 24–48 hours).</span>
+</div>
+</div>
+<!-- Terms Attestation -->
+<div class="pt-space-xs">
+<label class="flex items-start gap-space-sm cursor-pointer select-none">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary border-outline accent-primary" id="doc-attest" required="" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                    I attest under penalty of perjury that all clinical certifications, licenses, and biographical records supplied are current, valid, and free of suspension or adverse sanctions.
+                  </span>
+</label>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<button class="px-space-md h-12 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors flex items-center gap-1" onclick="goToDocStep(2)" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Back</span>
+</button>
+<button class="px-space-xl h-12 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-tertiary transition-all flex items-center gap-space-xs" id="btn-doc-submit" onclick="handleDoctorSubmit()" type="button">
+<span id="btn-doc-label">Submit for Credentialing Review</span>
+<span class="material-symbols-outlined text-[20px]" id="btn-doc-icon">verified</span>
+</button>
+</div>
+</div>
+</form>
+</section>
+<!-- ========================================== -->
+<!-- VIEW 3: SUCCESS STATE - PATIENT            -->
+<!-- ========================================== -->
+<section class="hidden p-space-xl flex-col items-center text-center" id="view-patient-success">
+<div class="w-20 h-20 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-space-md shadow-md">
+<span class="material-symbols-outlined text-[44px]">check_circle</span>
+</div>
+<div class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm mb-space-xs">
+<span>EMR #MED-88921-PT</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">
+            Welcome to Medico Health!
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-lg">
+            Your patient account has been created. A verification link has been dispatched to your email address. You can now access your appointments and care team.
+          </p>
+<div class="w-full max-w-md p-space-md rounded-xl bg-surface-container-low mb-space-lg text-left space-y-space-sm">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Profile Status</span>
+<span class="text-primary font-semibold flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span> Active</span>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Default Clinic</span>
+<span class="text-on-surface font-semibold">Medico Digital Care</span>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">2-Factor Authentication</span>
+<span class="text-on-surface-variant">Ready to configure</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md w-full max-w-md">
+<button class="flex-1 h-12 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors" onclick="previewView('patient-form')" type="button">
+              Back to Sign Up
+            </button>
+<a class="flex-1 h-12 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-tertiary transition-all flex items-center justify-center gap-1" href="#">
+<span>Go to Dashboard</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- VIEW 4: SUCCESS STATE - DOCTOR             -->
+<!-- ========================================== -->
+<section class="hidden p-space-xl flex-col items-center text-center" id="view-doctor-success">
+<div class="w-20 h-20 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md shadow-md">
+<span class="material-symbols-outlined text-[44px]">medical_services</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm mb-space-xs">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+<span>Application ID: DOC-2025-NY781</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">
+            Application Submitted Successfully!
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-space-lg">
+            Thank you for applying to practice within the Medico Clinical Network. Your submission has entered our physician review queue.
+          </p>
+<!-- Status Milestone Timeline -->
+<div class="w-full max-w-lg p-space-lg rounded-2xl bg-surface-container-low mb-space-lg text-left">
+<span class="block font-label-lg text-label-lg text-on-surface font-semibold mb-space-md">Next Verification Milestones</span>
+<div class="space-y-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div>
+<span class="block font-label-md text-label-md font-semibold text-on-surface">Application &amp; Credentials Received</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Profile packet queued for automated NPDB query.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5 animate-pulse">
+                  2
+                </div>
+<div>
+<span class="block font-label-md text-label-md font-semibold text-on-surface">Medical Credentialing Board Review</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Clinical peer review completed within 24–48 hours.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-md opacity-60">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">
+                  3
+                </div>
+<div>
+<span class="block font-label-md text-label-md font-semibold text-on-surface">Full Provider Portal Activation</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Direct access to patient scheduling, EHR integration, and billing.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md w-full max-w-md">
+<button class="flex-1 h-12 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors" onclick="previewView('doctor-form')" type="button">
+              Review Submitted Info
+            </button>
+<a class="flex-1 h-12 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-tertiary transition-all flex items-center justify-center gap-1" href="#">
+<span>Return to Home</span>
+</a>
+</div>
+</section>
+</div>
+<!-- Compliance & Trust Badges Strip -->
+<div class="max-w-3xl mx-auto flex flex-wrap items-center justify-center gap-space-lg text-on-surface-variant py-space-sm opacity-80">
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span>
+<span>256-bit AES Clinical Encryption</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span>HIPAA &amp; HITECH Compliant</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">health_and_safety</span>
+<span>JCI Accredited Safety Standards</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- CLIENT-SIDE INTERACTIVITY SCRIPT          -->
+<!-- ========================================== -->
+<script>
+  let currentRole = 'patient';
+  let doctorCurrentStep = 1;
+
+  function switchRole(role) {
+    currentRole = role;
+    
+    // UI elements
+    const btnPatient = document.getElementById('role-btn-patient');
+    const btnDoctor = document.getElementById('role-btn-doctor');
+    const iconPatient = document.getElementById('role-icon-patient');
+    const iconDoctor = document.getElementById('role-icon-doctor');
+    const checkPatient = document.getElementById('check-patient');
+    const checkDoctor = document.getElementById('check-doctor');
+    const badgePatient = document.getElementById('badge-patient');
+    const badgeDoctor = document.getElementById('badge-doctor');
+
+    const viewPatient = document.getElementById('view-patient-form');
+    const viewDoctor = document.getElementById('view-doctor-form');
+    const viewPatientSuccess = document.getElementById('view-patient-success');
+    const viewDoctorSuccess = document.getElementById('view-doctor-success');
+
+    // Hide success screens if active
+    viewPatientSuccess.classList.add('hidden');
+    viewDoctorSuccess.classList.add('hidden');
+
+    if (role === 'patient') {
+      // Toggle button states
+      btnPatient.className = "relative flex items-start gap-space-md p-space-md rounded-xl text-left transition-all duration-300 bg-surface-container-lowest shadow-md ring-2 ring-primary";
+      iconPatient.className = "w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm";
+      checkPatient.classList.remove('hidden');
+      badgePatient.classList.remove('hidden');
+
+      btnDoctor.className = "relative flex items-start gap-space-md p-space-md rounded-xl text-left transition-all duration-300 bg-surface-container hover:bg-surface-container-lowest/80";
+      iconDoctor.className = "w-12 h-12 rounded-xl bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0";
+      checkDoctor.classList.add('hidden');
+      badgeDoctor.classList.add('hidden');
+
+      // Forms
+      viewPatient.classList.remove('hidden');
+      viewPatient.classList.add('flex');
+      viewDoctor.classList.add('hidden');
+      viewDoctor.classList.remove('flex');
+    } else {
+      // Doctor Active
+      btnDoctor.className = "relative flex items-start gap-space-md p-space-md rounded-xl text-left transition-all duration-300 bg-surface-container-lowest shadow-md ring-2 ring-primary";
+      iconDoctor.className = "w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm";
+      checkDoctor.classList.remove('hidden');
+      badgeDoctor.classList.remove('hidden');
+
+      btnPatient.className = "relative flex items-start gap-space-md p-space-md rounded-xl text-left transition-all duration-300 bg-surface-container hover:bg-surface-container-lowest/80";
+      iconPatient.className = "w-12 h-12 rounded-xl bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0";
+      checkPatient.classList.add('hidden');
+      badgePatient.classList.add('hidden');
+
+      // Forms
+      viewDoctor.classList.remove('hidden');
+      viewDoctor.classList.add('flex');
+      viewPatient.classList.add('hidden');
+      viewPatient.classList.remove('flex');
+    }
+  }
+
+  function goToDocStep(step) {
+    doctorCurrentStep = step;
+    
+    // Hide all steps
+    document.getElementById('doc-step-1').classList.add('hidden');
+    document.getElementById('doc-step-2').classList.add('hidden');
+    document.getElementById('doc-step-3').classList.add('hidden');
+
+    // Show target step
+    document.getElementById(`doc-step-${step}`).classList.remove('hidden');
+
+    // Update Progress Indicator
+    const badge1 = document.getElementById('step-badge-1');
+    const badge2 = document.getElementById('step-badge-2');
+    const badge3 = document.getElementById('step-badge-3');
+    const line1 = document.getElementById('prog-line-1');
+    const line2 = document.getElementById('prog-line-2');
+
+    const lbl1 = document.getElementById('step-lbl-1');
+    const lbl2 = document.getElementById('step-lbl-2');
+    const lbl3 = document.getElementById('step-lbl-3');
+
+    // Reset base classes
+    [badge1, badge2, badge3].forEach(b => {
+      b.className = "w-7 h-7 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center";
+    });
+    [lbl1, lbl2, lbl3].forEach(l => {
+      l.className = "font-label-md text-label-md font-medium text-on-surface-variant";
+    });
+    line1.className = "flex-1 h-0.5 mx-space-sm bg-surface-container-highest";
+    line2.className = "flex-1 h-0.5 mx-space-sm bg-surface-container-highest";
+
+    if (step >= 1) {
+      badge1.className = "w-7 h-7 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center";
+      lbl1.className = "font-label-md text-label-md font-semibold text-primary";
+    }
+    if (step >= 2) {
+      line1.className = "flex-1 h-0.5 mx-space-sm bg-primary";
+      badge2.className = "w-7 h-7 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center";
+      lbl2.className = "font-label-md text-label-md font-semibold text-primary";
+    }
+    if (step >= 3) {
+      line2.className = "flex-1 h-0.5 mx-space-sm bg-primary";
+      badge3.className = "w-7 h-7 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center";
+      lbl3.className = "font-label-md text-label-md font-semibold text-primary";
+    }
+  }
+
+  function handlePatientSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('btn-patient-submit');
+    btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[20px]">sync</span><span>Creating EMR Account...</span>`;
+    setTimeout(() => {
+      previewView('patient-success');
+      btn.innerHTML = `<span>Create Patient Account</span><span class="material-symbols-outlined text-[20px]">arrow_forward</span>`;
+    }, 800);
+  }
+
+  function handleDoctorSubmit() {
+    const btn = document.getElementById('btn-doc-submit');
+    const label = document.getElementById('btn-doc-label');
+    const icon = document.getElementById('btn-doc-icon');
+    
+    label.innerText = "Transmitting Credentials...";
+    icon.classList.add('animate-spin');
+    icon.innerText = "sync";
+
+    setTimeout(() => {
+      previewView('doctor-success');
+      label.innerText = "Submit for Credentialing Review";
+      icon.classList.remove('animate-spin');
+      icon.innerText = "verified";
+    }, 900);
+  }
+
+  function previewView(viewKey) {
+    const vPatientForm = document.getElementById('view-patient-form');
+    const vDoctorForm = document.getElementById('view-doctor-form');
+    const vPatientSuccess = document.getElementById('view-patient-success');
+    const vDoctorSuccess = document.getElementById('view-doctor-success');
+
+    // Hide all
+    [vPatientForm, vDoctorForm, vPatientSuccess, vDoctorSuccess].forEach(v => {
+      v.classList.add('hidden');
+      v.classList.remove('flex');
+    });
+
+    if (viewKey === 'patient-form') {
+      switchRole('patient');
+    } else if (viewKey === 'doctor-form') {
+      switchRole('doctor');
+      goToDocStep(1);
+    } else if (viewKey === 'patient-success') {
+      vPatientSuccess.classList.remove('hidden');
+      vPatientSuccess.classList.add('flex');
+    } else if (viewKey === 'doctor-success') {
+      vDoctorSuccess.classList.remove('hidden');
+      vDoctorSuccess.classList.add('flex');
+    }
+  }
+
+  function togglePasswordVis(inputId, btn) {
+    const field = document.getElementById(inputId);
+    if (field.type === 'password') {
+      field.type = 'text';
+      btn.innerText = 'visibility_off';
+    } else {
+      field.type = 'password';
+      btn.innerText = 'visibility';
+    }
+  }
+
+  function validateEmailField(input) {
+    const val = input.value;
+    const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+    const validIcon = document.getElementById('email-valid-icon');
+    const errorMsg = document.getElementById('email-error-msg');
+
+    if (val.length > 3) {
+      if (isValid) {
+        validIcon.classList.remove('hidden');
+        errorMsg.classList.add('hidden');
+      } else {
+        validIcon.classList.add('hidden');
+        errorMsg.classList.remove('hidden');
+      }
+    } else {
+      validIcon.classList.add('hidden');
+      errorMsg.classList.add('hidden');
+    }
+  }
+
+  function evaluatePasswordStrength(val, targetPrefix) {
+    let score = 0;
+    const hasLen = val.length >= 8;
+    const hasUpper = /[A-Z]/.test(val);
+    const hasNum = /[0-9]/.test(val);
+    const hasSym = /[^A-Za-z0-9]/.test(val);
+
+    if (hasLen) score++;
+    if (hasUpper) score++;
+    if (hasNum) score++;
+    if (hasSym) score++;
+
+    if (targetPrefix === 'patient') {
+      const bar1 = document.getElementById('p-bar-1');
+      const bar2 = document.getElementById('p-bar-2');
+      const bar3 = document.getElementById('p-bar-3');
+      const bar4 = document.getElementById('p-bar-4');
+      const textLbl = document.getElementById('patient-strength-text');
+
+      const chkLen = document.getElementById('chk-len');
+      const chkUpper = document.getElementById('chk-upper');
+      const chkNum = document.getElementById('chk-num');
+      const chkSym = document.getElementById('chk-sym');
+
+      // Update checkboxes text
+      chkLen.className = hasLen ? "flex items-center gap-1 text-primary font-semibold" : "flex items-center gap-1 text-on-surface-variant";
+      chkLen.innerHTML = `<span class="material-symbols-outlined text-[14px]">${hasLen ? 'check_circle' : 'radio_button_unchecked'}</span> 8+ chars`;
+
+      chkUpper.className = hasUpper ? "flex items-center gap-1 text-primary font-semibold" : "flex items-center gap-1 text-on-surface-variant";
+      chkUpper.innerHTML = `<span class="material-symbols-outlined text-[14px]">${hasUpper ? 'check_circle' : 'radio_button_unchecked'}</span> 1 uppercase`;
+
+      chkNum.className = hasNum ? "flex items-center gap-1 text-primary font-semibold" : "flex items-center gap-1 text-on-surface-variant";
+      chkNum.innerHTML = `<span class="material-symbols-outlined text-[14px]">${hasNum ? 'check_circle' : 'radio_button_unchecked'}</span> 1 number`;
+
+      chkSym.className = hasSym ? "flex items-center gap-1 text-primary font-semibold" : "flex items-center gap-1 text-on-surface-variant";
+      chkSym.innerHTML = `<span class="material-symbols-outlined text-[14px]">${hasSym ? 'check_circle' : 'radio_button_unchecked'}</span> 1 symbol`;
+
+      // Reset bars
+      [bar1, bar2, bar3, bar4].forEach(b => b.className = "h-full bg-surface-variant transition-all");
+
+      if (score === 1) {
+        bar1.className = "h-full bg-error transition-all";
+        textLbl.innerText = "Weak";
+        textLbl.className = "font-label-sm text-label-sm font-semibold text-error";
+      } else if (score === 2) {
+        bar1.className = "h-full bg-secondary transition-all";
+        bar2.className = "h-full bg-secondary transition-all";
+        textLbl.innerText = "Moderate";
+        textLbl.className = "font-label-sm text-label-sm font-semibold text-secondary";
+      } else if (score === 3) {
+        bar1.className = "h-full bg-primary-container transition-all";
+        bar2.className = "h-full bg-primary-container transition-all";
+        bar3.className = "h-full bg-primary-container transition-all";
+        textLbl.innerText = "Good";
+        textLbl.className = "font-label-sm text-label-sm font-semibold text-primary";
+      } else if (score === 4) {
+        bar1.className = "h-full bg-primary transition-all";
+        bar2.className = "h-full bg-primary transition-all";
+        bar3.className = "h-full bg-primary transition-all";
+        bar4.className = "h-full bg-primary transition-all";
+        textLbl.innerText = "Strong (Optimal)";
+        textLbl.className = "font-label-sm text-label-sm font-semibold text-primary";
+      } else {
+        textLbl.innerText = "Too Short";
+        textLbl.className = "font-label-sm text-label-sm font-semibold text-error";
+      }
+    } else {
+      const docText = document.getElementById('doc-strength-text');
+      if (score >= 3) {
+        docText.innerText = "Compliant";
+        docText.className = "font-semibold text-primary";
+      } else {
+        docText.innerText = "Needs Improvement";
+        docText.className = "font-semibold text-error";
+      }
+    }
+  }
+
+  function checkMatchPassword() {
+    const pw = document.getElementById('patient-pw').value;
+    const confirm = document.getElementById('patient-pw-confirm').value;
+    const matchIcon = document.getElementById('pw-match-icon');
+
+    if (confirm.length > 0 && pw === confirm) {
+      matchIcon.classList.remove('hidden');
+    } else {
+      matchIcon.classList.add('hidden');
+    }
+  }
+
+  function toggleDocLanguage(btn) {
+    const isSelected = btn.classList.contains('bg-primary');
+    if (isSelected) {
+      btn.className = "px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors flex items-center gap-1";
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) icon.remove();
+    } else {
+      btn.className = "px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-primary text-on-primary shadow-sm flex items-center gap-1";
+      const span = document.createElement('span');
+      span.className = "material-symbols-outlined text-[14px]";
+      span.innerText = "done";
+      btn.appendChild(span);
+    }
+  }
+
+  function updateBioCount(textarea) {
+    const count = textarea.value.length;
+    const counter = document.getElementById('bio-counter');
+    counter.innerText = `${count} / 500 characters`;
+    if (count > 500) {
+      counter.classList.add('text-error');
+    } else {
+      counter.classList.remove('text-error');
+    }
+  }
+</script></main><footer class="w-full bg-tertiary text-inverse-on-surface border-t border-outline/20"><div class="max-w-[1440px] mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-1 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Medico Brand Logo" class="h-7 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1UV23cS6teRJAn_HDC2xV0EPg1DRC0N_Lvp8iDC8jjV61i9ZUcV_O_T6zKq-WCRu-ZPNd8he71d4ZcXFfJ1ABLtZmnbW1YqqL2wEQinS2BdLPifbAG-ya9lFcPF0T9CX_1srv6Ia_R8ehkb5OmeLwemIuMr_QqDZ6z4pXBr3UGhsKSBMvfIEJHuk9fGsSkKE2PtxrHnubJT3D6ya2Cxfh8SAW4EnOmMEB-IJ6FrFUg4dec3qltmhKkRnHhr"/><span class="font-headline-sm text-headline-sm text-on-primary font-semibold">Medico</span></div><p class="font-body-sm text-body-sm text-on-tertiary-container leading-relaxed">Providing compassionate, gold-standard clinical excellence and patient care across multi-specialty healthcare networks.</p><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-wider">24/7 Emergency Helpline</span><span class="font-headline-sm text-headline-sm text-on-primary font-semibold">+1 (800) 845-3342</span></div></div><div class="flex flex-col gap-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary font-medium">Quick Links</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Find a Doctor</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Our Specialties</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Clinical Trials</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Telehealth Access</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Careers &amp; Fellowships</li></ul></div><div class="flex flex-col gap-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary font-medium">Departments</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Cardiology &amp; Vascular</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Neurology &amp; Neurosurgery</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Orthopedics &amp; Sports Medicine</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Pediatrics &amp; Neonatal Care</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Oncology Comprehensive Care</li></ul></div><div class="flex flex-col gap-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary font-medium">Patient Resources</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Patient Portal Guide</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Insurance &amp; Financial Aid</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Visitor Guidelines &amp; Hours</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Medical Records (EMR)</li><li class="font-body-sm text-body-sm text-on-tertiary-container hover:text-on-primary cursor-pointer transition-colors">Prescription Refills</li></ul></div><div class="flex flex-col gap-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary font-medium">Contact &amp; Location</h4><div class="flex flex-col gap-space-xs text-on-tertiary-container font-body-sm text-body-sm"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary-fixed">location_on</span><span>742 Evergreen Healthcare Ave, Medical District, NY 10001</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary-fixed">mail</span><span>care@medico-health.org</span></div></div><div class="flex items-center gap-space-xs mt-space-sm"><div class="w-9 h-9 rounded-full bg-tertiary-container flex items-center justify-center cursor-pointer hover:bg-primary-container transition-colors"><span class="material-symbols-outlined text-[18px] text-on-primary">share</span></div><div class="w-9 h-9 rounded-full bg-tertiary-container flex items-center justify-center cursor-pointer hover:bg-primary-container transition-colors"><span class="material-symbols-outlined text-[18px] text-on-primary">forum</span></div><div class="w-9 h-9 rounded-full bg-tertiary-container flex items-center justify-center cursor-pointer hover:bg-primary-container transition-colors"><span class="material-symbols-outlined text-[18px] text-on-primary">alternate_email</span></div></div></div></div><div class="pt-space-lg border-t border-outline/20 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md"><span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-tertiary-container font-label-sm text-label-sm text-on-primary"><span class="material-symbols-outlined text-[14px] text-primary-fixed">verified</span> JCI Accredited</span><span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-tertiary-container font-label-sm text-label-sm text-on-primary"><span class="material-symbols-outlined text-[14px] text-primary-fixed">shield</span> HIPAA Compliant</span></div><div class="flex items-center gap-space-lg font-body-sm text-body-sm text-on-tertiary-container"><span>© 2025 Medico Health Systems. All rights reserved.</span><a class="hover:text-on-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-primary transition-colors" href="#">Terms of Service</a><a class="hover:text-on-primary transition-colors" href="#">Notice of Nondiscrimination</a></div></div></div></footer></body></html>

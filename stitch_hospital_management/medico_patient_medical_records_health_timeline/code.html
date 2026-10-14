@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#00174d","on-tertiary":"#ffffff","primary-fixed-dim":"#8dd3d2","on-secondary-fixed-variant":"#003cac","on-error":"#ffffff","error-container":"#ffdad6","error":"#ba1a1a","outline":"#6f7979","on-tertiary-container":"#b1e6e9","surface-container-low":"#e9f6f6","on-primary":"#ffffff","surface-container-high":"#ddebea","inverse-surface":"#263333","on-secondary-container":"#fefbff","on-primary-fixed-variant":"#004f50","secondary-fixed":"#dbe1ff","secondary-container":"#2b69fd","surface-variant":"#d8e5e5","outline-variant":"#bec8c8","primary-fixed":"#a8efee","surface-container-highest":"#d8e5e5","surface-bright":"#effcfb","tertiary-fixed-dim":"#9bd0d3","primary":"#005252","background":"#effcfb","on-secondary":"#ffffff","secondary-fixed-dim":"#b5c4ff","on-primary-fixed":"#002020","on-surface":"#121e1e","inverse-on-surface":"#e6f3f3","on-tertiary-fixed":"#002021","secondary":"#004fda","tertiary-fixed":"#b7ecef","surface":"#effcfb","surface-container":"#e3f1f0","inverse-primary":"#8dd3d2","surface-dim":"#cfdddc","tertiary":"#195154","on-primary-container":"#a2e9e8","primary-container":"#1f6b6b","surface-tint":"#1b6969","on-error-container":"#93000a","on-surface-variant":"#3f4948","on-background":"#121e1e","on-tertiary-fixed-variant":"#164e51","surface-container-lowest":"#ffffff","tertiary-container":"#35696c"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","gutter":"1.5rem","space-lg":"1.5rem","space-xl":"2.5rem","space-xs":"0.25rem","margin":"2rem","margin-mobile":"1rem"},"fontFamily":{"headline-md":["Outfit"],"headline-sm":["Outfit"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-xl":["Outfit"],"headline-lg":["Outfit"],"label-md":["Inter"],"headline-lg-mobile":["Outfit"],"body-sm":["Inter"],"body-md":["Inter"],"headline-xl-mobile":["Outfit"],"label-lg":["Inter"]},"fontSize":{"headline-md":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">local_hospital</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">Medico</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Patient Portal</span></div></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-medium rounded-xl shadow-sm"><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="appointments" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Appointments</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2.5 transition-colors bg-primary-container text-on-primary font-medium rounded-xl shadow-sm" data-path="medical-records" href="#"><span class="material-symbols-outlined text-[20px]">folder_shared</span><span>Medical Records</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="prescriptions" href="#"><span class="material-symbols-outlined text-[20px]">prescriptions</span><span>Prescriptions</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="lab-reports" href="#"><span class="material-symbols-outlined text-[20px]">chips</span><span>Lab Reports</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="billing" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Billing</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span>Messages</span></a></nav></div><div class="flex flex-col gap-1 pt-4"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-medium rounded-xl shadow-sm"><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors" data-path="logout" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Logout</span></a></nav></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 px-gutter flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center w-80"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full h-10 pl-9 pr-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search records, labs, doctors..." type="search"/></div></div><div class="flex items-center gap-4"><a class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="help-desk" href="#"><span class="material-symbols-outlined text-[18px]">help_center</span><span class="hidden sm:inline">Help Desk</span></a><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex items-center gap-3 pl-2"><div class="flex flex-col text-right hidden md:flex"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Eleanor Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant">MRN #49281-A</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter bg-surface min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Top Utility Context & Actions Bar -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 py-6 border-b border-outline-variant/30">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span>PORTAL</span>
+<span>/</span>
+<span class="text-primary font-semibold">PATIENT CLINICAL DOSSIER</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+<span class="text-primary font-medium">SYNCHRONIZED (FHIR R4)</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Medical Records &amp; Health History</h1>
+</div>
+<!-- Quick Actions -->
+<div class="flex flex-wrap items-center gap-3">
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-lg text-label-lg shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">move_to_inbox</span>
+<span>Request Records Transfer</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all font-label-lg text-label-lg shadow-sm hover:shadow" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Complete Health Record (PDF)</span>
+</button>
+</div>
+</section>
+<!-- Patient Summary Card -->
+<section class="my-6 p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-headline-md text-headline-md font-semibold ring-4 ring-surface-container-low">
+          EV
+        </div>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-primary-container ring-2 ring-surface-container-lowest flex items-center justify-center" title="Active Records Identity">
+<span class="material-symbols-outlined text-on-primary text-[10px]">check</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Eleanor Vance</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed/40 text-primary font-label-sm text-label-sm font-semibold tracking-wider">VERIFIED PATIENT</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-on-surface-variant font-label-md text-label-md mt-1">
+<span class="flex items-center gap-1"><span class="text-outline">DOB:</span> <strong class="text-on-surface font-medium">May 14, 1988 (36y)</strong></span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1"><span class="text-outline">Blood Type:</span> <strong class="text-on-surface font-medium">A Positive (Rh+)</strong></span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1"><span class="text-outline">MRN:</span> <strong class="text-on-surface font-medium">#MED-940218</strong></span>
+</div>
+</div>
+</div>
+<!-- Attending Physician & Insurance Meta -->
+<div class="flex flex-wrap items-center gap-6 pt-4 md:pt-0 border-t md:border-t-0 border-outline-variant/30">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Primary Care Clinician</span>
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Dr. Marcus Chen, MD</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Coverage Tier</span>
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Aetna Signature Elite</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Controls: Categorical Pills & Filters -->
+<section class="flex flex-col gap-4 mb-8">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<!-- Record Category Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none" id="filter-pills">
+<button class="tab-btn active px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-primary text-on-primary font-semibold shadow-sm" data-category="all" type="button">
+          All Records <span class="ml-1 opacity-80">(18)</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest" data-category="visits" type="button">
+          Visits &amp; Consultations <span class="ml-1 opacity-70">(7)</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest" data-category="prescriptions" type="button">
+          Prescriptions <span class="ml-1 opacity-70">(4)</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest" data-category="labs" type="button">
+          Lab Reports <span class="ml-1 opacity-70">(5)</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest" data-category="imaging" type="button">
+          Imaging &amp; Scans <span class="ml-1 opacity-70">(2)</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest" data-category="vaccines" type="button">
+          Vaccinations <span class="ml-1 opacity-70">(3)</span>
+</button>
+</div>
+<!-- Quick Search & Date Range Selectors -->
+<div class="flex items-center gap-3">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">filter_alt</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-sm" id="record-search" placeholder="Filter by provider or term..." type="text"/>
+</div>
+<div class="relative">
+<select class="h-10 pl-3 pr-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md appearance-none focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-sm cursor-pointer">
+<option value="12m">Last 12 Months</option>
+<option value="2024">Calendar Year 2024</option>
+<option value="2023">Calendar Year 2023</option>
+<option value="all">All Time Records</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Grid: Timeline (8 cols) & Quick Documents Access (4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT: Chronological Health Timeline (8 Cols) -->
+<section class="lg:col-span-8 flex flex-col gap-6">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">timeline</span>
+<span>Chronological Health Timeline</span>
+</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide uppercase">4 Displayed / 18 Total</span>
+</div>
+<!-- The Timeline Spine Container -->
+<div class="relative pl-6 md:pl-10 space-y-8 before:absolute before:left-3 md:before:left-5 before:top-4 before:bottom-4 before:w-0.5 before:bg-gradient-to-b before:from-primary before:via-outline-variant/40 before:to-transparent">
+<!-- TIMELINE NODE 1: Physical Exam -->
+<article class="timeline-card relative flex flex-col p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow group" data-category="visits">
+<!-- Dot Node on Axis -->
+<div class="absolute -left-6 md:-left-10 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center ring-4 ring-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px]">stethoscope</span>
+</div>
+<!-- Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-outline-variant/20">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed/40 text-primary font-label-sm text-label-sm font-semibold uppercase">Consultation</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Encounter #ENC-8812</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Comprehensive Annual Physical Exam</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Attending: <strong class="text-on-surface font-medium">Dr. Marcus Chen, MD</strong> • Internal Medicine Specialist</p>
+</div>
+<div class="text-left sm:text-right flex flex-col sm:items-end">
+<time class="font-headline-sm text-headline-sm text-primary font-semibold">Oct 14, 2024</time>
+<span class="font-label-sm text-label-sm text-outline">09:30 AM EST • Room 402B</span>
+</div>
+</div>
+<!-- Body: Vitals Summary Metrics Bento -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-4">
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blood Pressure</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">118/76</span>
+<span class="font-label-sm text-label-sm text-outline">mmHg</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">Normal Resting</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Heart Rate</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">70</span>
+<span class="font-label-sm text-label-sm text-outline">BPM</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">Sinus Rhythm</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">BMI Index</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">22.4</span>
+<span class="font-label-sm text-label-sm text-outline">kg/m²</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">Ideal Weight</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">O₂ Saturation</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">99%</span>
+<span class="font-label-sm text-label-sm text-outline">SpO2</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">Room Air</span>
+</div>
+</div>
+<!-- Clinician Assessment Note -->
+<div class="p-4 rounded-xl bg-surface-container/60 mb-5 flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">clinical_notes</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Clinical Assessment &amp; Diagnosis</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+              Patient exhibits <strong class="text-primary font-semibold">Optimal Cardiovascular Health</strong>. Pulmonary auscultation reveals clear lung bases bilaterally without adventitious sounds. Routine follow-up scheduled for 12 months. Continued exercise regimen recommended.
+            </p>
+</div>
+<!-- Action Footers -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Physician Electronic Signature Confirmed</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" type="button">
+                View Full Summary
+              </button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download PDF (2.4 MB)</span>
+</button>
+</div>
+</div>
+</article>
+<!-- TIMELINE NODE 2: Metabolic Panel Lab -->
+<article class="timeline-card relative flex flex-col p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow group" data-category="labs">
+<!-- Dot Node on Axis -->
+<div class="absolute -left-6 md:-left-10 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-fixed text-primary flex items-center justify-center ring-4 ring-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px]">science</span>
+</div>
+<!-- Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-outline-variant/20">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold uppercase">Pathology &amp; Labs</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Reviewed by Dr. Chen
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Comprehensive Metabolic Panel &amp; Lipid Panel</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Processed by: <strong class="text-on-surface font-medium">Medico Central Pathology Laboratory</strong> • Specimen ID: #LAB-5021</p>
+</div>
+<div class="text-left sm:text-right flex flex-col sm:items-end">
+<time class="font-headline-sm text-headline-sm text-primary font-semibold">Oct 12, 2024</time>
+<span class="font-label-sm text-label-sm text-outline">Fasting Specimen • 07:15 AM</span>
+</div>
+</div>
+<!-- Mini Lab Results Table -->
+<div class="my-4 overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="text-outline font-label-sm text-label-sm uppercase tracking-wider border-b border-outline-variant/30">
+<th class="py-2.5 pr-4">Marker</th>
+<th class="py-2.5 px-4">Result</th>
+<th class="py-2.5 px-4">Standard Range</th>
+<th class="py-2.5 pl-4 text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10 text-on-surface">
+<tr>
+<td class="py-2.5 pr-4 font-medium">Fasting Serum Glucose</td>
+<td class="py-2.5 px-4 font-semibold text-primary">88 mg/dL</td>
+<td class="py-2.5 px-4 text-on-surface-variant">70 – 99 mg/dL</td>
+<td class="py-2.5 pl-4 text-right">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-medium">Optimal</span>
+</td>
+</tr>
+<tr>
+<td class="py-2.5 pr-4 font-medium">Total Cholesterol</td>
+<td class="py-2.5 px-4 font-semibold text-primary">164 mg/dL</td>
+<td class="py-2.5 px-4 text-on-surface-variant">&lt; 200 mg/dL</td>
+<td class="py-2.5 pl-4 text-right">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-medium">Normal</span>
+</td>
+</tr>
+<tr>
+<td class="py-2.5 pr-4 font-medium">HDL ("Good") Cholesterol</td>
+<td class="py-2.5 px-4 font-semibold text-primary">62 mg/dL</td>
+<td class="py-2.5 px-4 text-on-surface-variant">&gt; 50 mg/dL</td>
+<td class="py-2.5 pl-4 text-right">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-medium">Protective</span>
+</td>
+</tr>
+<tr>
+<td class="py-2.5 pr-4 font-medium">Estimated GFR (Kidney)</td>
+<td class="py-2.5 px-4 font-semibold text-primary">&gt; 90 mL/min</td>
+<td class="py-2.5 px-4 text-on-surface-variant">&gt; 60 mL/min</td>
+<td class="py-2.5 pl-4 text-right">
+<span class="inline-flex px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-medium">Normal</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Action Footers -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-outline-variant/20">
+<span class="text-on-surface-variant font-label-sm text-label-sm">14 biomarkers assessed • All within calibrated ranges</span>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md transition-colors shadow-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">file_open</span>
+<span>Download Lab Report (PDF)</span>
+</button>
+</div>
+</article>
+<!-- TIMELINE NODE 3: Chest X-Ray Imaging -->
+<article class="timeline-card relative flex flex-col p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow group" data-category="imaging">
+<!-- Dot Node on Axis -->
+<div class="absolute -left-6 md:-left-10 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center ring-4 ring-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px]">radiology</span>
+</div>
+<!-- Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-outline-variant/20">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm font-semibold uppercase">Diagnostic Imaging</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Accession #XR-9941</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Chest X-Ray PA &amp; Lateral View (2 Projections)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Facility: <strong class="text-on-surface font-medium">Diagnostic Imaging Wing, Suite 100</strong> • Read by: Dr. Evelyn Zhao, MD</p>
+</div>
+<div class="text-left sm:text-right flex flex-col sm:items-end">
+<time class="font-headline-sm text-headline-sm text-primary font-semibold">Aug 28, 2024</time>
+<span class="font-label-sm text-label-sm text-outline">DICOM Series 1.2.840</span>
+</div>
+</div>
+<!-- Imaging Preview Split Block -->
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-4 my-4 items-center">
+<!-- Scan Thumbnail -->
+<div class="sm:col-span-4 relative rounded-xl overflow-hidden bg-inverse-surface group cursor-pointer shadow-inner">
+<img class="w-full h-36 object-cover opacity-90 group-hover:scale-105 transition-transform duration-300" data-alt="High-resolution clinical digital chest radiograph displaying clear lung fields and thoracic cage anatomy in deep monochromatic contrast with clinical measurement overlay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCowpPfV9YgR4NQOTFFQVtdfYo7_gP-30jZd2dHtGd46HNx1V9bHEL_WWBXSjnt2aIcKg3x6nVDeTJetK1CXPD3s4kPhFbABaegP6_0iOxFT10fRlhxFDQtJ4kJn7LCf33HefNreIJoKLbJcnqOU8WtI3Qw_4fP4kVLrbFw32ooDACWGYnGKG5E7vfj-VIsFiux35r_Nu2pcRDPUUZ2y1f3vrHTJLneF014kE-9UEUHFbQ8KcwV2n5PZg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="inline-flex items-center gap-1 text-on-primary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">visibility</span> PA Projection
+                </span>
+</div>
+</div>
+<!-- Findings Card -->
+<div class="sm:col-span-8 p-4 rounded-xl bg-surface-container-low flex flex-col justify-between h-full">
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Radiological Impression</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+                  "Clear lung fields bilaterally. No evidence of focal consolidation, pneumothorax, or pleural effusion. Normal cardiothoracic ratio (&lt; 0.50). Bony thorax intact."
+                </p>
+</div>
+<div class="flex items-center gap-2 mt-3 pt-2 border-t border-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>Finalized report archived to PAC system</span>
+</div>
+</div>
+</div>
+<!-- Action Footers -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Lossless DICOM Study (38.4 MB) available</span>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">view_in_ar</span>
+<span>View DICOM / Scans</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download Radiologist Report</span>
+</button>
+</div>
+</div>
+</article>
+<!-- TIMELINE NODE 4: Vaccines & Immunization -->
+<article class="timeline-card relative flex flex-col p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow group" data-category="vaccines">
+<!-- Dot Node on Axis -->
+<div class="absolute -left-6 md:-left-10 top-6 -translate-x-1/2 w-8 h-8 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center ring-4 ring-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px]">vaccines</span>
+</div>
+<!-- Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-outline-variant/20">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold uppercase">Immunization</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Registry Sync: CDC/IIS Verified</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Tdap Booster &amp; Seasonal Influenza Quadrivalent</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Administered by: <strong class="text-on-surface font-medium">Dr. Sarah Jenkins, MD</strong> • Preventive Medicine Clinic</p>
+</div>
+<div class="text-left sm:text-right flex flex-col sm:items-end">
+<time class="font-headline-sm text-headline-sm text-primary font-semibold">Aug 15, 2024</time>
+<span class="font-label-sm text-label-sm text-outline">11:15 AM • Ambulatory Care</span>
+</div>
+</div>
+<!-- Vaccine Lot & Administration Details Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Tdap (Tetanus, Diphtheria, Pertussis)</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary/10 text-primary font-semibold">Adacel</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>Lot: <strong class="text-on-surface">#TD-88190B</strong></span>
+<span>Site: <strong class="text-on-surface">Left Deltoid (IM)</strong></span>
+<span>Exp: <strong class="text-on-surface">06/2026</strong></span>
+<span class="text-primary font-medium">Next Due: <strong>Aug 2034</strong></span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Influenza 2024-2025 (Quadrivalent)</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary/10 text-primary font-semibold">Fluzone</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>Lot: <strong class="text-on-surface">#FL-44019C</strong></span>
+<span>Site: <strong class="text-on-surface">Right Deltoid (IM)</strong></span>
+<span>Exp: <strong class="text-on-surface">04/2025</strong></span>
+<span class="text-primary font-medium">Next Due: <strong>Autumn 2025</strong></span>
+</div>
+</div>
+</div>
+<!-- Action Footers -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Logged to State Immunization Information System</span>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md transition-colors font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Export Vaccine Record Card</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- RIGHT: Quick Access Official Documents & Health Insights (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-6">
+<!-- Official Records Card Grid -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">folder_special</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Quick Access Records</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Certified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Directly certified copies sealed with cryptographic healthcare signatures ready for employer, travel, or referral submissions.
+        </p>
+<!-- Document Item 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between group">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Immunization Certificate</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">State Sealed PDF • 1.2 MB</span>
+</div>
+</div>
+<button aria-label="Download Immunization Certificate" class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- Document Item 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between group">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">bloodtype</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Recent Bloodwork Panel</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 2024 Complete • 850 KB</span>
+</div>
+</div>
+<button aria-label="Download Bloodwork Panel" class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- Document Item 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between group">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/40 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">photo_camera_front</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Radiology Summary &amp; Index</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aug 2024 Report • 3.1 MB</span>
+</div>
+</div>
+<button aria-label="Download Radiology Summary" class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- Document Item 4 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between group">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Discharge Notes &amp; Plan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Annual Review • 640 KB</span>
+</div>
+</div>
+<button aria-label="Download Discharge Notes" class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<button class="w-full py-2.5 rounded-lg border border-outline-variant/40 hover:bg-surface-container-high transition-colors text-primary font-label-md text-label-md font-semibold text-center mt-1" type="button">
+          Open Document Archive (All 34 Files)
+        </button>
+</div>
+<!-- Health Care Team Contact Card -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">support_agent</span>
+<span>Health Record Custodian</span>
+</h4>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low">
+<img class="w-12 h-12 rounded-full object-cover shrink-0" data-alt="Portrait of professional clinical health information management officer in light medical scrubs with friendly warm smile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvov4rH--bL4IRmBaEJzTce7uK24oLqkrxs4AaRKnks4Q9AaV80ow979KoMhh2bQHrRadVunTTZU8r-OSNYxPoN2JgnZjjwtVSQWxNFXdSC9_fFPmEdWtVW9OznhQeo_da-CCY3VOODhhcnuS-cex9maD_09NmGvQX50L3dom64Xd9uDrMAkK6k785G0T82jgarYco4ri67u-ZD9xSbRnKveK93LPFYDIzswx9BJgF8QXmjZY_-WEAcQ"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Elena Rostova, RHIA</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Health Information Management Lead</span>
+<span class="font-label-sm text-label-sm text-primary">Medico Central Hospital Network</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span>HIPAA Compliance:</span>
+<span class="text-primary font-medium">Fully Compliant</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Record Release SLA:</span>
+<span class="text-on-surface font-medium">&lt; 24 Business Hours</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Direct Desk:</span>
+<span class="text-on-surface font-medium">(555) 019-4822</span>
+</div>
+</div>
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors text-center font-medium mt-1" type="button">
+          Message Custodian Office
+        </button>
+</div>
+<!-- Privacy & Third-party Share Permission Banner -->
+<div class="p-5 rounded-2xl bg-primary-fixed/30 border border-primary/10 flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">lock</span>
+<span class="font-label-md text-label-md font-semibold text-primary">Active Data Access Sharing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Your records are currently shared with <strong>1 authorized specialist</strong> (Dr. Evelyn Zhao - Diagnostic Imaging). Revoke or authorize new parties anytime in settings.
+        </p>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold hover:underline" href="#">
+          Manage Consent &amp; Sharing Permissions →
+        </a>
+</div>
+</aside>
+</div>
+<!-- Client-side Interactive Filter Script -->
+<script>
+    (function() {
+      const pills = document.querySelectorAll('#filter-pills .tab-btn');
+      const cards = document.querySelectorAll('.timeline-card');
+      const searchInput = document.getElementById('record-search');
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          // Reset styling
+          pills.forEach(p => {
+            p.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+            p.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          });
+
+          // Active style
+          pill.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+          pill.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+
+          const category = pill.getAttribute('data-category');
+          filterTimeline(category, searchInput ? searchInput.value.toLowerCase() : '');
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const activePill = document.querySelector('#filter-pills .tab-btn.bg-primary');
+          const category = activePill ? activePill.getAttribute('data-category') : 'all';
+          filterTimeline(category, e.target.value.toLowerCase());
+        });
+      }
+
+      function filterTimeline(category, query) {
+        cards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          const cardText = card.textContent.toLowerCase();
+
+          const matchesCategory = (category === 'all' || cardCat === category);
+          const matchesQuery = !query || cardText.includes(query);
+
+          if (matchesCategory && matchesQuery) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

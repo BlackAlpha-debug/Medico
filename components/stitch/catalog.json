@@ -1,0 +1,118 @@
+{
+  "departments": [
+    {
+      "title": "Cardiology & Vascular",
+      "description": "Complete cardiovascular interventions, 4D echocardiograms, and preventive heart panels."
+    },
+    {
+      "title": "Neurology & Brain",
+      "description": "Specialized diagnostics for neurodegenerative conditions, epilepsy, and brain trauma."
+    },
+    {
+      "title": "Pediatrics & Neonatal",
+      "description": "Compassionate child wellness, routine immunizations, and round-the-clock neonatal ICU."
+    },
+    {
+      "title": "Orthopedics & Sports",
+      "description": "Robotic joint reconstruction, spinal therapy, and athletic rehabilitation programs."
+    },
+    {
+      "title": "Dental Surgery",
+      "description": "Implants, maxillofacial reconstructive surgery, and cosmetic preventive dentistry."
+    },
+    {
+      "title": "Eye Care & Lasik",
+      "description": "Refractive surgery, corneal transplantation, and advanced diabetic retinopathy monitoring."
+    },
+    {
+      "title": "Maternal & OB/GYN",
+      "description": "Holistic pregnancy management, fertility consultations, and high-risk obstetric monitoring."
+    },
+    {
+      "title": "24/7 Level 1 Trauma",
+      "description": "Fully equipped acute resuscitation bays with immediate helicopter helipad access."
+    }
+  ],
+  "doctors": [
+    {
+      "name": "Dr. Marcus Vance, MD",
+      "specialty": "Cardiology Lead",
+      "description": "18 Years Experience • Harvard Med",
+      "image": "/medico/stitch/image-05.png",
+      "filter": "Cardiology"
+    },
+    {
+      "name": "Dr. Elena Rostova, MD",
+      "specialty": "Pediatric Medicine",
+      "description": "12 Years Experience • Johns Hopkins",
+      "image": "/medico/stitch/image-06.png",
+      "filter": "Pediatrics"
+    },
+    {
+      "name": "Dr. David Chen, MD, PhD",
+      "specialty": "Neurology Dept",
+      "description": "16 Years Experience • Stanford Health",
+      "image": "/medico/stitch/image-07.png",
+      "filter": "Neurology"
+    },
+    {
+      "name": "Dr. Sarah Jenkins, FACS",
+      "specialty": "Orthopedic Surgery",
+      "description": "14 Years Experience • Mayo Clinic",
+      "image": "/medico/stitch/image-08.png",
+      "filter": "Surgery"
+    }
+  ],
+  "packages": [
+    {
+      "title": "Basic Wellness Checkup",
+      "price": "$99",
+      "features": [
+        "Complete Blood Count (CBC) & Lipid Profile",
+        "Fasting Blood Glucose & HbA1c Panel",
+        "Vital Signs & BMI Biometrics Review",
+        "30-min General Physician Consultation",
+        "Full Body Ultrasound & ECG"
+      ]
+    },
+    {
+      "title": "Family Comprehensive",
+      "price": "$249",
+      "features": [
+        "All Basic Wellness diagnostics included",
+        "Resting 12-Lead Electrocardiogram (ECG)",
+        "Complimentary Pediatric Growth Screen",
+        "Dental & Vision Preventive Screening",
+        "Dedicated Digital Family Health Locker"
+      ]
+    },
+    {
+      "title": "Executive & Senior Cardiac",
+      "price": "$449",
+      "features": [
+        "Full Comprehensive Metabolic & Cardiac Panel",
+        "Echocardiogram & Cardiac Stress Test",
+        "Tumor Marker & Thyroid Ultrasound Panel",
+        "1-on-1 Chief Specialist Consultation",
+        "Personalized 12-Month Longevity Protocol"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "Understanding Silent Hypertension: Early Warning Signs",
+      "description": "Why blood pressure remains the most overlooked cardiovascular risk factor and how routine ambulatory monitoring saves lives.",
+      "image": "/medico/stitch/image-13.png"
+    },
+    {
+      "title": "Microbiome Optimization for Metabolic Resilience",
+      "description": "Clinical evidence linking diverse gut bacterial populations to immune readiness and insulin sensitivity in adults.",
+      "image": "/medico/stitch/image-14.png"
+    },
+    {
+      "title": "Seasonal Allergies vs Respiratory Infections in Children",
+      "description": "How parents can identify key differences in symptoms, cough characteristics, and when to visit the emergency clinic.",
+      "image": "/medico/stitch/image-15.png"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+import { createRequire } from 'node:module';
+import { mkdirSync, writeFileSync } from 'node:fs';
+import path from 'node:path';
+const require = createRequire(path.join(process.env.TEMP, 'medico-browser-check', 'package.json'));
+const { chromium } = require('playwright');
+const browser = await chromium.launch({ channel: 'msedge', headless: true });
+const page = await browser.newPage({ viewport: { width: 1440, height: 1050 } });
+const errors=[];
+page.on('pageerror', e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:3000', { waitUntil:'networkidle', timeout:120000 });
+await page.screenshot({ path:'docs/redesign/landing-desktop.png', fullPage:true });
+console.log(JSON.stringify({title:await page.title(),errors,body:(await page.locator('body').innerText()).slice(0,450)}));
+await browser.close();

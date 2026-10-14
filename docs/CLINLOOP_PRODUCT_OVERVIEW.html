@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ClinLoop AI product proposal and phased delivery overview, October 2026.">
+  <title>ClinLoop AI product overview</title>
+  <style>
+    :root { color-scheme: light; --ink:#182b35; --muted:#465c66; --accent:#166b65; --line:#d7e2e4; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:#edf2f3; color:var(--ink); font-family:Segoe UI,Arial,sans-serif; font-size:16px; line-height:1.62; }
+    main { max-width:940px; margin:36px auto; padding:56px 64px; background:white; }
+    .eyebrow { color:var(--accent); font-weight:650; font-size:13px; letter-spacing:.09em; text-transform:uppercase; margin:0 0 12px; }
+    h1 { color:#000; font-size:42px; line-height:1.15; margin:0 0 18px; font-weight:650; }
+    h2 { color:#000; font-size:24px; line-height:1.25; margin:34px 0 12px; }
+    h3 { color:#000; font-size:17px; margin:0 0 8px; }
+    p { margin:0 0 16px; }
+    .lead { font-size:21px; line-height:1.5; max-width:730px; }
+    .meta { color:var(--muted); font-size:13px; }
+    .status { background:#eef6f5; border-left:3px solid var(--accent); padding:17px 20px; margin:24px 0; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .card { border:1px solid var(--line); border-radius:8px; padding:20px; }
+    .card p:last-child { margin-bottom:0; }
+    .flow { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 20px; padding:0; list-style:none; counter-reset:steps; }
+    .flow li { background:#f1f5f6; border-radius:5px; padding:10px 12px; font-size:14px; counter-increment:steps; }
+    .flow li::before { content:counter(steps) '. '; font-weight:bold; color:var(--accent); }
+    table { width:100%; border-collapse:collapse; font-size:14px; margin:16px 0 20px; }
+    th { text-align:left; background:#edf3f4; padding:11px 13px; }
+    td { vertical-align:top; border-bottom:1px solid var(--line); padding:11px 13px; }
+    td:first-child { width:29%; font-weight:600; }
+    ul { padding-left:22px; margin-top:10px; }
+    li { margin-bottom:6px; }
+    a { color:#125e70; text-underline-offset:3px; }
+    footer { margin-top:34px; color:var(--muted); font-size:12px; }
+    @media (max-width:650px) { body { font-size:15px; } main { margin:0; padding:28px 22px; } h1 { font-size:34px; } .lead { font-size:19px; } .grid { grid-template-columns:1fr; } table { font-size:13px; } th,td { padding:9px 7px; } }
+    @media print { @page { size:A4; margin:17mm; } body { background:white; font-size:10.5pt; } main { max-width:none; margin:0; padding:0; } h1 { font-size:29pt; } h2 { font-size:17pt; break-after:avoid; } h3 { break-after:avoid; } .lead { font-size:14pt; } .card,.status,tr { break-inside:avoid; } .grid { gap:12px; } p { orphans:3; widows:3; } a { color:inherit; } table { font-size:9.5pt; } footer { font-size:9pt; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Product proposal · Competition prototype</p>
+    <h1>ClinLoop AI</h1>
+    <p class="lead">Doctor-supervised clinical documentation with controlled learning from reviewed corrections.</p>
+    <p class="meta">Product overview · Version 1.0 · October 9, 2026</p>
+  </header>
+  <div class="status"><strong>Project status</strong><br>An existing application provides the starting code for intake, voice, SOAP reports and doctor review. The secure learning workflow, fine-tuned model, evaluation and redesigned interface below are planned deliverables. No clinical performance or production-readiness claim is made.</div>
+
+  <h2>What the product will do</h2>
+  <p>ClinLoop AI will organize multilingual patient intake into an English SOAP draft, show the evidence behind documented facts, and help an authorized doctor review and revise the record. The doctor retains authority over the final document and any patient-facing medication instructions.</p>
+  <ol class="flow" aria-label="Clinical workflow"><li>Voice or text intake</li><li>Confirmed transcript</li><li>Evidence-linked SOAP</li><li>Doctor correction</li><li>Finalized document</li></ol>
+  <p>The initial scope is synthetic general-outpatient cases, with English, Urdu and Roman Urdu input. Voice transcription remains editable before submission. Missing measurements stay marked as missing rather than being invented.</p>
+
+  <h2>Two controlled ways to improve</h2>
+  <div class="grid">
+    <section class="card"><h3>Approved example retrieval</h3><p>Suitable corrections receive separate privacy and clinical review. Generalized examples can then inform later drafts, with recorded sources and applicability. Retrieval changes context; it does not update model weights.</p></section>
+    <section class="card"><h3>Actual model fine-tuning</h3><p>A frozen synthetic dataset trains an adapter for an existing open-weight model in Colab or Kaggle. The artifact is compared with its unchanged base model and approved before use. Training completion does not guarantee improvement.</p></section>
+  </div>
+
+  <h2>When doctors disagree</h2>
+  <p>If two doctors suggest different prescriptions for apparently similar patients, each decision stays with its own patient record. The latest correction does not become a global rule. ClinLoop checks applicability and missing context, flags contradictions, and holds unresolved medication advice out of shared retrieval and training.</p>
+  <p>The initial design uses one shared model release. Doctor-specific preferences may control wording and layout, but cannot override clinical evidence or review safeguards. A qualified reviewer must resolve reusable clinical conflicts; automated similarity alone cannot decide them.</p>
+
+  <h2>Privacy and clinician authority</h2>
+  <ul>
+    <li><strong>Separate data areas:</strong> identifiable clinical records and raw feedback remain restricted; approved learning examples contain generalized content.</li>
+    <li><strong>Server authorization:</strong> verified doctor scope, patient isolation and approval states are enforced beyond the interface.</li>
+    <li><strong>Versioned approval:</strong> original drafts and edits are preserved; regeneration requires fresh review.</li>
+    <li><strong>Private delivery:</strong> only the owning patient can receive their finalized document.</li>
+    <li><strong>Auditable release:</strong> examples, datasets and models can be reviewed, revoked and traced to their versions.</li>
+  </ul>
+  <p>Supabase PostgreSQL, pgvector and private Storage form the planned data platform. The competition build uses synthetic data only. Real-patient deployment would require further clinical, privacy and operational assessment.</p>
+
+  <h2>Build and evaluation</h2>
+  <table>
+    <thead><tr><th scope="col">Stage</th><th scope="col">Deliverable and verification</th></tr></thead>
+    <tbody>
+      <tr><td>Foundation</td><td>Recoverable source, fresh Supabase database and restricted access. Test patient isolation, doctor permissions and private documents.</td></tr>
+      <tr><td>Prototype</td><td>Voice/text intake, versioned SOAP, doctor correction and approved delivery. Test the complete patient-to-doctor workflow.</td></tr>
+      <tr><td>Learning</td><td>Review queue, conflict handling and eligible-example retrieval. Test rejection of unapproved, revoked and conflicting examples.</td></tr>
+      <tr><td>Training</td><td>Cloud GPU notebook, saved adapter, dataset lineage and reproducible held-out outputs.</td></tr>
+      <tr><td>Interface</td><td>Supplied landing and portal designs connected to real application states, with responsive and browser checks.</td></tr>
+      <tr><td>Final review</td><td>Qualified doctor review of blinded outputs, model comparisons, failure cases, security regression and presentation rehearsal.</td></tr>
+    </tbody>
+  </table>
+  <p>Evaluation compares the same model and held-out cases under baseline, guidance retrieval, feedback-enhanced retrieval and fine-tuned configurations. Measures include unsupported facts, omissions, contradictions, revision fidelity, correction burden, retrieval relevance and latency. The report will include sample counts, failures and limitations, whether results improve or not.</p>
+
+  <h2>A realistic free demonstration</h2>
+  <p>The website runs on localhost. Free provider-hosted open-weight inference can support the live workflow, while the custom adapter is trained and tested in user-operated cloud notebooks. Its first application integration uses validated case export and result import. The interface will distinguish live base-model output from notebook-generated fine-tuned output.</p>
+  <p>No ChatGPT or Claude API, Pinecone database, local training GPU or billing-enabled service is required. Free notebook access is not a promise of continuous model hosting. Replay results, if needed for an outage, will be labeled as replay.</p>
+
+  <h2>What success means</h2>
+  <p>A synthetic consultation can be captured, drafted, corrected and finalized by an authorized doctor. An eligible correction can influence a later draft without exposing its source patient's identity. Conflicting advice remains under review. Actual training is demonstrated through a saved adapter and reproducible evaluation, with no invented improvement percentages.</p>
+  <p>The prototype is a supervised documentation assistant. It does not independently diagnose or prescribe, certify de-identification, or establish broad clinical safety from a small synthetic evaluation.</p>
+  <footer>
+    <p>Planning basis: supplied ClinLoop AI brief, architecture flow, source audit and agreed constraints. Technical references: <a href="https://supabase.com/docs/guides/database/postgres/row-level-security">Supabase RLS</a>, <a href="https://huggingface.co/docs/peft/developer_guides/quantization">PEFT quantization</a>, <a href="https://research.google.com/colaboratory/faq.html">Colab limitations</a>, <a href="https://www.kaggle.com/docs/notebooks">Kaggle notebooks</a>.</p>
+  </footer>
+</main>
+</body>
+</html>

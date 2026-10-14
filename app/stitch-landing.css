@@ -1,0 +1,2262 @@
+
+@font-face{font-family:'Stitch Material Symbols';font-style:normal;font-weight:100 700;src:url('/medico/stitch/material-symbols.woff2') format('woff2');font-display:block}
+#stitch-landing .material-symbols-outlined{font-family:'Stitch Material Symbols';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;font-feature-settings:'liga';-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased}
+#stitch-landing{font-family:var(--font-inter),sans-serif;color:#121e1e;background:#effcfb} #stitch-landing [hidden]{display:none!important} #stitch-landing :focus-visible{outline:3px solid #004fda;outline-offset:4px} #stitch-landing main>:first-child{margin-top:0!important}#stitch-landing main>:last-child{margin-bottom:0!important}
+#stitch-landing *, #stitch-landing ::before, #stitch-landing ::after {
+  --stitch-border-spacing-x: 0;
+  --stitch-border-spacing-y: 0;
+  --stitch-translate-x: 0;
+  --stitch-translate-y: 0;
+  --stitch-rotate: 0;
+  --stitch-skew-x: 0;
+  --stitch-skew-y: 0;
+  --stitch-scale-x: 1;
+  --stitch-scale-y: 1;
+  --stitch-pan-x:  ;
+  --stitch-pan-y:  ;
+  --stitch-pinch-zoom:  ;
+  --stitch-scroll-snap-strictness: proximity;
+  --stitch-gradient-from-position:  ;
+  --stitch-gradient-via-position:  ;
+  --stitch-gradient-to-position:  ;
+  --stitch-ordinal:  ;
+  --stitch-slashed-zero:  ;
+  --stitch-numeric-figure:  ;
+  --stitch-numeric-spacing:  ;
+  --stitch-numeric-fraction:  ;
+  --stitch-ring-inset:  ;
+  --stitch-ring-offset-width: 0px;
+  --stitch-ring-offset-color: #fff;
+  --stitch-ring-color: rgb(59 130 246 / 0.5);
+  --stitch-ring-offset-shadow: 0 0 #0000;
+  --stitch-ring-shadow: 0 0 #0000;
+  --stitch-shadow: 0 0 #0000;
+  --stitch-shadow-colored: 0 0 #0000;
+  --stitch-blur:  ;
+  --stitch-brightness:  ;
+  --stitch-contrast:  ;
+  --stitch-grayscale:  ;
+  --stitch-hue-rotate:  ;
+  --stitch-invert:  ;
+  --stitch-saturate:  ;
+  --stitch-sepia:  ;
+  --stitch-drop-shadow:  ;
+  --stitch-backdrop-blur:  ;
+  --stitch-backdrop-brightness:  ;
+  --stitch-backdrop-contrast:  ;
+  --stitch-backdrop-grayscale:  ;
+  --stitch-backdrop-hue-rotate:  ;
+  --stitch-backdrop-invert:  ;
+  --stitch-backdrop-opacity:  ;
+  --stitch-backdrop-saturate:  ;
+  --stitch-backdrop-sepia:  ;
+  --stitch-contain-size:  ;
+  --stitch-contain-layout:  ;
+  --stitch-contain-paint:  ;
+  --stitch-contain-style:  ;
+}
+
+#stitch-landing ::backdrop {
+  --stitch-border-spacing-x: 0;
+  --stitch-border-spacing-y: 0;
+  --stitch-translate-x: 0;
+  --stitch-translate-y: 0;
+  --stitch-rotate: 0;
+  --stitch-skew-x: 0;
+  --stitch-skew-y: 0;
+  --stitch-scale-x: 1;
+  --stitch-scale-y: 1;
+  --stitch-pan-x:  ;
+  --stitch-pan-y:  ;
+  --stitch-pinch-zoom:  ;
+  --stitch-scroll-snap-strictness: proximity;
+  --stitch-gradient-from-position:  ;
+  --stitch-gradient-via-position:  ;
+  --stitch-gradient-to-position:  ;
+  --stitch-ordinal:  ;
+  --stitch-slashed-zero:  ;
+  --stitch-numeric-figure:  ;
+  --stitch-numeric-spacing:  ;
+  --stitch-numeric-fraction:  ;
+  --stitch-ring-inset:  ;
+  --stitch-ring-offset-width: 0px;
+  --stitch-ring-offset-color: #fff;
+  --stitch-ring-color: rgb(59 130 246 / 0.5);
+  --stitch-ring-offset-shadow: 0 0 #0000;
+  --stitch-ring-shadow: 0 0 #0000;
+  --stitch-shadow: 0 0 #0000;
+  --stitch-shadow-colored: 0 0 #0000;
+  --stitch-blur:  ;
+  --stitch-brightness:  ;
+  --stitch-contrast:  ;
+  --stitch-grayscale:  ;
+  --stitch-hue-rotate:  ;
+  --stitch-invert:  ;
+  --stitch-saturate:  ;
+  --stitch-sepia:  ;
+  --stitch-drop-shadow:  ;
+  --stitch-backdrop-blur:  ;
+  --stitch-backdrop-brightness:  ;
+  --stitch-backdrop-contrast:  ;
+  --stitch-backdrop-grayscale:  ;
+  --stitch-backdrop-hue-rotate:  ;
+  --stitch-backdrop-invert:  ;
+  --stitch-backdrop-opacity:  ;
+  --stitch-backdrop-saturate:  ;
+  --stitch-backdrop-sepia:  ;
+  --stitch-contain-size:  ;
+  --stitch-contain-layout:  ;
+  --stitch-contain-paint:  ;
+  --stitch-contain-style:  ;
+}/*
+! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+#stitch-landing *,
+#stitch-landing ::before,
+#stitch-landing ::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+#stitch-landing ::before,
+#stitch-landing ::after {
+  --stitch-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+#stitch-landing,
+#stitch-landing {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+#stitch-landing {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+#stitch-landing hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+#stitch-landing abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+#stitch-landing h1,
+#stitch-landing h2,
+#stitch-landing h3,
+#stitch-landing h4,
+#stitch-landing h5,
+#stitch-landing h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+#stitch-landing a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+#stitch-landing b,
+#stitch-landing strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+#stitch-landing code,
+#stitch-landing kbd,
+#stitch-landing samp,
+#stitch-landing pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+#stitch-landing small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+#stitch-landing sub,
+#stitch-landing sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+#stitch-landing sub {
+  bottom: -0.25em;
+}
+
+#stitch-landing sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+#stitch-landing table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+#stitch-landing button,
+#stitch-landing input,
+#stitch-landing optgroup,
+#stitch-landing select,
+#stitch-landing textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+#stitch-landing button,
+#stitch-landing select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+#stitch-landing button,
+#stitch-landing input:where([type='button']),
+#stitch-landing input:where([type='reset']),
+#stitch-landing input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+#stitch-landing :-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+#stitch-landing :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+#stitch-landing progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+#stitch-landing ::-webkit-inner-spin-button,
+#stitch-landing ::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+#stitch-landing [type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+#stitch-landing ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+#stitch-landing ::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+#stitch-landing summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+#stitch-landing blockquote,
+#stitch-landing dl,
+#stitch-landing dd,
+#stitch-landing h1,
+#stitch-landing h2,
+#stitch-landing h3,
+#stitch-landing h4,
+#stitch-landing h5,
+#stitch-landing h6,
+#stitch-landing hr,
+#stitch-landing figure,
+#stitch-landing p,
+#stitch-landing pre {
+  margin: 0;
+}
+
+#stitch-landing fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+#stitch-landing legend {
+  padding: 0;
+}
+
+#stitch-landing ol,
+#stitch-landing ul,
+#stitch-landing menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+#stitch-landing dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+#stitch-landing textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+#stitch-landing input::placeholder,
+#stitch-landing textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+#stitch-landing button,
+#stitch-landing [role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+#stitch-landing :disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+#stitch-landing img,
+#stitch-landing svg,
+#stitch-landing video,
+#stitch-landing canvas,
+#stitch-landing audio,
+#stitch-landing iframe,
+#stitch-landing embed,
+#stitch-landing object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+#stitch-landing img,
+#stitch-landing video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+#stitch-landing [hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+} #stitch-landing .pointer-events-none {
+  pointer-events: none;
+} #stitch-landing .pointer-events-auto {
+  pointer-events: auto;
+} #stitch-landing .fixed {
+  position: fixed;
+} #stitch-landing .absolute {
+  position: absolute;
+} #stitch-landing .relative {
+  position: relative;
+} #stitch-landing .sticky {
+  position: sticky;
+} #stitch-landing .inset-0 {
+  inset: 0px;
+} #stitch-landing .-bottom-1 {
+  bottom: -0.25rem;
+} #stitch-landing .-bottom-12 {
+  bottom: -3rem;
+} #stitch-landing .-bottom-16 {
+  bottom: -4rem;
+} #stitch-landing .-bottom-20 {
+  bottom: -5rem;
+} #stitch-landing .-bottom-6 {
+  bottom: -1.5rem;
+} #stitch-landing .-left-20 {
+  left: -5rem;
+} #stitch-landing .-left-32 {
+  left: -8rem;
+} #stitch-landing .-left-6 {
+  left: -1.5rem;
+} #stitch-landing .-left-8 {
+  left: -2rem;
+} #stitch-landing .-right-1 {
+  right: -0.25rem;
+} #stitch-landing .-right-12 {
+  right: -3rem;
+} #stitch-landing .-right-16 {
+  right: -4rem;
+} #stitch-landing .-right-20 {
+  right: -5rem;
+} #stitch-landing .-right-32 {
+  right: -8rem;
+} #stitch-landing .-right-4 {
+  right: -1rem;
+} #stitch-landing .-top-3\.5 {
+  top: -0.875rem;
+} #stitch-landing .-top-32 {
+  top: -8rem;
+} #stitch-landing .-top-4 {
+  top: -1rem;
+} #stitch-landing .bottom-0 {
+  bottom: 0px;
+} #stitch-landing .bottom-10 {
+  bottom: 2.5rem;
+} #stitch-landing .bottom-3 {
+  bottom: 0.75rem;
+} #stitch-landing .bottom-4 {
+  bottom: 1rem;
+} #stitch-landing .bottom-6 {
+  bottom: 1.5rem;
+} #stitch-landing .left-0 {
+  left: 0px;
+} #stitch-landing .left-1\/2 {
+  left: 50%;
+} #stitch-landing .left-1\/3 {
+  left: 33.333333%;
+} #stitch-landing .left-10 {
+  left: 2.5rem;
+} #stitch-landing .left-16 {
+  left: 4rem;
+} #stitch-landing .left-2\.5 {
+  left: 0.625rem;
+} #stitch-landing .left-3 {
+  left: 0.75rem;
+} #stitch-landing .left-3\.5 {
+  left: 0.875rem;
+} #stitch-landing .left-4 {
+  left: 1rem;
+} #stitch-landing .left-6 {
+  left: 1.5rem;
+} #stitch-landing .right-0 {
+  right: 0px;
+} #stitch-landing .right-1\/3 {
+  right: 33.333333%;
+} #stitch-landing .right-16 {
+  right: 4rem;
+} #stitch-landing .right-2 {
+  right: 0.5rem;
+} #stitch-landing .right-3 {
+  right: 0.75rem;
+} #stitch-landing .right-6 {
+  right: 1.5rem;
+} #stitch-landing .top-0 {
+  top: 0px;
+} #stitch-landing .top-1\/2 {
+  top: 50%;
+} #stitch-landing .top-12 {
+  top: 3rem;
+} #stitch-landing .top-2\.5 {
+  top: 0.625rem;
+} #stitch-landing .top-24 {
+  top: 6rem;
+} #stitch-landing .top-3 {
+  top: 0.75rem;
+} #stitch-landing .top-4 {
+  top: 1rem;
+} #stitch-landing .top-6 {
+  top: 1.5rem;
+} #stitch-landing .-z-0 {
+  z-index: 0;
+} #stitch-landing .z-0 {
+  z-index: 0;
+} #stitch-landing .z-10 {
+  z-index: 10;
+} #stitch-landing .z-20 {
+  z-index: 20;
+} #stitch-landing .z-50 {
+  z-index: 50;
+} #stitch-landing .col-span-12 {
+  grid-column: span 12 / span 12;
+} #stitch-landing .col-span-3 {
+  grid-column: span 3 / span 3;
+} #stitch-landing .col-span-9 {
+  grid-column: span 9 / span 9;
+} #stitch-landing .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+} #stitch-landing .my-space-md {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+} #stitch-landing .-mt-1 {
+  margin-top: -0.25rem;
+} #stitch-landing .-mt-10 {
+  margin-top: -2.5rem;
+} #stitch-landing .-mt-14 {
+  margin-top: -3.5rem;
+} #stitch-landing .mb-1 {
+  margin-bottom: 0.25rem;
+} #stitch-landing .mb-10 {
+  margin-bottom: 2.5rem;
+} #stitch-landing .mb-12 {
+  margin-bottom: 3rem;
+} #stitch-landing .mb-16 {
+  margin-bottom: 4rem;
+} #stitch-landing .mb-2 {
+  margin-bottom: 0.5rem;
+} #stitch-landing .mb-20 {
+  margin-bottom: 5rem;
+} #stitch-landing .mb-24 {
+  margin-bottom: 6rem;
+} #stitch-landing .mb-28 {
+  margin-bottom: 7rem;
+} #stitch-landing .mb-3 {
+  margin-bottom: 0.75rem;
+} #stitch-landing .mb-4 {
+  margin-bottom: 1rem;
+} #stitch-landing .mb-5 {
+  margin-bottom: 1.25rem;
+} #stitch-landing .mb-6 {
+  margin-bottom: 1.5rem;
+} #stitch-landing .mb-8 {
+  margin-bottom: 2rem;
+} #stitch-landing .mb-space-lg {
+  margin-bottom: 1.5rem;
+} #stitch-landing .mb-space-md {
+  margin-bottom: 1rem;
+} #stitch-landing .mb-space-sm {
+  margin-bottom: 0.5rem;
+} #stitch-landing .mb-space-xl {
+  margin-bottom: 2.5rem;
+} #stitch-landing .ml-1 {
+  margin-left: 0.25rem;
+} #stitch-landing .ml-6 {
+  margin-left: 1.5rem;
+} #stitch-landing .mt-0\.5 {
+  margin-top: 0.125rem;
+} #stitch-landing .mt-1 {
+  margin-top: 0.25rem;
+} #stitch-landing .mt-12 {
+  margin-top: 3rem;
+} #stitch-landing .mt-2 {
+  margin-top: 0.5rem;
+} #stitch-landing .mt-3 {
+  margin-top: 0.75rem;
+} #stitch-landing .mt-4 {
+  margin-top: 1rem;
+} #stitch-landing .mt-5 {
+  margin-top: 1.25rem;
+} #stitch-landing .mt-6 {
+  margin-top: 1.5rem;
+} #stitch-landing .mt-8 {
+  margin-top: 2rem;
+} #stitch-landing .mt-space-sm {
+  margin-top: 0.5rem;
+} #stitch-landing .line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+} #stitch-landing .block {
+  display: block;
+} #stitch-landing .inline-block {
+  display: inline-block;
+} #stitch-landing .inline {
+  display: inline;
+} #stitch-landing .flex {
+  display: flex;
+} #stitch-landing .inline-flex {
+  display: inline-flex;
+} #stitch-landing .grid {
+  display: grid;
+} #stitch-landing .hidden {
+  display: none;
+} #stitch-landing .h-1 {
+  height: 0.25rem;
+} #stitch-landing .h-10 {
+  height: 2.5rem;
+} #stitch-landing .h-11 {
+  height: 2.75rem;
+} #stitch-landing .h-12 {
+  height: 3rem;
+} #stitch-landing .h-14 {
+  height: 3.5rem;
+} #stitch-landing .h-16 {
+  height: 4rem;
+} #stitch-landing .h-2 {
+  height: 0.5rem;
+} #stitch-landing .h-2\.5 {
+  height: 0.625rem;
+} #stitch-landing .h-20 {
+  height: 5rem;
+} #stitch-landing .h-24 {
+  height: 6rem;
+} #stitch-landing .h-28 {
+  height: 7rem;
+} #stitch-landing .h-3 {
+  height: 0.75rem;
+} #stitch-landing .h-3\.5 {
+  height: 0.875rem;
+} #stitch-landing .h-4 {
+  height: 1rem;
+} #stitch-landing .h-40 {
+  height: 10rem;
+} #stitch-landing .h-48 {
+  height: 12rem;
+} #stitch-landing .h-5 {
+  height: 1.25rem;
+} #stitch-landing .h-6 {
+  height: 1.5rem;
+} #stitch-landing .h-60 {
+  height: 15rem;
+} #stitch-landing .h-64 {
+  height: 16rem;
+} #stitch-landing .h-7 {
+  height: 1.75rem;
+} #stitch-landing .h-72 {
+  height: 18rem;
+} #stitch-landing .h-8 {
+  height: 2rem;
+} #stitch-landing .h-80 {
+  height: 20rem;
+} #stitch-landing .h-9 {
+  height: 2.25rem;
+} #stitch-landing .h-96 {
+  height: 24rem;
+} #stitch-landing .h-\[340px\] {
+  height: 340px;
+} #stitch-landing .h-\[380px\] {
+  height: 380px;
+} #stitch-landing .h-\[500px\] {
+  height: 500px;
+} #stitch-landing .h-\[520px\] {
+  height: 520px;
+} #stitch-landing .h-full {
+  height: 100%;
+} #stitch-landing .max-h-\[calc\(100vh-120px\)\] {
+  max-height: calc(100vh - 120px);
+} #stitch-landing .min-h-\[380px\] {
+  min-height: 380px;
+} #stitch-landing .w-1 {
+  width: 0.25rem;
+} #stitch-landing .w-10 {
+  width: 2.5rem;
+} #stitch-landing .w-11 {
+  width: 2.75rem;
+} #stitch-landing .w-12 {
+  width: 3rem;
+} #stitch-landing .w-14 {
+  width: 3.5rem;
+} #stitch-landing .w-16 {
+  width: 4rem;
+} #stitch-landing .w-2 {
+  width: 0.5rem;
+} #stitch-landing .w-2\.5 {
+  width: 0.625rem;
+} #stitch-landing .w-20 {
+  width: 5rem;
+} #stitch-landing .w-24 {
+  width: 6rem;
+} #stitch-landing .w-28 {
+  width: 7rem;
+} #stitch-landing .w-3 {
+  width: 0.75rem;
+} #stitch-landing .w-3\.5 {
+  width: 0.875rem;
+} #stitch-landing .w-4 {
+  width: 1rem;
+} #stitch-landing .w-40 {
+  width: 10rem;
+} #stitch-landing .w-5 {
+  width: 1.25rem;
+} #stitch-landing .w-6 {
+  width: 1.5rem;
+} #stitch-landing .w-60 {
+  width: 15rem;
+} #stitch-landing .w-64 {
+  width: 16rem;
+} #stitch-landing .w-7 {
+  width: 1.75rem;
+} #stitch-landing .w-8 {
+  width: 2rem;
+} #stitch-landing .w-80 {
+  width: 20rem;
+} #stitch-landing .w-9 {
+  width: 2.25rem;
+} #stitch-landing .w-96 {
+  width: 24rem;
+} #stitch-landing .w-\[500px\] {
+  width: 500px;
+} #stitch-landing .w-auto {
+  width: auto;
+} #stitch-landing .w-fit {
+  width: fit-content;
+} #stitch-landing .w-full {
+  width: 100%;
+} #stitch-landing .min-w-0 {
+  min-width: 0px;
+} #stitch-landing .max-w-2xl {
+  max-width: 42rem;
+} #stitch-landing .max-w-3xl {
+  max-width: 48rem;
+} #stitch-landing .max-w-4xl {
+  max-width: 56rem;
+} #stitch-landing .max-w-5xl {
+  max-width: 64rem;
+} #stitch-landing .max-w-\[1000px\] {
+  max-width: 1000px;
+} #stitch-landing .max-w-\[1040px\] {
+  max-width: 1040px;
+} #stitch-landing .max-w-\[1440px\] {
+  max-width: 1440px;
+} #stitch-landing .max-w-\[460px\] {
+  max-width: 460px;
+} #stitch-landing .max-w-\[900px\] {
+  max-width: 900px;
+} #stitch-landing .max-w-lg {
+  max-width: 32rem;
+} #stitch-landing .max-w-md {
+  max-width: 28rem;
+} #stitch-landing .max-w-sm {
+  max-width: 24rem;
+} #stitch-landing .max-w-xl {
+  max-width: 36rem;
+} #stitch-landing .max-w-xs {
+  max-width: 20rem;
+} #stitch-landing .flex-1 {
+  flex: 1 1 0%;
+} #stitch-landing .flex-shrink-0 {
+  flex-shrink: 0;
+} #stitch-landing .shrink-0 {
+  flex-shrink: 0;
+} #stitch-landing .flex-grow {
+  flex-grow: 1;
+} #stitch-landing .-translate-x-1\/2 {
+  --stitch-translate-x: -50%;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .-translate-y-1\/2 {
+  --stitch-translate-y: -50%;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .-rotate-1 {
+  --stitch-rotate: -1deg;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .-rotate-2 {
+  --stitch-rotate: -2deg;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .-rotate-3 {
+  --stitch-rotate: -3deg;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .-rotate-6 {
+  --stitch-rotate: -6deg;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .rotate-1 {
+  --stitch-rotate: 1deg;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .rotate-6 {
+  --stitch-rotate: 6deg;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .scale-95 {
+  --stitch-scale-x: .95;
+  --stitch-scale-y: .95;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .transform {
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} @keyframes spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+} #stitch-landing .animate-\[spin_18s_linear_infinite\] {
+  animation: spin 18s linear infinite;
+} @keyframes bounce {
+
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+} #stitch-landing .animate-bounce {
+  animation: bounce 1s infinite;
+} @keyframes ping {
+
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+} #stitch-landing .animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+} @keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+} #stitch-landing .animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+} #stitch-landing .cursor-pointer {
+  cursor: pointer;
+} #stitch-landing .select-none {
+  user-select: none;
+} #stitch-landing .resize-none {
+  resize: none;
+} #stitch-landing .appearance-none {
+  appearance: none;
+} #stitch-landing .grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+} #stitch-landing .grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+} #stitch-landing .grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+} #stitch-landing .grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+} #stitch-landing .flex-col {
+  flex-direction: column;
+} #stitch-landing .flex-wrap {
+  flex-wrap: wrap;
+} #stitch-landing .items-start {
+  align-items: flex-start;
+} #stitch-landing .items-end {
+  align-items: flex-end;
+} #stitch-landing .items-center {
+  align-items: center;
+} #stitch-landing .items-baseline {
+  align-items: baseline;
+} #stitch-landing .items-stretch {
+  align-items: stretch;
+} #stitch-landing .justify-end {
+  justify-content: flex-end;
+} #stitch-landing .justify-center {
+  justify-content: center;
+} #stitch-landing .justify-between {
+  justify-content: space-between;
+} #stitch-landing .gap-1 {
+  gap: 0.25rem;
+} #stitch-landing .gap-1\.5 {
+  gap: 0.375rem;
+} #stitch-landing .gap-12 {
+  gap: 3rem;
+} #stitch-landing .gap-2 {
+  gap: 0.5rem;
+} #stitch-landing .gap-2\.5 {
+  gap: 0.625rem;
+} #stitch-landing .gap-3 {
+  gap: 0.75rem;
+} #stitch-landing .gap-3\.5 {
+  gap: 0.875rem;
+} #stitch-landing .gap-4 {
+  gap: 1rem;
+} #stitch-landing .gap-6 {
+  gap: 1.5rem;
+} #stitch-landing .gap-8 {
+  gap: 2rem;
+} #stitch-landing .gap-space-lg {
+  gap: 1.5rem;
+} #stitch-landing .gap-space-md {
+  gap: 1rem;
+} #stitch-landing .gap-space-sm {
+  gap: 0.5rem;
+} #stitch-landing .gap-space-xl {
+  gap: 2.5rem;
+} #stitch-landing .gap-space-xs {
+  gap: 0.25rem;
+} #stitch-landing :is(.-space-x-3 > :not([hidden]) ~ :not([hidden])) {
+  --stitch-space-x-reverse: 0;
+  margin-right: calc(-0.75rem * var(--stitch-space-x-reverse));
+  margin-left: calc(-0.75rem * calc(1 - var(--stitch-space-x-reverse)));
+} #stitch-landing :is(.space-y-12 > :not([hidden]) ~ :not([hidden])) {
+  --stitch-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--stitch-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--stitch-space-y-reverse));
+} #stitch-landing :is(.space-y-3 > :not([hidden]) ~ :not([hidden])) {
+  --stitch-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--stitch-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--stitch-space-y-reverse));
+} #stitch-landing :is(.space-y-4 > :not([hidden]) ~ :not([hidden])) {
+  --stitch-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--stitch-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--stitch-space-y-reverse));
+} #stitch-landing :is(.space-y-6 > :not([hidden]) ~ :not([hidden])) {
+  --stitch-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--stitch-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--stitch-space-y-reverse));
+} #stitch-landing :is(.divide-y > :not([hidden]) ~ :not([hidden])) {
+  --stitch-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--stitch-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--stitch-divide-y-reverse));
+} #stitch-landing :is(.divide-on-primary\/15 > :not([hidden]) ~ :not([hidden])) {
+  border-color: rgb(255 255 255 / 0.15);
+} #stitch-landing .self-start {
+  align-self: flex-start;
+} #stitch-landing .overflow-hidden {
+  overflow: hidden;
+} #stitch-landing .overflow-y-auto {
+  overflow-y: auto;
+} #stitch-landing .truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} #stitch-landing .break-all {
+  word-break: break-all;
+} #stitch-landing .rounded {
+  border-radius: 0.25rem;
+} #stitch-landing .rounded-2xl {
+  border-radius: 1rem;
+} #stitch-landing .rounded-3xl {
+  border-radius: 1.5rem;
+} #stitch-landing .rounded-\[2\.5rem\] {
+  border-radius: 2.5rem;
+} #stitch-landing .rounded-\[3rem\] {
+  border-radius: 3rem;
+} #stitch-landing .rounded-full {
+  border-radius: 9999px;
+} #stitch-landing .rounded-lg {
+  border-radius: 0.5rem;
+} #stitch-landing .rounded-xl {
+  border-radius: 0.75rem;
+} #stitch-landing .rounded-bl-\[3rem\] {
+  border-bottom-left-radius: 3rem;
+} #stitch-landing .rounded-tl-none {
+  border-top-left-radius: 0px;
+} #stitch-landing .rounded-tr-none {
+  border-top-right-radius: 0px;
+} #stitch-landing .border-0 {
+  border-width: 0px;
+} #stitch-landing .border-b {
+  border-bottom-width: 1px;
+} #stitch-landing .border-b-2 {
+  border-bottom-width: 2px;
+} #stitch-landing .border-t {
+  border-top-width: 1px;
+} #stitch-landing .border-none {
+  border-style: none;
+} #stitch-landing .border-outline-variant\/30 {
+  border-color: rgb(190 200 200 / 0.3);
+} #stitch-landing .border-outline\/20 {
+  border-color: rgb(111 121 121 / 0.2);
+} #stitch-landing .border-primary {
+  --stitch-border-opacity: 1;
+  border-color: rgb(0 82 82 / var(--stitch-border-opacity, 1));
+} #stitch-landing .bg-emerald-100 {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(209 250 229 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-emerald-400 {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(52 211 153 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-emerald-500 {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-error {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(186 26 26 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-error-container {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(255 218 214 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-error\/20 {
+  background-color: rgb(186 26 26 / 0.2);
+} #stitch-landing .bg-inverse-surface {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(38 51 51 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-inverse-surface\/40 {
+  background-color: rgb(38 51 51 / 0.4);
+} #stitch-landing .bg-primary {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(0 82 82 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-primary-container {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(31 107 107 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-primary-container\/40 {
+  background-color: rgb(31 107 107 / 0.4);
+} #stitch-landing .bg-primary-container\/60 {
+  background-color: rgb(31 107 107 / 0.6);
+} #stitch-landing .bg-primary-fixed {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(168 239 238 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-primary-fixed\/10 {
+  background-color: rgb(168 239 238 / 0.1);
+} #stitch-landing .bg-primary-fixed\/15 {
+  background-color: rgb(168 239 238 / 0.15);
+} #stitch-landing .bg-primary-fixed\/20 {
+  background-color: rgb(168 239 238 / 0.2);
+} #stitch-landing .bg-primary-fixed\/40 {
+  background-color: rgb(168 239 238 / 0.4);
+} #stitch-landing .bg-red-400 {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-secondary {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(0 79 218 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-secondary-container {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(43 105 253 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-secondary-container\/15 {
+  background-color: rgb(43 105 253 / 0.15);
+} #stitch-landing .bg-secondary-container\/20 {
+  background-color: rgb(43 105 253 / 0.2);
+} #stitch-landing .bg-secondary-fixed {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(219 225 255 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-secondary\/10 {
+  background-color: rgb(0 79 218 / 0.1);
+} #stitch-landing .bg-secondary\/15 {
+  background-color: rgb(0 79 218 / 0.15);
+} #stitch-landing .bg-surface {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(239 252 251 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-surface-container {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(227 241 240 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-surface-container-high {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(221 235 234 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-surface-container-high\/20 {
+  background-color: rgb(221 235 234 / 0.2);
+} #stitch-landing .bg-surface-container-highest {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(216 229 229 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-surface-container-low {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(233 246 246 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-surface-container-lowest {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-surface-container-lowest\/10 {
+  background-color: rgb(255 255 255 / 0.1);
+} #stitch-landing .bg-surface-container-lowest\/15 {
+  background-color: rgb(255 255 255 / 0.15);
+} #stitch-landing .bg-surface-container-lowest\/20 {
+  background-color: rgb(255 255 255 / 0.2);
+} #stitch-landing .bg-surface-container-lowest\/90 {
+  background-color: rgb(255 255 255 / 0.9);
+} #stitch-landing .bg-surface-container-lowest\/95 {
+  background-color: rgb(255 255 255 / 0.95);
+} #stitch-landing .bg-surface-dim {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(207 221 220 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-tertiary {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(25 81 84 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-tertiary-container {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(53 105 108 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-tertiary-fixed {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(183 236 239 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .bg-transparent {
+  background-color: transparent;
+} #stitch-landing .bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--stitch-gradient-stops));
+} #stitch-landing .bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--stitch-gradient-stops));
+} #stitch-landing .from-inverse-surface\/80 {
+  --stitch-gradient-from: rgb(38 51 51 / 0.8) var(--stitch-gradient-from-position);
+  --stitch-gradient-to: rgb(38 51 51 / 0) var(--stitch-gradient-to-position);
+  --stitch-gradient-stops: var(--stitch-gradient-from), var(--stitch-gradient-to);
+} #stitch-landing .from-on-background\/80 {
+  --stitch-gradient-from: rgb(18 30 30 / 0.8) var(--stitch-gradient-from-position);
+  --stitch-gradient-to: rgb(18 30 30 / 0) var(--stitch-gradient-to-position);
+  --stitch-gradient-stops: var(--stitch-gradient-from), var(--stitch-gradient-to);
+} #stitch-landing .from-on-background\/85 {
+  --stitch-gradient-from: rgb(18 30 30 / 0.85) var(--stitch-gradient-from-position);
+  --stitch-gradient-to: rgb(18 30 30 / 0) var(--stitch-gradient-to-position);
+  --stitch-gradient-stops: var(--stitch-gradient-from), var(--stitch-gradient-to);
+} #stitch-landing .from-primary {
+  --stitch-gradient-from: #005252 var(--stitch-gradient-from-position);
+  --stitch-gradient-to: rgb(0 82 82 / 0) var(--stitch-gradient-to-position);
+  --stitch-gradient-stops: var(--stitch-gradient-from), var(--stitch-gradient-to);
+} #stitch-landing .from-primary\/60 {
+  --stitch-gradient-from: rgb(0 82 82 / 0.6) var(--stitch-gradient-from-position);
+  --stitch-gradient-to: rgb(0 82 82 / 0) var(--stitch-gradient-to-position);
+  --stitch-gradient-stops: var(--stitch-gradient-from), var(--stitch-gradient-to);
+} #stitch-landing .from-primary\/70 {
+  --stitch-gradient-from: rgb(0 82 82 / 0.7) var(--stitch-gradient-from-position);
+  --stitch-gradient-to: rgb(0 82 82 / 0) var(--stitch-gradient-to-position);
+  --stitch-gradient-stops: var(--stitch-gradient-from), var(--stitch-gradient-to);
+} #stitch-landing .via-on-background\/20 {
+  --stitch-gradient-to: rgb(18 30 30 / 0)  var(--stitch-gradient-to-position);
+  --stitch-gradient-stops: var(--stitch-gradient-from), rgb(18 30 30 / 0.2) var(--stitch-gradient-via-position), var(--stitch-gradient-to);
+} #stitch-landing .via-transparent {
+  --stitch-gradient-to: rgb(0 0 0 / 0)  var(--stitch-gradient-to-position);
+  --stitch-gradient-stops: var(--stitch-gradient-from), transparent var(--stitch-gradient-via-position), var(--stitch-gradient-to);
+} #stitch-landing .to-inverse-surface\/20 {
+  --stitch-gradient-to: rgb(38 51 51 / 0.2) var(--stitch-gradient-to-position);
+} #stitch-landing .to-tertiary {
+  --stitch-gradient-to: #195154 var(--stitch-gradient-to-position);
+} #stitch-landing .to-transparent {
+  --stitch-gradient-to: transparent var(--stitch-gradient-to-position);
+} #stitch-landing .bg-cover {
+  background-size: cover;
+} #stitch-landing .bg-center {
+  background-position: center;
+} #stitch-landing .fill-current {
+  fill: currentColor;
+} #stitch-landing .fill-primary-fixed {
+  fill: #a8efee;
+} #stitch-landing .object-contain {
+  object-fit: contain;
+} #stitch-landing .object-cover {
+  object-fit: cover;
+} #stitch-landing .object-top {
+  object-position: top;
+} #stitch-landing .p-1 {
+  padding: 0.25rem;
+} #stitch-landing .p-2 {
+  padding: 0.5rem;
+} #stitch-landing .p-2\.5 {
+  padding: 0.625rem;
+} #stitch-landing .p-3 {
+  padding: 0.75rem;
+} #stitch-landing .p-3\.5 {
+  padding: 0.875rem;
+} #stitch-landing .p-4 {
+  padding: 1rem;
+} #stitch-landing .p-5 {
+  padding: 1.25rem;
+} #stitch-landing .p-6 {
+  padding: 1.5rem;
+} #stitch-landing .p-8 {
+  padding: 2rem;
+} #stitch-landing .p-space-lg {
+  padding: 1.5rem;
+} #stitch-landing .p-space-md {
+  padding: 1rem;
+} #stitch-landing .p-space-sm {
+  padding: 0.5rem;
+} #stitch-landing .px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+} #stitch-landing .px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+} #stitch-landing .px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+} #stitch-landing .px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+} #stitch-landing .px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+} #stitch-landing .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+} #stitch-landing .px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+} #stitch-landing .px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+} #stitch-landing .px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+} #stitch-landing .px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+} #stitch-landing .px-margin {
+  padding-left: 2rem;
+  padding-right: 2rem;
+} #stitch-landing .px-space-lg {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+} #stitch-landing .px-space-md {
+  padding-left: 1rem;
+  padding-right: 1rem;
+} #stitch-landing .px-space-sm {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+} #stitch-landing .px-space-xs {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+} #stitch-landing .py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+} #stitch-landing .py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+} #stitch-landing .py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+} #stitch-landing .py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+} #stitch-landing .py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+} #stitch-landing .py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+} #stitch-landing .py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+} #stitch-landing .py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+} #stitch-landing .py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+} #stitch-landing .py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+} #stitch-landing .py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+} #stitch-landing .py-space-md {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+} #stitch-landing .py-space-sm {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+} #stitch-landing .py-space-xl {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+} #stitch-landing .py-space-xs {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+} #stitch-landing .pb-1 {
+  padding-bottom: 0.25rem;
+} #stitch-landing .pb-12 {
+  padding-bottom: 3rem;
+} #stitch-landing .pb-16 {
+  padding-bottom: 4rem;
+} #stitch-landing .pb-20 {
+  padding-bottom: 5rem;
+} #stitch-landing .pb-24 {
+  padding-bottom: 6rem;
+} #stitch-landing .pb-3 {
+  padding-bottom: 0.75rem;
+} #stitch-landing .pb-32 {
+  padding-bottom: 8rem;
+} #stitch-landing .pb-4 {
+  padding-bottom: 1rem;
+} #stitch-landing .pb-space-sm {
+  padding-bottom: 0.5rem;
+} #stitch-landing .pl-11 {
+  padding-left: 2.75rem;
+} #stitch-landing .pl-12 {
+  padding-left: 3rem;
+} #stitch-landing .pl-8 {
+  padding-left: 2rem;
+} #stitch-landing .pr-10 {
+  padding-right: 2.5rem;
+} #stitch-landing .pr-3 {
+  padding-right: 0.75rem;
+} #stitch-landing .pr-4 {
+  padding-right: 1rem;
+} #stitch-landing .pt-1 {
+  padding-top: 0.25rem;
+} #stitch-landing .pt-10 {
+  padding-top: 2.5rem;
+} #stitch-landing .pt-2 {
+  padding-top: 0.5rem;
+} #stitch-landing .pt-20 {
+  padding-top: 5rem;
+} #stitch-landing .pt-3 {
+  padding-top: 0.75rem;
+} #stitch-landing .pt-4 {
+  padding-top: 1rem;
+} #stitch-landing .pt-6 {
+  padding-top: 1.5rem;
+} #stitch-landing .pt-8 {
+  padding-top: 2rem;
+} #stitch-landing .pt-space-lg {
+  padding-top: 1.5rem;
+} #stitch-landing .pt-space-md {
+  padding-top: 1rem;
+} #stitch-landing .pt-space-sm {
+  padding-top: 0.5rem;
+} #stitch-landing .pt-space-xl {
+  padding-top: 2.5rem;
+} #stitch-landing .text-left {
+  text-align: left;
+} #stitch-landing .text-center {
+  text-align: center;
+} #stitch-landing .text-right {
+  text-align: right;
+} #stitch-landing .font-body-lg {
+  font-family: var(--font-inter), sans-serif;
+} #stitch-landing .font-body-md {
+  font-family: var(--font-inter), sans-serif;
+} #stitch-landing .font-body-sm {
+  font-family: var(--font-inter), sans-serif;
+} #stitch-landing .font-headline-lg {
+  font-family: var(--font-outfit), sans-serif;
+} #stitch-landing .font-headline-md {
+  font-family: var(--font-outfit), sans-serif;
+} #stitch-landing .font-headline-sm {
+  font-family: var(--font-outfit), sans-serif;
+} #stitch-landing .font-headline-xl {
+  font-family: var(--font-outfit), sans-serif;
+} #stitch-landing .font-label-lg {
+  font-family: var(--font-inter), sans-serif;
+} #stitch-landing .font-label-md {
+  font-family: var(--font-inter), sans-serif;
+} #stitch-landing .font-label-sm {
+  font-family: var(--font-inter), sans-serif;
+} #stitch-landing .text-\[10px\] {
+  font-size: 10px;
+} #stitch-landing .text-\[11px\] {
+  font-size: 11px;
+} #stitch-landing .text-\[13px\] {
+  font-size: 13px;
+} #stitch-landing .text-\[14px\] {
+  font-size: 14px;
+} #stitch-landing .text-\[15px\] {
+  font-size: 15px;
+} #stitch-landing .text-\[16px\] {
+  font-size: 16px;
+} #stitch-landing .text-\[17px\] {
+  font-size: 17px;
+} #stitch-landing .text-\[18px\] {
+  font-size: 18px;
+} #stitch-landing .text-\[20px\] {
+  font-size: 20px;
+} #stitch-landing .text-\[22px\] {
+  font-size: 22px;
+} #stitch-landing .text-\[24px\] {
+  font-size: 24px;
+} #stitch-landing .text-\[26px\] {
+  font-size: 26px;
+} #stitch-landing .text-\[28px\] {
+  font-size: 28px;
+} #stitch-landing .text-\[30px\] {
+  font-size: 30px;
+} #stitch-landing .text-\[32px\] {
+  font-size: 32px;
+} #stitch-landing .text-\[36px\] {
+  font-size: 36px;
+} #stitch-landing .text-\[9\.5px\] {
+  font-size: 9.5px;
+} #stitch-landing .text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+} #stitch-landing .text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  font-weight: 400;
+} #stitch-landing .text-body-md {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  font-weight: 400;
+} #stitch-landing .text-body-sm {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+  font-weight: 400;
+} #stitch-landing .text-headline-lg {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+} #stitch-landing .text-headline-md {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+} #stitch-landing .text-headline-sm {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  font-weight: 500;
+} #stitch-landing .text-headline-xl {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+} #stitch-landing .text-label-lg {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+} #stitch-landing .text-label-md {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+} #stitch-landing .text-label-sm {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+} #stitch-landing .font-bold {
+  font-weight: 700;
+} #stitch-landing .font-medium {
+  font-weight: 500;
+} #stitch-landing .font-semibold {
+  font-weight: 600;
+} #stitch-landing .uppercase {
+  text-transform: uppercase;
+} #stitch-landing .italic {
+  font-style: italic;
+} #stitch-landing .leading-none {
+  line-height: 1;
+} #stitch-landing .leading-relaxed {
+  line-height: 1.625;
+} #stitch-landing .leading-snug {
+  line-height: 1.375;
+} #stitch-landing .leading-tight {
+  line-height: 1.25;
+} #stitch-landing .tracking-\[2px\] {
+  letter-spacing: 2px;
+} #stitch-landing .tracking-tight {
+  letter-spacing: -0.025em;
+} #stitch-landing .tracking-wide {
+  letter-spacing: 0.025em;
+} #stitch-landing .tracking-wider {
+  letter-spacing: 0.05em;
+} #stitch-landing .tracking-widest {
+  letter-spacing: 0.1em;
+} #stitch-landing .text-amber-300 {
+  --stitch-text-opacity: 1;
+  color: rgb(252 211 77 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-amber-400 {
+  --stitch-text-opacity: 1;
+  color: rgb(251 191 36 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-amber-500 {
+  --stitch-text-opacity: 1;
+  color: rgb(245 158 11 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-emerald-800 {
+  --stitch-text-opacity: 1;
+  color: rgb(6 95 70 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-error {
+  --stitch-text-opacity: 1;
+  color: rgb(186 26 26 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-error-container {
+  --stitch-text-opacity: 1;
+  color: rgb(255 218 214 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-inverse-on-surface {
+  --stitch-text-opacity: 1;
+  color: rgb(230 243 243 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-inverse-on-surface\/90 {
+  color: rgb(230 243 243 / 0.9);
+} #stitch-landing .text-on-error {
+  --stitch-text-opacity: 1;
+  color: rgb(255 255 255 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-error-container {
+  --stitch-text-opacity: 1;
+  color: rgb(147 0 10 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-primary {
+  --stitch-text-opacity: 1;
+  color: rgb(255 255 255 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-primary-container {
+  --stitch-text-opacity: 1;
+  color: rgb(162 233 232 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-primary-fixed {
+  --stitch-text-opacity: 1;
+  color: rgb(0 32 32 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-primary\/90 {
+  color: rgb(255 255 255 / 0.9);
+} #stitch-landing .text-on-secondary {
+  --stitch-text-opacity: 1;
+  color: rgb(255 255 255 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-secondary-container {
+  --stitch-text-opacity: 1;
+  color: rgb(254 251 255 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-secondary-fixed {
+  --stitch-text-opacity: 1;
+  color: rgb(0 23 77 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-secondary-fixed-variant {
+  --stitch-text-opacity: 1;
+  color: rgb(0 60 172 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-surface {
+  --stitch-text-opacity: 1;
+  color: rgb(18 30 30 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-surface-variant {
+  --stitch-text-opacity: 1;
+  color: rgb(63 73 72 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-surface-variant\/60 {
+  color: rgb(63 73 72 / 0.6);
+} #stitch-landing .text-on-tertiary {
+  --stitch-text-opacity: 1;
+  color: rgb(255 255 255 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-tertiary-container {
+  --stitch-text-opacity: 1;
+  color: rgb(177 230 233 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-on-tertiary-fixed-variant {
+  --stitch-text-opacity: 1;
+  color: rgb(22 78 81 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-outline {
+  --stitch-text-opacity: 1;
+  color: rgb(111 121 121 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-outline-variant {
+  --stitch-text-opacity: 1;
+  color: rgb(190 200 200 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-primary {
+  --stitch-text-opacity: 1;
+  color: rgb(0 82 82 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-primary-fixed {
+  --stitch-text-opacity: 1;
+  color: rgb(168 239 238 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-secondary {
+  --stitch-text-opacity: 1;
+  color: rgb(0 79 218 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-surface {
+  --stitch-text-opacity: 1;
+  color: rgb(239 252 251 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-surface-container-lowest {
+  --stitch-text-opacity: 1;
+  color: rgb(255 255 255 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-tertiary {
+  --stitch-text-opacity: 1;
+  color: rgb(25 81 84 / var(--stitch-text-opacity, 1));
+} #stitch-landing .text-tertiary-fixed {
+  --stitch-text-opacity: 1;
+  color: rgb(183 236 239 / var(--stitch-text-opacity, 1));
+} #stitch-landing .antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} #stitch-landing .accent-primary {
+  accent-color: #005252;
+} #stitch-landing .opacity-50 {
+  opacity: 0.5;
+} #stitch-landing .opacity-75 {
+  opacity: 0.75;
+} #stitch-landing .opacity-80 {
+  opacity: 0.8;
+} #stitch-landing .opacity-95 {
+  opacity: 0.95;
+} #stitch-landing .shadow-2xl {
+  --stitch-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --stitch-shadow-colored: 0 25px 50px -12px var(--stitch-shadow-color);
+  box-shadow: var(--stitch-ring-offset-shadow, 0 0 #0000), var(--stitch-ring-shadow, 0 0 #0000), var(--stitch-shadow);
+} #stitch-landing .shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c 0\.03\)\] {
+  --stitch-shadow: 0 1px 8px rgba(0,0,0,0.03);
+  --stitch-shadow-colored: 0 1px 8px var(--stitch-shadow-color);
+  box-shadow: var(--stitch-ring-offset-shadow, 0 0 #0000), var(--stitch-ring-shadow, 0 0 #0000), var(--stitch-shadow);
+} #stitch-landing .shadow-\[0_2px_8px_rgba\(31\2c 107\2c 107\2c 0\.2\)\] {
+  --stitch-shadow: 0 2px 8px rgba(31,107,107,0.2);
+  --stitch-shadow-colored: 0 2px 8px var(--stitch-shadow-color);
+  box-shadow: var(--stitch-ring-offset-shadow, 0 0 #0000), var(--stitch-ring-shadow, 0 0 #0000), var(--stitch-shadow);
+} #stitch-landing .shadow-lg {
+  --stitch-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --stitch-shadow-colored: 0 10px 15px -3px var(--stitch-shadow-color), 0 4px 6px -4px var(--stitch-shadow-color);
+  box-shadow: var(--stitch-ring-offset-shadow, 0 0 #0000), var(--stitch-ring-shadow, 0 0 #0000), var(--stitch-shadow);
+} #stitch-landing .shadow-md {
+  --stitch-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --stitch-shadow-colored: 0 4px 6px -1px var(--stitch-shadow-color), 0 2px 4px -2px var(--stitch-shadow-color);
+  box-shadow: var(--stitch-ring-offset-shadow, 0 0 #0000), var(--stitch-ring-shadow, 0 0 #0000), var(--stitch-shadow);
+} #stitch-landing .shadow-sm {
+  --stitch-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --stitch-shadow-colored: 0 1px 2px 0 var(--stitch-shadow-color);
+  box-shadow: var(--stitch-ring-offset-shadow, 0 0 #0000), var(--stitch-ring-shadow, 0 0 #0000), var(--stitch-shadow);
+} #stitch-landing .shadow-xl {
+  --stitch-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --stitch-shadow-colored: 0 20px 25px -5px var(--stitch-shadow-color), 0 8px 10px -6px var(--stitch-shadow-color);
+  box-shadow: var(--stitch-ring-offset-shadow, 0 0 #0000), var(--stitch-ring-shadow, 0 0 #0000), var(--stitch-shadow);
+} #stitch-landing .outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+} #stitch-landing .outline {
+  outline-style: solid;
+} #stitch-landing .ring-2 {
+  --stitch-ring-offset-shadow: var(--stitch-ring-inset) 0 0 0 var(--stitch-ring-offset-width) var(--stitch-ring-offset-color);
+  --stitch-ring-shadow: var(--stitch-ring-inset) 0 0 0 calc(2px + var(--stitch-ring-offset-width)) var(--stitch-ring-color);
+  box-shadow: var(--stitch-ring-offset-shadow), var(--stitch-ring-shadow), var(--stitch-shadow, 0 0 #0000);
+} #stitch-landing .ring-8 {
+  --stitch-ring-offset-shadow: var(--stitch-ring-inset) 0 0 0 var(--stitch-ring-offset-width) var(--stitch-ring-offset-color);
+  --stitch-ring-shadow: var(--stitch-ring-inset) 0 0 0 calc(8px + var(--stitch-ring-offset-width)) var(--stitch-ring-color);
+  box-shadow: var(--stitch-ring-offset-shadow), var(--stitch-ring-shadow), var(--stitch-shadow, 0 0 #0000);
+} #stitch-landing .ring-primary {
+  --stitch-ring-opacity: 1;
+  --stitch-ring-color: rgb(0 82 82 / var(--stitch-ring-opacity, 1));
+} #stitch-landing .ring-surface {
+  --stitch-ring-opacity: 1;
+  --stitch-ring-color: rgb(239 252 251 / var(--stitch-ring-opacity, 1));
+} #stitch-landing .ring-surface-container-low {
+  --stitch-ring-opacity: 1;
+  --stitch-ring-color: rgb(233 246 246 / var(--stitch-ring-opacity, 1));
+} #stitch-landing .blur-2xl {
+  --stitch-blur: blur(40px);
+  filter: var(--stitch-blur) var(--stitch-brightness) var(--stitch-contrast) var(--stitch-grayscale) var(--stitch-hue-rotate) var(--stitch-invert) var(--stitch-saturate) var(--stitch-sepia) var(--stitch-drop-shadow);
+} #stitch-landing .blur-3xl {
+  --stitch-blur: blur(64px);
+  filter: var(--stitch-blur) var(--stitch-brightness) var(--stitch-contrast) var(--stitch-grayscale) var(--stitch-hue-rotate) var(--stitch-invert) var(--stitch-saturate) var(--stitch-sepia) var(--stitch-drop-shadow);
+} #stitch-landing .blur-xl {
+  --stitch-blur: blur(24px);
+  filter: var(--stitch-blur) var(--stitch-brightness) var(--stitch-contrast) var(--stitch-grayscale) var(--stitch-hue-rotate) var(--stitch-invert) var(--stitch-saturate) var(--stitch-sepia) var(--stitch-drop-shadow);
+} #stitch-landing .brightness-0 {
+  --stitch-brightness: brightness(0);
+  filter: var(--stitch-blur) var(--stitch-brightness) var(--stitch-contrast) var(--stitch-grayscale) var(--stitch-hue-rotate) var(--stitch-invert) var(--stitch-saturate) var(--stitch-sepia) var(--stitch-drop-shadow);
+} #stitch-landing .drop-shadow-md {
+  --stitch-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--stitch-blur) var(--stitch-brightness) var(--stitch-contrast) var(--stitch-grayscale) var(--stitch-hue-rotate) var(--stitch-invert) var(--stitch-saturate) var(--stitch-sepia) var(--stitch-drop-shadow);
+} #stitch-landing .invert {
+  --stitch-invert: invert(100%);
+  filter: var(--stitch-blur) var(--stitch-brightness) var(--stitch-contrast) var(--stitch-grayscale) var(--stitch-hue-rotate) var(--stitch-invert) var(--stitch-saturate) var(--stitch-sepia) var(--stitch-drop-shadow);
+} #stitch-landing .backdrop-blur-md {
+  --stitch-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--stitch-backdrop-blur) var(--stitch-backdrop-brightness) var(--stitch-backdrop-contrast) var(--stitch-backdrop-grayscale) var(--stitch-backdrop-hue-rotate) var(--stitch-backdrop-invert) var(--stitch-backdrop-opacity) var(--stitch-backdrop-saturate) var(--stitch-backdrop-sepia);
+  backdrop-filter: var(--stitch-backdrop-blur) var(--stitch-backdrop-brightness) var(--stitch-backdrop-contrast) var(--stitch-backdrop-grayscale) var(--stitch-backdrop-hue-rotate) var(--stitch-backdrop-invert) var(--stitch-backdrop-opacity) var(--stitch-backdrop-saturate) var(--stitch-backdrop-sepia);
+} #stitch-landing .backdrop-blur-sm {
+  --stitch-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--stitch-backdrop-blur) var(--stitch-backdrop-brightness) var(--stitch-backdrop-contrast) var(--stitch-backdrop-grayscale) var(--stitch-backdrop-hue-rotate) var(--stitch-backdrop-invert) var(--stitch-backdrop-opacity) var(--stitch-backdrop-saturate) var(--stitch-backdrop-sepia);
+  backdrop-filter: var(--stitch-backdrop-blur) var(--stitch-backdrop-brightness) var(--stitch-backdrop-contrast) var(--stitch-backdrop-grayscale) var(--stitch-backdrop-hue-rotate) var(--stitch-backdrop-invert) var(--stitch-backdrop-opacity) var(--stitch-backdrop-saturate) var(--stitch-backdrop-sepia);
+} #stitch-landing .backdrop-blur-xl {
+  --stitch-backdrop-blur: blur(24px);
+  -webkit-backdrop-filter: var(--stitch-backdrop-blur) var(--stitch-backdrop-brightness) var(--stitch-backdrop-contrast) var(--stitch-backdrop-grayscale) var(--stitch-backdrop-hue-rotate) var(--stitch-backdrop-invert) var(--stitch-backdrop-opacity) var(--stitch-backdrop-saturate) var(--stitch-backdrop-sepia);
+  backdrop-filter: var(--stitch-backdrop-blur) var(--stitch-backdrop-brightness) var(--stitch-backdrop-contrast) var(--stitch-backdrop-grayscale) var(--stitch-backdrop-hue-rotate) var(--stitch-backdrop-invert) var(--stitch-backdrop-opacity) var(--stitch-backdrop-saturate) var(--stitch-backdrop-sepia);
+} #stitch-landing .transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+} #stitch-landing .transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+} #stitch-landing .transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+} #stitch-landing .transition-shadow {
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+} #stitch-landing .transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+} #stitch-landing .duration-200 {
+  transition-duration: 200ms;
+} #stitch-landing .duration-300 {
+  transition-duration: 300ms;
+} #stitch-landing .duration-500 {
+  transition-duration: 500ms;
+} #stitch-landing .duration-700 {
+  transition-duration: 700ms;
+} #stitch-landing :is(.selection\:bg-primary-fixed *)::selection {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(168 239 238 / var(--stitch-bg-opacity, 1));
+} #stitch-landing :is(.selection\:text-on-primary-fixed *)::selection {
+  --stitch-text-opacity: 1;
+  color: rgb(0 32 32 / var(--stitch-text-opacity, 1));
+} #stitch-landing .selection\:bg-primary-fixed::selection {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(168 239 238 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .selection\:text-on-primary-fixed::selection {
+  --stitch-text-opacity: 1;
+  color: rgb(0 32 32 / var(--stitch-text-opacity, 1));
+} #stitch-landing .placeholder\:text-on-surface-variant\/60::placeholder {
+  color: rgb(63 73 72 / 0.6);
+} #stitch-landing .placeholder\:text-on-surface-variant\/70::placeholder {
+  color: rgb(63 73 72 / 0.7);
+} #stitch-landing .placeholder\:text-outline::placeholder {
+  --stitch-text-opacity: 1;
+  color: rgb(111 121 121 / var(--stitch-text-opacity, 1));
+} #stitch-landing .focus-within\:bg-surface-container:focus-within {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(227 241 240 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:-translate-y-1:hover {
+  --stitch-translate-y: -0.25rem;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .hover\:rotate-0:hover {
+  --stitch-rotate: 0deg;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .hover\:bg-primary:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(0 82 82 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-primary-container:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(31 107 107 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-primary-fixed:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(168 239 238 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-red-700:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-secondary:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(0 79 218 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-secondary-container:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(43 105 253 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-surface-container:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(227 241 240 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-surface-container-high:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(221 235 234 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-surface-container-low:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(233 246 246 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-surface-container-lowest:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-surface-container-lowest\/20:hover {
+  background-color: rgb(255 255 255 / 0.2);
+} #stitch-landing .hover\:bg-surface-container-lowest\/25:hover {
+  background-color: rgb(255 255 255 / 0.25);
+} #stitch-landing .hover\:bg-surface-container-lowest\/30:hover {
+  background-color: rgb(255 255 255 / 0.3);
+} #stitch-landing .hover\:bg-surface-dim:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(207 221 220 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:bg-tertiary:hover {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(25 81 84 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .hover\:text-error:hover {
+  --stitch-text-opacity: 1;
+  color: rgb(186 26 26 / var(--stitch-text-opacity, 1));
+} #stitch-landing .hover\:text-on-primary:hover {
+  --stitch-text-opacity: 1;
+  color: rgb(255 255 255 / var(--stitch-text-opacity, 1));
+} #stitch-landing .hover\:text-on-primary-fixed:hover {
+  --stitch-text-opacity: 1;
+  color: rgb(0 32 32 / var(--stitch-text-opacity, 1));
+} #stitch-landing .hover\:text-on-secondary:hover {
+  --stitch-text-opacity: 1;
+  color: rgb(255 255 255 / var(--stitch-text-opacity, 1));
+} #stitch-landing .hover\:text-on-secondary-fixed-variant:hover {
+  --stitch-text-opacity: 1;
+  color: rgb(0 60 172 / var(--stitch-text-opacity, 1));
+} #stitch-landing .hover\:text-on-surface:hover {
+  --stitch-text-opacity: 1;
+  color: rgb(18 30 30 / var(--stitch-text-opacity, 1));
+} #stitch-landing .hover\:text-primary:hover {
+  --stitch-text-opacity: 1;
+  color: rgb(0 82 82 / var(--stitch-text-opacity, 1));
+} #stitch-landing .hover\:text-surface-container-lowest:hover {
+  --stitch-text-opacity: 1;
+  color: rgb(255 255 255 / var(--stitch-text-opacity, 1));
+} #stitch-landing .hover\:text-tertiary:hover {
+  --stitch-text-opacity: 1;
+  color: rgb(25 81 84 / var(--stitch-text-opacity, 1));
+} #stitch-landing .hover\:underline:hover {
+  text-decoration-line: underline;
+} #stitch-landing .hover\:opacity-100:hover {
+  opacity: 1;
+} #stitch-landing .hover\:opacity-80:hover {
+  opacity: 0.8;
+} #stitch-landing .hover\:shadow-lg:hover {
+  --stitch-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --stitch-shadow-colored: 0 10px 15px -3px var(--stitch-shadow-color), 0 4px 6px -4px var(--stitch-shadow-color);
+  box-shadow: var(--stitch-ring-offset-shadow, 0 0 #0000), var(--stitch-ring-shadow, 0 0 #0000), var(--stitch-shadow);
+} #stitch-landing .hover\:shadow-md:hover {
+  --stitch-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --stitch-shadow-colored: 0 4px 6px -1px var(--stitch-shadow-color), 0 2px 4px -2px var(--stitch-shadow-color);
+  box-shadow: var(--stitch-ring-offset-shadow, 0 0 #0000), var(--stitch-ring-shadow, 0 0 #0000), var(--stitch-shadow);
+} #stitch-landing .hover\:shadow-xl:hover {
+  --stitch-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --stitch-shadow-colored: 0 20px 25px -5px var(--stitch-shadow-color), 0 8px 10px -6px var(--stitch-shadow-color);
+  box-shadow: var(--stitch-ring-offset-shadow, 0 0 #0000), var(--stitch-ring-shadow, 0 0 #0000), var(--stitch-shadow);
+} #stitch-landing .hover\:brightness-110:hover {
+  --stitch-brightness: brightness(1.1);
+  filter: var(--stitch-blur) var(--stitch-brightness) var(--stitch-contrast) var(--stitch-grayscale) var(--stitch-hue-rotate) var(--stitch-invert) var(--stitch-saturate) var(--stitch-sepia) var(--stitch-drop-shadow);
+} #stitch-landing .focus\:bg-surface-container-lowest:focus {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+} #stitch-landing .focus\:ring-2:focus {
+  --stitch-ring-offset-shadow: var(--stitch-ring-inset) 0 0 0 var(--stitch-ring-offset-width) var(--stitch-ring-offset-color);
+  --stitch-ring-shadow: var(--stitch-ring-inset) 0 0 0 calc(2px + var(--stitch-ring-offset-width)) var(--stitch-ring-color);
+  box-shadow: var(--stitch-ring-offset-shadow), var(--stitch-ring-shadow), var(--stitch-shadow, 0 0 #0000);
+} #stitch-landing .focus\:ring-primary:focus {
+  --stitch-ring-opacity: 1;
+  --stitch-ring-color: rgb(0 82 82 / var(--stitch-ring-opacity, 1));
+} #stitch-landing .active\:translate-y-0\.5:active {
+  --stitch-translate-y: 0.125rem;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .active\:translate-y-\[1px\]:active {
+  --stitch-translate-y: 1px;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .active\:scale-\[0\.98\]:active {
+  --stitch-scale-x: 0.98;
+  --stitch-scale-y: 0.98;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing .disabled\:opacity-40:disabled {
+  opacity: 0.4;
+} #stitch-landing :is(.group:hover .group-hover\:translate-x-1) {
+  --stitch-translate-x: 0.25rem;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing :is(.group:hover .group-hover\:rotate-12) {
+  --stitch-rotate: 12deg;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing :is(.group:hover .group-hover\:scale-105) {
+  --stitch-scale-x: 1.05;
+  --stitch-scale-y: 1.05;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing :is(.group:hover .group-hover\:scale-110) {
+  --stitch-scale-x: 1.1;
+  --stitch-scale-y: 1.1;
+  transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+} #stitch-landing :is(.group:hover .group-hover\:bg-primary) {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(0 82 82 / var(--stitch-bg-opacity, 1));
+} #stitch-landing :is(.group:hover .group-hover\:text-on-primary) {
+  --stitch-text-opacity: 1;
+  color: rgb(255 255 255 / var(--stitch-text-opacity, 1));
+} #stitch-landing :is(.group:hover .group-hover\:text-primary) {
+  --stitch-text-opacity: 1;
+  color: rgb(0 82 82 / var(--stitch-text-opacity, 1));
+} #stitch-landing .has-\[\:checked\]\:bg-primary:has(:checked) {
+  --stitch-bg-opacity: 1;
+  background-color: rgb(0 82 82 / var(--stitch-bg-opacity, 1));
+} #stitch-landing .has-\[\:checked\]\:text-on-primary:has(:checked) {
+  --stitch-text-opacity: 1;
+  color: rgb(255 255 255 / var(--stitch-text-opacity, 1));
+} @media (min-width: 640px) {
+
+  #stitch-landing .sm\:-right-4 {
+    right: -1rem;
+  }
+
+  #stitch-landing .sm\:block {
+    display: block;
+  }
+
+  #stitch-landing .sm\:inline {
+    display: inline;
+  }
+
+  #stitch-landing .sm\:flex {
+    display: flex;
+  }
+
+  #stitch-landing .sm\:w-auto {
+    width: auto;
+  }
+
+  #stitch-landing .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #stitch-landing .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  #stitch-landing .sm\:items-center {
+    align-items: center;
+  }
+
+  #stitch-landing .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  #stitch-landing .sm\:p-10 {
+    padding: 2.5rem;
+  }
+
+  #stitch-landing .sm\:p-8 {
+    padding: 2rem;
+  }
+
+  #stitch-landing .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+} @media (min-width: 768px) {
+
+  #stitch-landing .md\:left-1\/2 {
+    left: 50%;
+  }
+
+  #stitch-landing .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  #stitch-landing .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  #stitch-landing .md\:-mt-20 {
+    margin-top: -5rem;
+  }
+
+  #stitch-landing .md\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
+  #stitch-landing .md\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
+  #stitch-landing .md\:mb-36 {
+    margin-bottom: 9rem;
+  }
+
+  #stitch-landing .md\:block {
+    display: block;
+  }
+
+  #stitch-landing .md\:inline {
+    display: inline;
+  }
+
+  #stitch-landing .md\:h-16 {
+    height: 4rem;
+  }
+
+  #stitch-landing .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  #stitch-landing .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #stitch-landing .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #stitch-landing .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #stitch-landing .md\:flex-row {
+    flex-direction: row;
+  }
+
+  #stitch-landing .md\:items-end {
+    align-items: flex-end;
+  }
+
+  #stitch-landing .md\:items-center {
+    align-items: center;
+  }
+
+  #stitch-landing .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  #stitch-landing :is(.md\:divide-x > :not([hidden]) ~ :not([hidden])) {
+    --stitch-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--stitch-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--stitch-divide-x-reverse)));
+  }
+
+  #stitch-landing :is(.md\:divide-y-0 > :not([hidden]) ~ :not([hidden])) {
+    --stitch-divide-y-reverse: 0;
+    border-top-width: calc(0px * calc(1 - var(--stitch-divide-y-reverse)));
+    border-bottom-width: calc(0px * var(--stitch-divide-y-reverse));
+  }
+
+  #stitch-landing .md\:self-auto {
+    align-self: auto;
+  }
+
+  #stitch-landing .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  #stitch-landing .md\:p-12 {
+    padding: 3rem;
+  }
+
+  #stitch-landing .md\:p-14 {
+    padding: 3.5rem;
+  }
+
+  #stitch-landing .md\:p-4 {
+    padding: 1rem;
+  }
+
+  #stitch-landing .md\:p-6 {
+    padding: 1.5rem;
+  }
+
+  #stitch-landing .md\:p-8 {
+    padding: 2rem;
+  }
+
+  #stitch-landing .md\:p-space-xl {
+    padding: 2.5rem;
+  }
+
+  #stitch-landing .md\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  #stitch-landing .md\:pb-28 {
+    padding-bottom: 7rem;
+  }
+
+  #stitch-landing .md\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  #stitch-landing .md\:pl-0 {
+    padding-left: 0px;
+  }
+
+  #stitch-landing .md\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  #stitch-landing .md\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  #stitch-landing .md\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  #stitch-landing .md\:pt-2 {
+    padding-top: 0.5rem;
+  }
+
+  #stitch-landing .md\:text-right {
+    text-align: right;
+  }
+
+  #stitch-landing .md\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  #stitch-landing .md\:text-\[54px\] {
+    font-size: 54px;
+  }
+
+  #stitch-landing .md\:text-headline-xl {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  #stitch-landing .md\:leading-\[62px\] {
+    line-height: 62px;
+  }
+} @media (min-width: 1024px) {
+
+  #stitch-landing .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  #stitch-landing .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  #stitch-landing .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  #stitch-landing .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  #stitch-landing .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  #stitch-landing .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  #stitch-landing .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  #stitch-landing .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  #stitch-landing .lg\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
+  #stitch-landing .lg\:flex {
+    display: flex;
+  }
+
+  #stitch-landing .lg\:-translate-y-2 {
+    --stitch-translate-y: -0.5rem;
+    transform: translate(var(--stitch-translate-x), var(--stitch-translate-y)) rotate(var(--stitch-rotate)) skewX(var(--stitch-skew-x)) skewY(var(--stitch-skew-y)) scaleX(var(--stitch-scale-x)) scaleY(var(--stitch-scale-y));
+  }
+
+  #stitch-landing .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  #stitch-landing .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #stitch-landing .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #stitch-landing .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  #stitch-landing .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  #stitch-landing .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  #stitch-landing .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  #stitch-landing .lg\:items-center {
+    align-items: center;
+  }
+
+  #stitch-landing .lg\:gap-16 {
+    gap: 4rem;
+  }
+
+  #stitch-landing .lg\:text-left {
+    text-align: left;
+  }
+
+  #stitch-landing .lg\:text-\[56px\] {
+    font-size: 56px;
+  }
+
+  #stitch-landing .lg\:text-headline-xl {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  #stitch-landing .lg\:leading-\[64px\] {
+    line-height: 64px;
+  }
+}

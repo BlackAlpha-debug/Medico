@@ -1,0 +1,9 @@
+{
+  "results": [
+    "patient signup and role redirect passed",
+    "live patient history, dashboard, interview creation, and non-repeating AI follow-ups passed",
+    "doctor signup and role redirect passed",
+    "live doctor onboarding API, dashboard, profile load, and profile save passed"
+  ],
+  "dataPolicy": "Synthetic test accounts and synthetic clinical details only."
+}

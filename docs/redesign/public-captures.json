@@ -1,0 +1,78 @@
+{
+  "data": [
+    {
+      "route": "",
+      "controls": [
+        "Subscribe Now",
+        "☰",
+        "×",
+        ""
+      ],
+      "broken": [],
+      "duplicate": 0,
+      "overflow": {
+        "w": 390,
+        "s": 390
+      }
+    },
+    {
+      "route": "about",
+      "controls": [
+        "☰",
+        "×",
+        ""
+      ],
+      "broken": [],
+      "duplicate": 0,
+      "overflow": {
+        "w": 390,
+        "s": 390
+      }
+    },
+    {
+      "route": "contact",
+      "controls": [
+        "Send Messagesend",
+        "☰",
+        "×",
+        ""
+      ],
+      "broken": [],
+      "duplicate": 0,
+      "overflow": {
+        "w": 390,
+        "s": 390
+      }
+    },
+    {
+      "route": "doctors",
+      "controls": [
+        "searchSearch",
+        "☰",
+        "×",
+        ""
+      ],
+      "broken": [],
+      "duplicate": 0,
+      "overflow": {
+        "w": 390,
+        "s": 390
+      }
+    },
+    {
+      "route": "services",
+      "controls": [
+        "☰",
+        "×",
+        ""
+      ],
+      "broken": [],
+      "duplicate": 0,
+      "overflow": {
+        "w": 390,
+        "s": 390
+      }
+    }
+  ],
+  "errors": []
+}

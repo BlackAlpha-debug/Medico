@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medico - Login & Register</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            teal: {
+              brand: '#1F6B6B',
+              dark: '#174F52',
+              darker: '#0F383A',
+              light: '#E6F2F1',
+              subtle: '#F0F7F6',
+            },
+            accent: {
+              blue: '#2F6BFF',
+            },
+            neutral: {
+              dark: '#0F1B1B',
+              muted: '#6B7A7A',
+              border: '#E2E8E8',
+              surface: '#F7FAFA'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
+          },
+          borderRadius: {
+            '2xl': '1.25rem',
+            '3xl': '1.75rem',
+            '4xl': '2.25rem'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Organic Blob Shape Mask for Image */
+    .blob-mask {
+      border-radius: 60% 40% 50% 50% / 45% 55% 45% 55%;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1;
+      border-radius: 9999px;
+    }
+    /* Subtle background mesh */
+    .brand-gradient {
+      background: radial-gradient(circle at 15% 15%, rgba(47, 107, 255, 0.15) 0%, transparent 40%),
+                  radial-gradient(circle at 85% 85%, rgba(31, 107, 107, 0.3) 0%, transparent 50%),
+                  #1F6B6B;
+    }
+  </style>
+</head>
+<body class="bg-neutral-surface font-sans text-neutral-dark min-h-screen flex items-center justify-center p-0 md:p-6 lg:p-8 antialiased selection:bg-teal-light selection:text-teal-dark">
+
+  <!-- Main Container Card -->
+  <div class="w-full max-w-[1400px] min-h-[100vh] md:min-h-[920px] bg-white md:rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-neutral-border/60">
+
+    <!-- LEFT PANEL: Brand, Imagery & Accreditations (Teal Panel) -->
+    <div class="lg:w-[48%] brand-gradient text-white p-8 sm:p-12 lg:p-16 flex flex-col justify-between relative overflow-hidden">
+      <!-- Decorative Background Circles & Waves -->
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="absolute -bottom-28 -right-24 w-96 h-96 bg-accent-blue/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- Top Header / Logo -->
+      <div class="relative z-10 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2.5 group">
+          <div class="w-11 h-11 rounded-2xl bg-white text-teal-brand flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-200">
+            <i data-lucide="cross" class="w-6 h-6 stroke-[2.5]"></i>
+          </div>
+          <span class="font-display text-2xl font-bold tracking-tight text-white">Medico<span class="text-emerald-300">.</span></span>
+        </a>
+
+        <!-- Return to Home link -->
+        <a href="#" class="inline-flex items-center gap-2 text-sm font-medium text-teal-light/90 hover:text-white bg-white/10 hover:bg-white/20 backdrop-blur-md px-4 py-2 rounded-full transition-all">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          <span>Back to site</span>
+        </a>
+      </div>
+
+      <!-- Central Visual & Value Proposition -->
+      <div class="my-auto py-8 lg:py-4 relative z-10">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-xs font-semibold tracking-wide text-white uppercase mb-6 shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-emerald-300 animate-pulse"></span>
+          Trusted Healthcare Network
+        </div>
+
+        <!-- Tagline / Headline -->
+        <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.15] text-white tracking-tight mb-4">
+          Compassionate care, powered by modern intelligence.
+        </h1>
+        <p class="text-teal-light/90 text-base sm:text-lg leading-relaxed max-w-lg mb-8 font-normal">
+          Access your unified medical records, consult with leading specialists, and manage prescription refills seamlessly in one secure portal.
+        </p>
+
+        <!-- Doctors Photo with Blob Mask & Floating Badges -->
+        <div class="relative max-w-md mx-auto lg:mx-0">
+          <!-- Main Doctor Image Frame with Organic Mask & Glass Border -->
+          <div class="relative rounded-3xl p-2 bg-gradient-to-tr from-white/20 to-white/5 backdrop-blur-md shadow-2xl">
+            <div class="w-full h-64 sm:h-72 rounded-2xl overflow-hidden relative">
+              <img 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCojdo870Cf_jASI-x7uO-J7x7gQbPNYCvknSagJ7Ky_EXilovQxfjvJ03q1Ar49rbq1J_CY_MH0HGu8yf_KHhYBu4iTctHgnHm_CUNx2VIiFQd7FFnOmna5qoGPzicajhrYuzbTmB6Edoi1DA7LZMygVEDfEX-JjWcZCsyNSlenO6ZwHwFTzbgBJ9oHDHLGKODU2rPjj7-ci5Ifyhbc7VDE93AC599CvAOhJxcZoOv3G9XQUc2FWSAEg" 
+                alt="Medico Specialists" 
+                class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-teal-darker/60 via-transparent to-transparent"></div>
+            </div>
+          </div>
+
+          <!-- Floating Badge 1: 24/7 Verified Doctors -->
+          <div class="absolute -top-4 -right-4 sm:-right-6 bg-white text-neutral-dark px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3 border border-white/80 animate-bounce duration-1000" style="animation-duration: 4s;">
+            <div class="w-9 h-9 rounded-xl bg-teal-light text-teal-brand flex items-center justify-center font-bold">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <p class="text-xs font-semibold leading-tight">JCI & HIPAA</p>
+              <p class="text-[11px] text-neutral-muted">Certified Security</p>
+            </div>
+          </div>
+
+          <!-- Floating Badge 2: Doctor Response Time -->
+          <div class="absolute -bottom-5 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md text-neutral-dark px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-white/60">
+            <div class="w-9 h-9 rounded-xl bg-accent-blue/15 text-accent-blue flex items-center justify-center font-bold">
+              <i data-lucide="stethoscope" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <p class="text-xs font-bold leading-tight">150+ Specialists</p>
+              </div>
+              <p class="text-[11px] text-neutral-muted">Avg. Triage &lt; 8 Mins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Panel Bottom Trust Proof & Accreditations -->
+      <div class="relative z-10 pt-6 border-t border-white/15 flex flex-wrap items-center justify-between gap-4 text-xs text-teal-light/80">
+        <div class="flex items-center gap-2">
+          <i data-lucide="lock" class="w-4 h-4 text-emerald-300"></i>
+          <span>256-Bit Bank-grade Clinical Encryption</span>
+        </div>
+        <div class="flex items-center gap-4 text-white/90 font-medium">
+          <span class="flex items-center gap-1"><i data-lucide="award" class="w-3.5 h-3.5 text-emerald-300"></i> JCI Accredited</span>
+          <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-300"></i> HIPAA Compliant</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- RIGHT PANEL: Authentication Panel (White & Interactive) -->
+    <div class="lg:w-[52%] bg-white p-8 sm:p-12 lg:p-16 flex flex-col justify-between overflow-y-auto custom-scroll">
+      
+      <!-- Top Action Switcher (Sign In vs Register Switch) -->
+      <div class="flex items-center justify-between pb-6 border-b border-neutral-border/60">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-brand"></span>
+          <span class="text-xs uppercase tracking-wider font-semibold text-neutral-muted">Medico Secure Portal</span>
+        </div>
+
+        <div class="text-sm font-medium text-neutral-muted">
+          <span id="nav-toggle-text">Don't have an account?</span>
+          <button id="auth-mode-toggle" type="button" class="font-bold text-teal-brand hover:text-teal-dark underline ml-1 focus:outline-none transition-colors">
+            Register now
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Form Wrapper -->
+      <div class="max-w-md w-full mx-auto my-auto py-6">
+        
+        <!-- Header Text -->
+        <div class="mb-6">
+          <h2 id="auth-title" class="font-display text-2xl sm:text-3xl font-extrabold text-neutral-dark tracking-tight mb-2">
+            Welcome back
+          </h2>
+          <p id="auth-subtitle" class="text-neutral-muted text-sm sm:text-base">
+            Please enter your credentials to access your healthcare portal.
+          </p>
+        </div>
+
+        <!-- ROLE SELECTOR TABS (Patient / Doctor / Staff) -->
+        <div class="mb-6">
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-muted mb-2.5">Select Your Portal Role</label>
+          <div class="grid grid-cols-2 p-1.5 bg-neutral-surface rounded-2xl border border-neutral-border relative" id="role-tab-group">
+            <!-- Patient Role Tab -->
+            <button 
+              type="button" 
+              id="role-patient" 
+              class="role-btn relative flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-200 bg-teal-brand text-white shadow-md"
+            >
+              <i data-lucide="user" class="w-4 h-4"></i>
+              <span>Patient Portal</span>
+            </button>
+            
+            <!-- Doctor Role Tab -->
+            <button 
+              type="button" 
+              id="role-doctor" 
+              class="role-btn relative flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-200 text-neutral-muted hover:text-neutral-dark"
+            >
+              <i data-lucide="stethoscope" class="w-4 h-4"></i>
+              <span>Doctor / Clinician</span>
+            </button>
+          </div>
+          <!-- Role context hint -->
+          <div id="role-hint" class="mt-2 text-xs text-neutral-muted flex items-center gap-1.5 px-1">
+            <i data-lucide="info" class="w-3.5 h-3.5 text-teal-brand"></i>
+            <span>Access appointments, prescriptions, billing & lab results.</span>
+          </div>
+        </div>
+
+        <!-- Social Single Sign-On (Google & Apple) -->
+        <div class="grid grid-cols-2 gap-3 mb-6">
+          <button type="button" class="flex items-center justify-center gap-2.5 py-3 px-4 border border-neutral-border rounded-xl text-sm font-semibold text-neutral-dark hover:bg-neutral-surface hover:border-neutral-300 transition-all shadow-sm">
+            <!-- Google SVG -->
+            <svg class="w-4 h-4" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span>Google</span>
+          </button>
+
+          <button type="button" class="flex items-center justify-center gap-2.5 py-3 px-4 border border-neutral-border rounded-xl text-sm font-semibold text-neutral-dark hover:bg-neutral-surface hover:border-neutral-300 transition-all shadow-sm">
+            <!-- Apple SVG -->
+            <svg class="w-4 h-4 fill-current text-neutral-dark" viewBox="0 0 24 24">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1.01.08 2.03-.5 2.64-1.23z"/>
+            </svg>
+            <span>Apple ID</span>
+          </button>
+        </div>
+
+        <!-- Divider -->
+        <div class="relative flex items-center justify-center mb-6">
+          <div class="w-full border-t border-neutral-border"></div>
+          <span class="absolute px-3 bg-white text-xs uppercase tracking-wider text-neutral-muted font-medium">Or continue with email</span>
+        </div>
+
+        <!-- Form Elements -->
+        <form id="auth-form" onsubmit="event.preventDefault();" class="space-y-4">
+          
+          <!-- Full Name Field (Hidden on Login, Shown on Register) -->
+          <div id="field-name" class="hidden">
+            <label class="block text-xs font-semibold text-neutral-dark mb-1.5">Full Name</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-neutral-muted">
+                <i data-lucide="user" class="w-4 h-4"></i>
+              </span>
+              <input 
+                type="text" 
+                placeholder="Dr. Elena Rostova or John Doe" 
+                class="w-full pl-10 pr-4 py-3 rounded-xl border border-neutral-border bg-neutral-surface/40 text-sm text-neutral-dark placeholder:text-neutral-muted/60 focus:bg-white focus:outline-none focus:border-teal-brand focus:ring-2 focus:ring-teal-brand/10 transition-all"
+              />
+            </div>
+          </div>
+
+          <!-- Doctor Medical ID / License Field (Only shown when Doctor role active in Register) -->
+          <div id="field-license" class="hidden">
+            <label class="block text-xs font-semibold text-neutral-dark mb-1.5">Medical License / NPI Number</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-neutral-muted">
+                <i data-lucide="badge-check" class="w-4 h-4"></i>
+              </span>
+              <input 
+                type="text" 
+                placeholder="e.g. MED-849201-US" 
+                class="w-full pl-10 pr-4 py-3 rounded-xl border border-neutral-border bg-neutral-surface/40 text-sm text-neutral-dark placeholder:text-neutral-muted/60 focus:bg-white focus:outline-none focus:border-teal-brand focus:ring-2 focus:ring-teal-brand/10 transition-all"
+              />
+            </div>
+          </div>
+
+          <!-- Email Field -->
+          <div>
+            <label class="block text-xs font-semibold text-neutral-dark mb-1.5">Email Address</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-neutral-muted">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </span>
+              <input 
+                type="email" 
+                value="patient.care@medico.com" 
+                placeholder="name@example.com" 
+                required 
+                class="w-full pl-10 pr-4 py-3 rounded-xl border border-neutral-border bg-neutral-surface/40 text-sm text-neutral-dark placeholder:text-neutral-muted/60 focus:bg-white focus:outline-none focus:border-teal-brand focus:ring-2 focus:ring-teal-brand/10 transition-all"
+              />
+            </div>
+          </div>
+
+          <!-- Password Field -->
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <label class="block text-xs font-semibold text-neutral-dark">Password</label>
+              <a href="#" id="forgot-password-link" class="text-xs font-semibold text-teal-brand hover:text-teal-dark hover:underline">
+                Forgot password?
+              </a>
+            </div>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-neutral-muted">
+                <i data-lucide="lock" class="w-4 h-4"></i>
+              </span>
+              <input 
+                type="password" 
+                id="password-input"
+                value="••••••••••••" 
+                placeholder="Enter password" 
+                required 
+                class="w-full pl-10 pr-11 py-3 rounded-xl border border-neutral-border bg-neutral-surface/40 text-sm text-neutral-dark placeholder:text-neutral-muted/60 focus:bg-white focus:outline-none focus:border-teal-brand focus:ring-2 focus:ring-teal-brand/10 transition-all"
+              />
+              <button 
+                type="button" 
+                id="toggle-password-visibility" 
+                class="absolute inset-y-0 right-0 flex items-center pr-3.5 text-neutral-muted hover:text-neutral-dark transition-colors"
+              >
+                <i data-lucide="eye" id="eye-icon" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Remember Me Checkbox / Terms -->
+          <div class="flex items-center justify-between pt-1">
+            <label class="flex items-center gap-2.5 cursor-pointer select-none">
+              <input 
+                type="checkbox" 
+                checked 
+                class="w-4 h-4 rounded text-teal-brand border-neutral-border focus:ring-teal-brand/20 accent-teal-brand"
+              />
+              <span id="remember-label" class="text-xs font-medium text-neutral-muted">Remember me for 30 days</span>
+            </label>
+
+            <!-- Security indicator -->
+            <div class="flex items-center gap-1 text-[11px] text-neutral-muted">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+              <span>SSL Protected</span>
+            </div>
+          </div>
+
+          <!-- Register Terms Agreement (Hidden by default in login mode) -->
+          <div id="terms-agreement" class="hidden text-xs text-neutral-muted leading-relaxed">
+            By creating an account, you agree to Medico's 
+            <a href="#" class="text-teal-brand underline font-medium">Terms of Clinical Service</a> and 
+            <a href="#" class="text-teal-brand underline font-medium">HIPAA Privacy Notice</a>.
+          </div>
+
+          <!-- Submit Primary Button -->
+          <button 
+            type="submit" 
+            id="auth-submit-btn" 
+            class="w-full mt-2 py-3.5 px-6 rounded-2xl bg-teal-brand hover:bg-teal-dark active:scale-[0.99] text-white font-display font-bold text-sm sm:text-base tracking-wide shadow-lg shadow-teal-brand/25 flex items-center justify-center gap-2 transition-all duration-200"
+          >
+            <span id="submit-btn-text">Sign In to Medico</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 stroke-[2.5]"></i>
+          </button>
+        </form>
+
+        <!-- Doctor Portal Emergency Verification note -->
+        <div id="doctor-verification-note" class="hidden mt-4 p-3 rounded-xl bg-teal-light/70 border border-teal-brand/20 text-xs text-teal-dark flex items-start gap-2.5">
+          <i data-lucide="shield-alert" class="w-4 h-4 text-teal-brand flex-shrink-0 mt-0.5"></i>
+          <span>Doctor credentials require Two-Factor Authentication (2FA) via Duo Security or Authenticator App upon sign in.</span>
+        </div>
+
+      </div>
+
+      <!-- Footer Info -->
+      <div class="pt-6 border-t border-neutral-border/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-neutral-muted">
+        <div>
+          <span>© 2025 Medico Health Systems. All rights reserved.</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-teal-brand transition-colors">Privacy Policy</a>
+          <span>•</span>
+          <a href="#" class="hover:text-teal-brand transition-colors">HIPAA Compliance</a>
+          <span>•</span>
+          <a href="#" class="hover:text-teal-brand transition-colors">Help Desk</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Interactive Logic for Role Switching, Mode Toggle & Password View -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // DOM Elements
+    const rolePatientBtn = document.getElementById('role-patient');
+    const roleDoctorBtn = document.getElementById('role-doctor');
+    const roleHint = document.getElementById('role-hint');
+    const authModeToggle = document.getElementById('auth-mode-toggle');
+    const navToggleText = document.getElementById('nav-toggle-text');
+    const authTitle = document.getElementById('auth-title');
+    const authSubtitle = document.getElementById('auth-subtitle');
+    const fieldName = document.getElementById('field-name');
+    const fieldLicense = document.getElementById('field-license');
+    const termsAgreement = document.getElementById('terms-agreement');
+    const submitBtnText = document.getElementById('submit-btn-text');
+    const forgotPasswordLink = document.getElementById('forgot-password-link');
+    const doctorNote = document.getElementById('doctor-verification-note');
+    const togglePassBtn = document.getElementById('toggle-password-visibility');
+    const passInput = document.getElementById('password-input');
+
+    let currentRole = 'patient'; // 'patient' or 'doctor'
+    let currentMode = 'login';   // 'login' or 'register'
+
+    function updateRoleUI() {
+      if (currentRole === 'patient') {
+        rolePatientBtn.className = "role-btn relative flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-200 bg-teal-brand text-white shadow-md";
+        roleDoctorBtn.className = "role-btn relative flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-200 text-neutral-muted hover:text-neutral-dark";
+        roleHint.innerHTML = '<i data-lucide="info" class="w-3.5 h-3.5 text-teal-brand"></i><span>Access appointments, prescriptions, billing & lab results.</span>';
+        doctorNote.classList.add('hidden');
+        if (fieldLicense) fieldLicense.classList.add('hidden');
+      } else {
+        roleDoctorBtn.className = "role-btn relative flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-200 bg-teal-brand text-white shadow-md";
+        rolePatientBtn.className = "role-btn relative flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-200 text-neutral-muted hover:text-neutral-dark";
+        roleHint.innerHTML = '<i data-lucide="shield" class="w-3.5 h-3.5 text-accent-blue"></i><span>Access clinical charts, electronic prescriptions & surgery schedules.</span>';
+        doctorNote.classList.remove('hidden');
+        if (currentMode === 'register') {
+          fieldLicense.classList.remove('hidden');
+        }
+      }
+      lucide.createIcons();
+    }
+
+    function updateModeUI() {
+      if (currentMode === 'login') {
+        authTitle.textContent = currentRole === 'doctor' ? 'Clinician Portal Sign In' : 'Welcome back';
+        authSubtitle.textContent = 'Please enter your credentials to access your healthcare portal.';
+        navToggleText.textContent = "Don't have an account?";
+        authModeToggle.textContent = "Register now";
+        fieldName.classList.add('hidden');
+        fieldLicense.classList.add('hidden');
+        termsAgreement.classList.add('hidden');
+        forgotPasswordLink.classList.remove('hidden');
+        submitBtnText.textContent = currentRole === 'doctor' ? 'Sign In as Clinician' : 'Sign In to Medico';
+      } else {
+        authTitle.textContent = currentRole === 'doctor' ? 'Doctor Onboarding Application' : 'Create Patient Account';
+        authSubtitle.textContent = 'Join Medico to manage appointments, electronic records, and healthcare.';
+        navToggleText.textContent = "Already have an account?";
+        authModeToggle.textContent = "Sign in here";
+        fieldName.classList.remove('hidden');
+        if (currentRole === 'doctor') {
+          fieldLicense.classList.remove('hidden');
+        } else {
+          fieldLicense.classList.add('hidden');
+        }
+        termsAgreement.classList.remove('hidden');
+        forgotPasswordLink.classList.add('hidden');
+        submitBtnText.textContent = currentRole === 'doctor' ? 'Submit Clinician Application' : 'Create My Account';
+      }
+      lucide.createIcons();
+    }
+
+    // Role Tab Click Handlers
+    rolePatientBtn.addEventListener('click', () => {
+      currentRole = 'patient';
+      updateRoleUI();
+      updateModeUI();
+    });
+
+    roleDoctorBtn.addEventListener('click', () => {
+      currentRole = 'doctor';
+      updateRoleUI();
+      updateModeUI();
+    });
+
+    // Auth Mode Toggle Handler
+    authModeToggle.addEventListener('click', () => {
+      currentMode = currentMode === 'login' ? 'register' : 'login';
+      updateModeUI();
+    });
+
+    // Password visibility toggle
+    togglePassBtn.addEventListener('click', () => {
+      const type = passInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      passInput.setAttribute('type', type);
+      const icon = document.getElementById('eye-icon');
+      if (type === 'text') {
+        icon.setAttribute('data-lucide', 'eye-off');
+      } else {
+        icon.setAttribute('data-lucide', 'eye');
+      }
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
