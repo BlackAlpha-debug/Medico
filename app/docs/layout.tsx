@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Documentation | Sehat Guftagu',
-  description: 'User guide and help documentation for Sehat Guftagu',
+  title: 'Documentation | Medico',
+  description: 'User guide and help documentation for Medico',
 };
 
 export default function DocsLayout({

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Sehat Guftagu exposes RESTful API endpoints through Next.js API routes. All endpoints require authentication unless noted otherwise.
+Medico exposes RESTful API endpoints through Next.js API routes. All endpoints require authentication unless noted otherwise.
 
 ## Base URL
 

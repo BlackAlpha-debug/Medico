@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ClinLoop AI product proposal and phased delivery overview, October 2026.">
-  <title>ClinLoop AI product overview</title>
+  <meta name="description" content="Medico product proposal and phased delivery overview, October 2026.">
+  <title>Medico product overview</title>
   <style>
     :root { color-scheme: light; --ink:#182b35; --muted:#465c66; --accent:#166b65; --line:#d7e2e4; }
     * { box-sizing: border-box; }
@@ -40,14 +40,14 @@
 <main>
   <header>
     <p class="eyebrow">Product proposal · Competition prototype</p>
-    <h1>ClinLoop AI</h1>
+    <h1>Medico</h1>
     <p class="lead">Doctor-supervised clinical documentation with controlled learning from reviewed corrections.</p>
     <p class="meta">Product overview · Version 1.0 · October 9, 2026</p>
   </header>
   <div class="status"><strong>Project status</strong><br>An existing application provides the starting code for intake, voice, SOAP reports and doctor review. The secure learning workflow, fine-tuned model, evaluation and redesigned interface below are planned deliverables. No clinical performance or production-readiness claim is made.</div>
 
   <h2>What the product will do</h2>
-  <p>ClinLoop AI will organize multilingual patient intake into an English SOAP draft, show the evidence behind documented facts, and help an authorized doctor review and revise the record. The doctor retains authority over the final document and any patient-facing medication instructions.</p>
+  <p>Medico will organize multilingual patient intake into an English SOAP draft, show the evidence behind documented facts, and help an authorized doctor review and revise the record. The doctor retains authority over the final document and any patient-facing medication instructions.</p>
   <ol class="flow" aria-label="Clinical workflow"><li>Voice or text intake</li><li>Confirmed transcript</li><li>Evidence-linked SOAP</li><li>Doctor correction</li><li>Finalized document</li></ol>
   <p>The initial scope is synthetic general-outpatient cases, with English, Urdu and Roman Urdu input. Voice transcription remains editable before submission. Missing measurements stay marked as missing rather than being invented.</p>
 
@@ -58,7 +58,7 @@
   </div>
 
   <h2>When doctors disagree</h2>
-  <p>If two doctors suggest different prescriptions for apparently similar patients, each decision stays with its own patient record. The latest correction does not become a global rule. ClinLoop checks applicability and missing context, flags contradictions, and holds unresolved medication advice out of shared retrieval and training.</p>
+  <p>If two doctors suggest different prescriptions for apparently similar patients, each decision stays with its own patient record. The latest correction does not become a global rule. Medico checks applicability and missing context, flags contradictions, and holds unresolved medication advice out of shared retrieval and training.</p>
   <p>The initial design uses one shared model release. Doctor-specific preferences may control wording and layout, but cannot override clinical evidence or review safeguards. A qualified reviewer must resolve reusable clinical conflicts; automated similarity alone cannot decide them.</p>
 
   <h2>Privacy and clinician authority</h2>
@@ -93,7 +93,7 @@
   <p>A synthetic consultation can be captured, drafted, corrected and finalized by an authorized doctor. An eligible correction can influence a later draft without exposing its source patient's identity. Conflicting advice remains under review. Actual training is demonstrated through a saved adapter and reproducible evaluation, with no invented improvement percentages.</p>
   <p>The prototype is a supervised documentation assistant. It does not independently diagnose or prescribe, certify de-identification, or establish broad clinical safety from a small synthetic evaluation.</p>
   <footer>
-    <p>Planning basis: supplied ClinLoop AI brief, architecture flow, source audit and agreed constraints. Technical references: <a href="https://supabase.com/docs/guides/database/postgres/row-level-security">Supabase RLS</a>, <a href="https://huggingface.co/docs/peft/developer_guides/quantization">PEFT quantization</a>, <a href="https://research.google.com/colaboratory/faq.html">Colab limitations</a>, <a href="https://www.kaggle.com/docs/notebooks">Kaggle notebooks</a>.</p>
+    <p>Planning basis: supplied Medico brief, architecture flow, source audit and agreed constraints. Technical references: <a href="https://supabase.com/docs/guides/database/postgres/row-level-security">Supabase RLS</a>, <a href="https://huggingface.co/docs/peft/developer_guides/quantization">PEFT quantization</a>, <a href="https://research.google.com/colaboratory/faq.html">Colab limitations</a>, <a href="https://www.kaggle.com/docs/notebooks">Kaggle notebooks</a>.</p>
   </footer>
 </main>
 </body>

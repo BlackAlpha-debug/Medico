@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="public/logo/sehat-guftagu-logo.svg" alt="Sehat Guftagu Logo" width="200"/>
+<img src="public/medico/logo.png" alt="Medico logo" width="200"/>
 
-# Sehat Guftagu (صحت گفتگو)
+# Medico
 
 ### AI-Powered Clinical Interview System for Pakistan
 
@@ -30,7 +30,7 @@
 
 ## 🌟 Overview
 
-**Sehat Guftagu** is an AI-powered clinical interview platform designed for Pakistan's healthcare landscape. It conducts medical interviews in **Urdu/English**, generates **SOAP reports**, and connects patients with doctors through an intelligent **triage system**.
+**Medico** is an AI-powered clinical interview platform designed for Pakistan's healthcare landscape. It conducts medical interviews in **Urdu/English**, generates **SOAP reports**, and connects patients with doctors through an intelligent **triage system**.
 
 <div align="center">
 
@@ -45,6 +45,18 @@
 | 📚 **RAG Integration**  | Medical knowledge retrieval            |
 
 </div>
+
+---
+
+## 🖥️ Product Screens
+
+### Doctor Dashboard
+
+<img src="docs/redesign/doctor-dashboard-desktop.png" alt="Medico doctor dashboard home page" width="100%"/>
+
+### Patient Dashboard
+
+<img src="docs/redesign/patient-dashboard-desktop.png" alt="Medico patient dashboard home page" width="100%"/>
 
 ---
 
@@ -237,7 +249,7 @@ graph LR
 ## 📁 Project Structure
 
 ```
-sehat-guftagu/
+medico/
 ├── 📂 app/                    # Next.js App Router
 │   ├── 📂 (auth)/            # Auth pages
 │   ├── 📂 api/               # API endpoints

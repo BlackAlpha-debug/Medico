@@ -1,15 +1,15 @@
-# Sehat Guftagu - Technical Documentation
+# Medico - Technical Documentation
 
-## ClinLoop AI planning documents
+## Medico planning documents
 
-The documents below describe the October 2026 ClinLoop AI implementation targets. The older technical reference below describes the existing application and is not evidence that the planned learning/security features are implemented.
+The documents below describe the October 2026 Medico implementation targets. The older technical reference below describes the existing application and is not evidence that the planned learning/security features are implemented.
 
-- [Phased implementation and testing plan](./CLINLOOP_IMPLEMENTATION_PLAN.md)
-- [Free service and credential setup guide](./CLINLOOP_FREE_SETUP_GUIDE.md)
-- [Learning, doctor conflicts and evaluation](./CLINLOOP_LEARNING_AND_EVALUATION.md)
-- [Shareable product documentation](./CLINLOOP_PRODUCT_DOCUMENTATION.md)
-- [Standalone product overview](./CLINLOOP_PRODUCT_OVERVIEW.html)
-- [Existing architecture audit](./CLINLOOP_ARCHITECTURE_AUDIT.md)
+- [Phased implementation and testing plan](./MEDICO_IMPLEMENTATION_PLAN.md)
+- [Free service and credential setup guide](./MEDICO_FREE_SETUP_GUIDE.md)
+- [Learning, doctor conflicts and evaluation](./MEDICO_LEARNING_AND_EVALUATION.md)
+- [Shareable product documentation](./MEDICO_PRODUCT_DOCUMENTATION.md)
+- [Standalone product overview](./MEDICO_PRODUCT_OVERVIEW.html)
+- [Existing architecture audit](./MEDICO_ARCHITECTURE_AUDIT.md)
 
 ## Existing application reference
 
@@ -19,7 +19,7 @@ The documents below describe the October 2026 ClinLoop AI implementation targets
 
 ## Overview
 
-Sehat Guftagu (صحت گفتگو) is an AI-powered clinical interview system designed for Pakistan's healthcare landscape. It conducts medical interviews in Urdu/English, generates SOAP reports, and connects patients with doctors through an intelligent triage system.
+Medico is an AI-powered clinical interview system designed for Pakistan's healthcare landscape. It conducts medical interviews in Urdu/English, generates SOAP reports, and connects patients with doctors through an intelligent triage system.
 
 ## Documentation Index
 

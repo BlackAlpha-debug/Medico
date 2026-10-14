@@ -1,4 +1,4 @@
-# ClinLoop AI learning and evaluation specification
+# Medico learning and evaluation specification
 
 Version 1.0 — October 9, 2026
 
@@ -10,7 +10,7 @@ The system must not choose a reusable prescription simply because it is newer, m
 
 Each doctor can approve the document for the patient they are authorized to treat. That approval does not publish a general rule and does not update model weights.
 
-| Kind of difference | What ClinLoop stores | Effect on shared learning |
+| Kind of difference | What Medico stores | Effect on shared learning |
 | --- | --- | --- |
 | Wording or document layout | Optional private doctor style preference | May affect formatting only; cannot alter clinical facts or treatment |
 | New patient-specific information | New clinical version plus explanation | Stays with that patient; not generalized automatically |
@@ -19,7 +19,7 @@ Each doctor can approve the document for the patient they are authorized to trea
 | Contradictory treatment or safety advice | Conflict record linking candidates | Quarantine from shared retrieval and training pending qualified adjudication |
 | Verified correction of a documentation error | Generalized principle with source/evidence | Eligible after separate privacy and clinical approval |
 
-For a simple synthetic example, Doctor A changes a plan to treatment X and Doctor B changes a similar case to treatment Y. ClinLoop preserves both patient records, records each explanation, and opens a conflict. It does not average doses, select the latest treatment, count votes, or assume one doctor's preference is medical truth. If no qualified reviewer resolves it, the reusable lesson may only be that the context is insufficient to generalize. The current treating doctor still reviews their own patient's plan.
+For a simple synthetic example, Doctor A changes a plan to treatment X and Doctor B changes a similar case to treatment Y. Medico preserves both patient records, records each explanation, and opens a conflict. It does not average doses, select the latest treatment, count votes, or assume one doctor's preference is medical truth. If no qualified reviewer resolves it, the reusable lesson may only be that the context is insufficient to generalize. The current treating doctor still reviews their own patient's plan.
 
 Initial architecture: one shared, versioned base/adapter model with separately reviewed shared knowledge. No per-doctor clinical model. Optional doctor-specific preferences are limited to language, headings and formatting. Personal clinical fine-tuning is deferred because it could reinforce inconsistent practice and fragment evaluation.
 

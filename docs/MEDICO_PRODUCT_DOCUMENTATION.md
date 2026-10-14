@@ -1,14 +1,14 @@
-# ClinLoop AI product documentation
+# Medico product documentation
 
 Version 1.0 — October 9, 2026
 
-ClinLoop AI is a proposed doctor-supervised clinical documentation platform that turns multilingual patient intake into structured English SOAP drafts. Its central feature is a controlled feedback process: doctors review and correct drafts, suitable corrections receive separate privacy and clinical review, and approved examples can inform future drafts through retrieval and periodic model fine-tuning.
+Medico is a proposed doctor-supervised clinical documentation platform that turns multilingual patient intake into structured English SOAP drafts. Its central feature is a controlled feedback process: doctors review and correct drafts, suitable corrections receive separate privacy and clinical review, and approved examples can inform future drafts through retrieval and periodic model fine-tuning.
 
 The current project contains an existing web application with intake, SOAP, voice, report and doctor-review code. The security hardening, learning governance, model training, evaluation and redesigned interfaces described here are planned work. No clinical performance improvement or production readiness is claimed.
 
 ## Product purpose
 
-Clinical documentation requires clinicians to organize patient histories, distinguish reported information from observations, and review proposed plans. AI can help draft those records, but its output may omit important facts or introduce unsupported statements. ClinLoop AI is designed to make drafts reviewable and corrections traceable while retaining clinician authority.
+Clinical documentation requires clinicians to organize patient histories, distinguish reported information from observations, and review proposed plans. AI can help draft those records, but its output may omit important facts or introduce unsupported statements. Medico is designed to make drafts reviewable and corrections traceable while retaining clinician authority.
 
 The competition prototype will use synthetic general-outpatient cases. It will accept English, Urdu and Roman Urdu intake and produce English SOAP documents. The user experience includes voice capture, editable transcription, patient confirmation, doctor review, approved document delivery and a visible learning-review workflow.
 
@@ -39,7 +39,7 @@ Clinical document states are Draft generated, Pending doctor review, Doctor edit
 
 ## Doctor feedback and conflicting advice
 
-A correction can reflect a documentation mistake, new patient information, clinical judgment or a stylistic preference. These categories require different treatment. ClinLoop does not assume that every edit proves the model was wrong.
+A correction can reflect a documentation mistake, new patient information, clinical judgment or a stylistic preference. These categories require different treatment. Medico does not assume that every edit proves the model was wrong.
 
 If two doctors choose different prescriptions for apparently similar patients, both patient-specific decisions remain in their respective records. Neither becomes a general rule because it was newer or more frequent. The system checks for missing context and marks contradictory reusable advice for qualified review. Unresolved medication conflicts are excluded from shared retrieval and training.
 
@@ -114,15 +114,15 @@ The final-presentation build additionally targets an actual saved fine-tuning ar
 
 ## Explicit limitations
 
-ClinLoop AI is a competition prototype and documentation assistant. It does not independently diagnose, prescribe, verify clinician licenses through an official registry, certify de-identification, or guarantee continuous free GPU access. Generated confidence percentages are not treated as calibrated clinical probabilities.
+Medico is a competition prototype and documentation assistant. It does not independently diagnose, prescribe, verify clinician licenses through an official registry, certify de-identification, or guarantee continuous free GPU access. Generated confidence percentages are not treated as calibrated clinical probabilities.
 
 Initial data is synthetic; source-derived reference material requires rights and applicability checks. Unreviewed examples cannot be represented as clinically verified. Missing context or unresolved conflicts lead to review and withholding of generalized advice, not automatic selection of a treatment.
 
 ## Supporting documents
 
-- [Implementation plan](CLINLOOP_IMPLEMENTATION_PLAN.md)
-- [Free account and credential setup](CLINLOOP_FREE_SETUP_GUIDE.md)
-- [Learning, conflicts and evaluation](CLINLOOP_LEARNING_AND_EVALUATION.md)
-- [Source architecture audit](CLINLOOP_ARCHITECTURE_AUDIT.md)
+- [Implementation plan](MEDICO_IMPLEMENTATION_PLAN.md)
+- [Free account and credential setup](MEDICO_FREE_SETUP_GUIDE.md)
+- [Learning, conflicts and evaluation](MEDICO_LEARNING_AND_EVALUATION.md)
+- [Source architecture audit](MEDICO_ARCHITECTURE_AUDIT.md)
 
 Technical service and model references are linked in the setup and learning documents. This product description states the agreed design and delivery targets; it does not convert those targets into claims of completed functionality.

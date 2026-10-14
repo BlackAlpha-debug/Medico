@@ -26,9 +26,9 @@ const sections = [
     title: 'Getting Started',
     icon: Home,
     content: `
-## Welcome to Sehat Guftagu 🏥
+## Welcome to Medico 🏥
 
-Sehat Guftagu (صحت گفتگو) is your AI-powered health companion. This platform helps you have medical consultations in Urdu or English, and connects you with qualified doctors.
+Medico is your AI-powered health companion. This platform helps you have medical consultations in Urdu or English, and connects you with qualified doctors.
 
 ### What Can You Do Here?
 
@@ -279,7 +279,7 @@ Your report may have a priority label:
 ### General
 
 **Q: Is this a replacement for seeing a real doctor?**
-A: No. Sehat Guftagu is a preliminary consultation tool. Always follow up with a licensed physician for serious concerns.
+A: No. Medico is a preliminary consultation tool. Always follow up with a licensed physician for serious concerns.
 
 **Q: What languages are supported?**
 A: Urdu and English, including mixing both.
@@ -348,7 +348,7 @@ export default function DocsPage() {
             <div>
               <h1 className="text-xl font-bold text-white flex items-center gap-2">
                 <Heart className="w-6 h-6 text-emerald-400" />
-                Sehat Guftagu
+                Medico
               </h1>
               <p className="text-slate-400 text-sm">User Documentation</p>
             </div>

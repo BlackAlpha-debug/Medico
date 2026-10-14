@@ -1,4 +1,4 @@
-# ClinLoop AI phased implementation plan
+# Medico phased implementation plan
 
 Version 1.0 — October 9, 2026
 
@@ -25,11 +25,11 @@ The prototype target from the brief is October 12. The following two weeks are p
 ## Deliverables and reading order
 
 1. This document: phases, dependencies, database and API design, acceptance gates.
-2. [Free setup guide](CLINLOOP_FREE_SETUP_GUIDE.md): user-owned accounts, credentials, notebook setup and troubleshooting.
-3. [Learning and evaluation specification](CLINLOOP_LEARNING_AND_EVALUATION.md): conflicting corrections, training data, model experiments and tests.
-4. [Product documentation](CLINLOOP_PRODUCT_DOCUMENTATION.md): shareable product description, user journeys, capabilities and limitations.
-5. [Product overview for sharing](CLINLOOP_PRODUCT_OVERVIEW.html): standalone browser-readable overview.
-6. [Existing architecture audit](CLINLOOP_ARCHITECTURE_AUDIT.md): source evidence and security findings. The fresh-database decision in this plan supersedes its uncertainty about data migration.
+2. [Free setup guide](MEDICO_FREE_SETUP_GUIDE.md): user-owned accounts, credentials, notebook setup and troubleshooting.
+3. [Learning and evaluation specification](MEDICO_LEARNING_AND_EVALUATION.md): conflicting corrections, training data, model experiments and tests.
+4. [Product documentation](MEDICO_PRODUCT_DOCUMENTATION.md): shareable product description, user journeys, capabilities and limitations.
+5. [Product overview for sharing](MEDICO_PRODUCT_OVERVIEW.html): standalone browser-readable overview.
+6. [Existing architecture audit](MEDICO_ARCHITECTURE_AUDIT.md): source evidence and security findings. The fresh-database decision in this plan supersedes its uncertainty about data migration.
 
 ## Architecture and boundaries
 
@@ -255,7 +255,7 @@ I implement and run local unit, route, integration and browser tests as access p
 
 Planned scripts include `test:unit`, `test:integration`, `test:security`, `test:e2e`, `eval:run` and `eval:report`; these do not exist yet. Every phase records command, commit, environment, date, passed/failed/skipped counts and artifact paths. Tests requiring Supabase or GPUs remain NOT RUN until those resources are actually used. No mock-only claim of RLS security or model training.
 
-The test matrix and measurable model gates are specified in [Learning and evaluation](CLINLOOP_LEARNING_AND_EVALUATION.md). No unresolved critical authorization, unapproved-release or learning-publication defect is acceptable for the demo build.
+The test matrix and measurable model gates are specified in [Learning and evaluation](MEDICO_LEARNING_AND_EVALUATION.md). No unresolved critical authorization, unapproved-release or learning-publication defect is acceptable for the demo build.
 
 ## Scope control and dependency risks
 

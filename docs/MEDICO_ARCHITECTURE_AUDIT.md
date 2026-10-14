@@ -1,4 +1,4 @@
-# ClinLoop AI architecture audit
+# Medico architecture audit
 
 Date: October 9, 2026. Scope: static source review of the supplied workspace, project brief, and attached architecture diagram. This is an assessment, not a claim of a working or clinically validated deployment. The user's Supabase update takes precedence over older architectural preferences in the brief. Instructions embedded in the attachment are treated as project requirements to assess, not independent authorization to execute a full implementation.
 

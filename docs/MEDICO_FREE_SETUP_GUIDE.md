@@ -1,4 +1,4 @@
-# ClinLoop AI free setup guide
+# Medico free setup guide
 
 Version 1.0 — October 9, 2026
 
@@ -21,7 +21,7 @@ You do not need Pinecone, OpenAI, Anthropic, Gemini, ElevenLabs, Uplift, Vercel,
 ## 2 Create the Supabase project
 
 1. Open the [Supabase dashboard](https://supabase.com/dashboard) and sign in or create an account.
-2. Create an organization on the Free plan, then a new project named `clinloop-prototype`.
+2. Create an organization on the Free plan, then a new project named `medico-prototype`.
 3. Choose a suitable available region near the demo location, and store a strong database password in your password manager. This is not the same as an API key.
 4. Confirm that the selected plan does not require billing details. If a screen requests an upgrade, stop that upgrade path; do not enable a paid trial.
 5. Wait for project provisioning. Record the project URL/reference privately so the correct project can be checked before migrations.
@@ -69,9 +69,9 @@ SUPABASE_URL="<project URL>"
 SUPABASE_SECRET_KEY="<backend-only secret key>"
 AUTH_DATABASE_URL="<limited auth-table connection URI>"
 LEARNING_DATABASE_URL="<limited learning-service connection URI>"
-CLINLOOP_DEMO_MODE="synthetic"
-CLINLOOP_GENERATION_PROVIDER="groq"
-CLINLOOP_GENERATION_MODEL="<verified available open-weight model ID>"
+MEDICO_DEMO_MODE="synthetic"
+MEDICO_GENERATION_PROVIDER="groq"
+MEDICO_GENERATION_MODEL="<verified available open-weight model ID>"
 ```
 
 The implementation will add an environment validator and keep privileged variables server-only. No secret variable receives a `NEXT_PUBLIC_` prefix. A public Supabase client key is needed only if the chosen integration actually uses a browser Supabase client; do not add one just because it appears in a generic tutorial.
